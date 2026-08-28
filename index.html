@@ -6,6 +6,7 @@
 <title>VOCK Character Table</title>
 <link href="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.2/dist/css/tabulator_midnight.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.2/dist/js/tabulator.min.js"></script>
+<script src="data/character_table.js"></script>
 <style>
   :root {
     --bg: #0c1210;
@@ -104,9 +105,9 @@ const statusClass = s => ({
 }[s] || "");
 
 let table;
-fetch("data/character_table.json")
-  .then(r => r.json())
-  .then(data => {
+try {
+  const data = window.CHARACTER_TABLE || [];
+  if (!data.length) throw new Error("window.CHARACTER_TABLE is empty or missing -- check data/character_table.js loaded");
     document.getElementById("stats").innerHTML =
       `<span><b>${data.filter(d=>d.InVockScope==="Yes").length}</b> VOCK-tracked NPCs</span>` +
       `<span><b>${data.filter(d=>d.CastStatus==="Cast").length}</b> cast</span>` +
@@ -193,10 +194,9 @@ fetch("data/character_table.json")
         return true;
       });
     }
-  })
-  .catch(err => {
-    document.getElementById("table").innerText = "Failed to load data/character_table.json: " + err;
-  });
+} catch (err) {
+  document.getElementById("table").innerText = "Failed to load character table data: " + err;
+}
 </script>
 </body>
 </html>

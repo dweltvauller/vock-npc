@@ -395,3 +395,12 @@ print(f"Wrote {csv_path}")
 # also JSON for the web viewer
 json.dump(rows, open(os.path.join(DATA_DIR, "character_table.json"), "w"), indent=1)
 print("Wrote character_table.json")
+
+# also a plain <script> version -- fetch() of local files is blocked by browsers
+# under file:// (no CORS), so index.html loads this instead of fetching the JSON,
+# which lets the page work by double-clicking it, not just when hosted/served.
+with open(os.path.join(DATA_DIR, "character_table.js"), "w") as f:
+    f.write("window.CHARACTER_TABLE = ")
+    json.dump(rows, f, indent=1)
+    f.write(";\n")
+print("Wrote character_table.js")
