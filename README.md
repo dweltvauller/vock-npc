@@ -56,10 +56,13 @@ no msg_stem or dialogue source to key them on.
   Per THAT.md's own disclaimer: third-party info, may be outdated, blank means
   no confirmed actor was found in the public listings — treat as a lead, not a
   confirmed credit.
-- `images/` — Talking Head portraits copied from `../TH Images/` and renamed to
-  `<msg_stem>.<ext>` so they can be looked up programmatically. Not every
-  character has a portrait yet — the TH Images folder only covers a portion of
-  the roster.
+- `images/` — Talking Head portraits. Most are copied from `../TH Images/`
+  (matched by name) and renamed to `<msg_stem>.<ext>`; the rest were dropped
+  in here directly, named after either the character's `msg_stem` or their
+  audio-tag prefix (whichever Fede had handy) — the build script checks both,
+  for VOCK-scope rows and wiki-only rows alike, so a file already sitting
+  here always wins over a TH Images name-match for that stem. Not every
+  character has a portrait yet — coverage is partial.
 - `scripts/build_table.py` — regenerates everything above. **This is the source
   of truth's source** — don't hand-edit the CSV/JSON, edit the underlying VOCK
   files (characters.py, audit files, CREDITS.md, float_filter.cfg, va-scripts)
@@ -161,9 +164,11 @@ previous run except what's re-derived from those source files.
   portrait bleeding from the Broken Hills ghoul onto the Special-Encounter
   reuse of his name.
 - TH Images matching is name-based fuzzy matching (handles "Dr."/"Doc" vs
-  "Doctor", articles, punctuation, curly quotes) — about 122/192 VOCK-scope
-  characters matched a portrait; the rest simply aren't in the TH Images
-  folder yet (plus a couple held back by the ambiguous-name rule above).
+  "Doctor", articles, punctuation, curly quotes) plus a direct stem-or-prefix
+  filename lookup against whatever's already in `images/` — together, about
+  169/348 rows (169/192 VOCK-scope) have a portrait; the rest have neither a
+  TH Images name-match nor a manually-placed file yet (plus a couple held
+  back by the ambiguous-name rule above).
 - **RPCE's 3 new companions aren't rows yet** (Red-Knuckle Rhea, Ceri, Den
   slave) — they have no `characters.py` entry, msg_stem, or Wiki page to key
   on. If/when VOCK starts tracking them, add `characters.py` rows first and
