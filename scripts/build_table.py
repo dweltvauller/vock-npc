@@ -397,13 +397,17 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
     if audit.get("_audit_path"):
         notes.append("audit: " + os.path.relpath(audit["_audit_path"], ROOT))
 
-    mod_list = ["VOCK"]
-    if that_entry.get("va"):
-        mod_list.append("THAT")
-    for m, _loc in fo2rpu_hits:
-        if m not in mod_list:
-            mod_list.append(m)
-    mod_value = ", ".join(mod_list)
+    # Mutually exclusive: FO2 > RPU > THAT > VOCK. VOCK doesn't re-voice
+    # a character that already has audio from one of the other three.
+    fo2rpu_mods_here = {m for m, _loc in fo2rpu_hits}
+    if "FO2" in fo2rpu_mods_here:
+        mod_value = "FO2"
+    elif "RPU" in fo2rpu_mods_here:
+        mod_value = "RPU"
+    elif that_entry.get("va"):
+        mod_value = "THAT"
+    else:
+        mod_value = "VOCK"
 
     rows.append({
         "Name": name, "MsgStem": stem, "Prefix": prefix, "Location": location,
@@ -433,12 +437,18 @@ for r in wiki_rows:
     added_stem_keys.add(key)
     that_entry_wiki = that_by_name.get(canon(r["name"]), {})
     fo2rpu_wiki = fo2rpu_by_stem.get(r["stem"], [])
-    wiki_mod_list = [m for m, _l in fo2rpu_wiki]
-    if that_entry_wiki.get("va"):
-        wiki_mod_list.append("THAT")
+    fo2rpu_mods_wiki = {m for m, _l in fo2rpu_wiki}
+    if "FO2" in fo2rpu_mods_wiki:
+        wiki_mod_value = "FO2"
+    elif "RPU" in fo2rpu_mods_wiki:
+        wiki_mod_value = "RPU"
+    elif that_entry_wiki.get("va"):
+        wiki_mod_value = "THAT"
+    else:
+        wiki_mod_value = ""
     rows.append({
         "Name": r["name"], "MsgStem": r["stem"], "Prefix": "", "Location": r["section"],
-        "Mod": ", ".join(wiki_mod_list), "Status": "Not in VOCK scope", "CastStatus": "", "VoiceActor": "",
+        "Mod": wiki_mod_value, "Status": "Not in VOCK scope", "CastStatus": "", "VoiceActor": "",
         "VoiceType": "", "THAudio": "", "FloatAudio": "", "AuditionLineA": "", "AuditionLineB": "",
         "AuditionLineC": "", "Notes": "Wiki-only; no VOCK dialogue tagging", "WikiLink": "",
         "ImageFile": "", "InVockScope": "No",
