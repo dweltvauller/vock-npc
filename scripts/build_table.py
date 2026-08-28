@@ -87,12 +87,35 @@ print(f"characters.py: {len(CHARACTERS)} rows")
 # file" only when they share BOTH a display name and a prefix (the prefix is
 # the shared audio-tag namespace -- Kaga's 5 encounter files all use tag
 # prefix "kaga", so they're really one character). Same name + DIFFERENT
-# prefix (Eric/Dalia/Quartermaster below) means two unrelated characters
-# that just happen to share a display name -- never merge those.
+# prefix (Eric/Dalia below) means two unrelated characters that just happen
+# to share a display name -- never merge those by default.
+#
+# Manual exception: ccmaster (prefix qm2) and ccqmstr (prefix qm) are BOTH
+# named "Quartermaster" but have different prefixes, so the rule above would
+# keep them separate. Game-data research says otherwise: both scripts are
+# registered in RPU's scripts.lst as the Navarro quartermaster ("Ccmaster.int
+# ; Quarter Master in Colusa/Nevarro" / "CcQmstr.int ; Quartermaster in
+# Navarro"), ccmaster has no RPU-forked .ssl (i.e. untouched vanilla, not a
+# separate character VOCK ever scripted), and the Fallout Wiki's single
+# "Quartermaster (Fallout 2)" article lists both CCMASTER.MSG and
+# CCQMSTR.MSG as dialogue files for the one Navarro NPC. So this is a
+# leftover/duplicate dialogue file for the same character, not two
+# characters -- merge it into ccqmstr's row (the one with the live RPU
+# script) rather than showing two "Quartermaster" rows.
+MANUAL_MERGE_STEMS = {"ccmaster": "ccqmstr"}  # duplicate/legacy stem -> primary stem
+_manual_merge_targets = set(MANUAL_MERGE_STEMS.values())
+_manual_target_prefix = {}
+for _src, _dst in MANUAL_MERGE_STEMS.items():
+    for _c in CHARACTERS:
+        if _c[0] == _dst:
+            _manual_target_prefix[_src] = _c[2]
+            break
+
 _char_groups = {}
 _char_group_order = []
 for _c in CHARACTERS:
-    _key = (canon(_c[1]), _c[2])
+    _prefix_for_key = _manual_target_prefix.get(_c[0], _c[2])
+    _key = (canon(_c[1]), _prefix_for_key)
     if _key not in _char_groups:
         _char_groups[_key] = []
         _char_group_order.append(_key)
@@ -101,13 +124,13 @@ for _c in CHARACTERS:
 MERGED_CHARACTERS = []  # (primary_stem, name, prefix, ssl_stems, head, all_stems)
 for _key in _char_group_order:
     _group = _char_groups[_key]
-    _primary = _group[0]
+    _primary = next((c for c in _group if c[0] in _manual_merge_targets), _group[0])
     MERGED_CHARACTERS.append((_primary[0], _primary[1], _primary[2], _primary[3], _primary[4],
                                [_c[0] for _c in _group]))
 if len(MERGED_CHARACTERS) != len(CHARACTERS):
     print(f"  collapsed {len(CHARACTERS) - len(MERGED_CHARACTERS)} multi-encounter rows into "
           f"{sum(1 for _k in _char_group_order if len(_char_groups[_k]) > 1)} merged NPCs "
-          f"(e.g. Kaga's 5 encounter files -> 1 row)")
+          f"(e.g. Kaga's 5 encounter files -> 1 row; ccmaster+ccqmstr Quartermaster -> 1 row)")
 
 # ---------- names that mean two+ different characters (share a display name, different prefix) ----------
 _name_prefixes = {}
@@ -632,6 +655,9 @@ for stem, name, prefix, ssl_stems, head, all_stems in MERGED_CHARACTERS:
         notes.append(src_note)
     if audit.get("_audit_path"):
         notes.append("audit: " + os.path.relpath(audit["_audit_path"], ROOT))
+    _merged_dupes = [s for s in all_stems if s != stem and s in MANUAL_MERGE_STEMS]
+    if _merged_dupes:
+        notes.append(f"{', '.join(_merged_dupes)} is a duplicate/unused legacy dialogue file for this NPC, merged here")
 
     # Mutually exclusive: FO2 > RPU > THAT > VOCK. VOCK doesn't re-voice
     # a character that already has audio from one of the other three.
