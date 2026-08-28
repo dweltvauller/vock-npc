@@ -23,6 +23,7 @@ CREDITS_MD = os.path.join(FO2, "CREDITS.md")
 THAT_MD = os.path.join(FO2, "THAT.md")
 FLOAT_CFG = os.path.join(FO2, "float_filter.cfg")
 WIKI_TSV = os.path.join(DATA_DIR, "wiki_roster.tsv")
+WIKI_LINKS_TSV = os.path.join(DATA_DIR, "wiki_links.tsv")
 
 QUOTE_MAP = {"’": "'", "‘": "'", "“": '"', "”": '"', "–": "-", "—": "-"}
 
@@ -81,6 +82,81 @@ import characters as _characters_mod
 CHARACTERS = _characters_mod.CHARACTERS  # (msg_stem, name, prefix, ssl_stems, head)
 print(f"characters.py: {len(CHARACTERS)} rows")
 
+# ---------- collapse same-NPC/multi-encounter rows (e.g. Kaga x5) ----------
+# Two characters.py rows are "the same NPC told with more than one dialogue
+# file" only when they share BOTH a display name and a prefix (the prefix is
+# the shared audio-tag namespace -- Kaga's 5 encounter files all use tag
+# prefix "kaga", so they're really one character). Same name + DIFFERENT
+# prefix (Eric/Dalia/Quartermaster below) means two unrelated characters
+# that just happen to share a display name -- never merge those.
+_char_groups = {}
+_char_group_order = []
+for _c in CHARACTERS:
+    _key = (canon(_c[1]), _c[2])
+    if _key not in _char_groups:
+        _char_groups[_key] = []
+        _char_group_order.append(_key)
+    _char_groups[_key].append(_c)
+
+MERGED_CHARACTERS = []  # (primary_stem, name, prefix, ssl_stems, head, all_stems)
+for _key in _char_group_order:
+    _group = _char_groups[_key]
+    _primary = _group[0]
+    MERGED_CHARACTERS.append((_primary[0], _primary[1], _primary[2], _primary[3], _primary[4],
+                               [_c[0] for _c in _group]))
+if len(MERGED_CHARACTERS) != len(CHARACTERS):
+    print(f"  collapsed {len(CHARACTERS) - len(MERGED_CHARACTERS)} multi-encounter rows into "
+          f"{sum(1 for _k in _char_group_order if len(_char_groups[_k]) > 1)} merged NPCs "
+          f"(e.g. Kaga's 5 encounter files -> 1 row)")
+
+# ---------- names that mean two+ different characters (share a display name, different prefix) ----------
+_name_prefixes = {}
+for _c in CHARACTERS:
+    _name_prefixes.setdefault(canon(_c[1]), set()).add(_c[2])
+AMBIGUOUS_NAMES = {n for n, prefixes in _name_prefixes.items() if len(prefixes) > 1}
+
+# ---------- coarse town grouping ("Vault City Courtyard" -> "Vault City") ----------
+KNOWN_TOWNS = [
+    "Vault City", "Broken Hills", "New Reno", "Den", "Redding",
+    "NCR", "Klamath", "Navarro", "Gecko", "Modoc", "Arroyo", "Vault 13",
+    "Vault 15", "San Francisco", "Enclave Oil Rig", "Enclave", "Sierra Army Depot",
+    "New Khans", "PMV Valdez", "Stables", "Westin Ranch", "Hubologist",
+    "Mariposa", "Council Hall", "Central Council and Vault 8",
+    "Special Encounter", "Random Encounter", "EPA", "Abbey",
+    "Primitive Tribe", "Umbra Tribe", "Slaver Camp",
+]
+_KNOWN_TOWNS_SORTED = sorted(KNOWN_TOWNS, key=len, reverse=True)
+def base_town(loc):
+    """Collapse a detailed sub-area Location down to its parent town."""
+    if not loc:
+        return loc
+    low = re.sub(r"^\s*the\s+", "", loc.lower())
+    for t in _KNOWN_TOWNS_SORTED:
+        if low.startswith(t.lower()):
+            return t
+    return loc
+
+# ---------- real Wiki article links, scraped directly from the Fallout Wiki's
+# Fallout 2 characters page (not guessed) -- keyed by msg_stem where the
+# table gave a dialogue file, else by display name for the handful of
+# stem-less rows (companions/props with no unique dialogue). ----------
+WIKI_BASE = "https://fallout.fandom.com"
+wiki_link_by_stem = {}
+wiki_link_by_name = {}
+if os.path.isfile(WIKI_LINKS_TSV):
+    with open(WIKI_LINKS_TSV, encoding="utf-8") as f:
+        for line in f:
+            parts = line.rstrip("\n").split("\t")
+            if len(parts) != 3:
+                continue
+            kind, key, path = parts
+            url = WIKI_BASE + path
+            if kind == "S":
+                wiki_link_by_stem[key] = url
+            else:
+                wiki_link_by_name[key] = url
+print(f"wiki_links.tsv: {len(wiki_link_by_stem)} stem links, {len(wiki_link_by_name)} name-only links")
+
 # ---------- float_filter.cfg ----------
 def expand_spec(spec):
     nums = set()
@@ -122,6 +198,14 @@ for path in glob.glob(os.path.join(AUDIT_DIR, "*.md")):
     if stem:
         fm["_audit_path"] = path
         audit_by_stem[stem] = fm
+        # A few audits cover a whole numbered-encounter group with a range
+        # like "eckaga1-5" instead of one file -- register each individual
+        # stem too so per-character lookups (eckaga1, eckaga2, ...) find it.
+        rm = re.match(r"^([a-z]+?)(\d+)-(\d+)$", stem)
+        if rm:
+            base, lo, hi = rm.group(1), int(rm.group(2)), int(rm.group(3))
+            for n in range(lo, hi + 1):
+                audit_by_stem.setdefault(f"{base}{n}", fm)
 
 # ---------- CREDITS.md ----------
 credits_by_name = {}
@@ -321,15 +405,40 @@ for fn in img_files:
     key = canon(base)
     img_by_canon.setdefault(key, []).append(fn)
 
+def _has_real_wiki_place(stem):
+    return any(r["section"] not in NON_LOCATION_WIKI_SECTIONS for r in wiki_by_stem.get(stem, []))
+
+# For a name shared by two+ unrelated characters (different prefixes -- see
+# AMBIGUOUS_NAMES), there's no way to tell from the image filename alone
+# which one it belongs to. Rather than clone the same portrait onto both
+# (e.g. the Broken Hills ghoul Eric's photo used to also show up on the
+# Special-Encounter Eric), only the single most-likely "real Talking Head"
+# owner gets it: prefer whichever stem has its own confirmed real-place Wiki
+# entry (a special/random encounter reuse of a name is not a rendered TH),
+# then whichever has an audit file, then just the first one deterministically.
+def _pick_image_owner(stems):
+    if len(stems) == 1:
+        return stems[0]
+    def score(s):
+        return (_has_real_wiki_place(s), s in audit_by_stem)
+    return sorted(stems, key=score, reverse=True)[0]
+
+_stems_by_name = {}
+for stem, name, prefix, ssl_stems, head, all_stems in MERGED_CHARACTERS:
+    _stems_by_name.setdefault(canon(name), []).append(stem)
+
 matched_images = {}   # msg_stem -> src filename
 unmatched_chars = []
-for stem, name, prefix, ssl_stems, head in CHARACTERS:
+for stem, name, prefix, ssl_stems, head, all_stems in MERGED_CHARACTERS:
     key = canon(name)
     cands = img_by_canon.get(key)
-    if cands:
-        matched_images[stem] = cands[0]
-    else:
+    if not cands:
         unmatched_chars.append(name)
+        continue
+    if key in AMBIGUOUS_NAMES and _pick_image_owner(_stems_by_name[key]) != stem:
+        unmatched_chars.append(name)  # portrait went to the other same-named stem instead
+        continue
+    matched_images[stem] = cands[0]
 
 used_images = {v for v in matched_images.values()}
 unmatched_images = [f for f in img_files if f not in used_images]
@@ -350,11 +459,29 @@ if unmatched_images:
 rows = []
 seen_stems_in_wiki = set()
 
-for stem, name, prefix, ssl_stems, head in CHARACTERS:
+for stem, name, prefix, ssl_stems, head, all_stems in MERGED_CHARACTERS:
     ck = canon(name)
     audit = audit_by_stem.get(stem, {})
-    credit = credits_by_name.get(ck, {})
-    that_entry = that_by_name.get(ck, {})
+
+    # A name shared by two+ unrelated characters (AMBIGUOUS_NAMES) can't be
+    # trusted to fetch the right CREDITS.md/THAT.md row by name alone --
+    # those files have no dialogue-file reference to disambiguate by. Only
+    # accept a name-keyed hit if its own wiki_url/location text names the
+    # place THIS specific stem is independently known to be at (via its own
+    # exact dialogue-file Wiki match) -- e.g. CREDITS.md's Eric row links to
+    # ".../Eric_(Broken_Hills)", which only agrees with hceric, not eceric.
+    def _resolve_ambiguous(entry):
+        if not entry or ck not in AMBIGUOUS_NAMES:
+            return entry
+        own_places = [base_town(r["section"]) for r in wiki_by_stem.get(stem, [])]
+        disambig_text = (entry.get("wiki_url", "") + " " + entry.get("location", "")).lower().replace("_", " ")
+        for place in own_places:
+            if place and place.lower() in disambig_text:
+                return entry
+        return {}
+
+    credit = _resolve_ambiguous(credits_by_name.get(ck, {}))
+    that_entry = _resolve_ambiguous(that_by_name.get(ck, {}))
 
     # location precedence: audit > credits > wiki(by name+stem) > wiki(by stem only) > FO2/RPU list
     # A few audit files put flavor text in `location` instead of a place
@@ -414,6 +541,10 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
         if location in ("Player characters",):
             location = ""  # still never show the companion-roster grouping itself
     location = normalize_location(location)
+    _detailed_location = location
+    location = base_town(location)
+    if _detailed_location and _detailed_location != location:
+        location_note = (location_note + "; " if location_note else "") + f"Area: {_detailed_location}"
     seen_stems_in_wiki.add(stem)
 
     # status
@@ -426,13 +557,15 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
 
     cast_status = credit.get("cast_status", "Not cast")
     voice_actor = credit.get("va", "")
-    # Best-effort fallback: the Fallout Wiki's standard article-slug pattern
-    # is the character's display name with spaces -> underscores. CREDITS.md
-    # links (when present) are hand-confirmed and always win; this fallback
-    # covers everyone else so most rows get a clickable link instead of a
-    # blank cell. Not guaranteed to resolve for every obscure/minor NPC.
-    wiki_link = credit.get("wiki_url", "") or (
-        f"https://fallout.fandom.com/wiki/{name.replace(' ', '_')}" if name else ""
+    # Real link, scraped straight off the Wiki's own characters page, wins.
+    # CREDITS.md's hand-confirmed link is next (Fede may have picked a more
+    # specific target). Last resort: a guessed article-slug -- not
+    # guaranteed to resolve for every obscure/minor NPC.
+    wiki_link = (
+        wiki_link_by_stem.get(stem)
+        or credit.get("wiki_url", "")
+        or wiki_link_by_name.get(name, "")
+        or (f"https://fallout.fandom.com/wiki/{name.replace(' ', '_')}" if name else "")
     )
 
     tags_total = audit.get("tags_total")
@@ -495,9 +628,10 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
 
     companion_mod = "RPCE" if stem in RPCE_COMPANION_STEMS else ""
     is_companion = "Yes" if (stem in RPCE_COMPANION_STEMS or stem in vanilla_companion_stems) else ""
+    display_stem = ", ".join(all_stems) if len(all_stems) > 1 else stem
 
     rows.append({
-        "Name": name, "MsgStem": stem, "Prefix": prefix, "Location": location,
+        "Name": name, "MsgStem": display_stem, "Prefix": prefix, "Location": location,
         "Mod": mod_value, "Status": status, "CastStatus": cast_status,
         "VoiceActor": voice_actor, "VoiceType": voice_type,
         "THAudio": th_audio, "FloatAudio": float_audio,
@@ -542,7 +676,7 @@ for r in wiki_rows:
     if key in added_stem_keys:
         continue
     added_stem_keys.add(key)
-    best_location = normalize_location(_best_wiki_location(wiki_sections_by_key.get(key, [r["section"]])))
+    best_location = base_town(normalize_location(_best_wiki_location(wiki_sections_by_key.get(key, [r["section"]]))))
     that_entry_wiki = that_by_name.get(canon(r["name"]), {})
     fo2rpu_wiki = fo2rpu_by_stem.get(r["stem"], [])
     fo2rpu_mods_wiki = {m for m, _l in fo2rpu_wiki}
@@ -556,7 +690,11 @@ for r in wiki_rows:
         wiki_mod_value = ""
     companion_mod_wiki = "RPCE" if r["stem"] in RPCE_COMPANION_STEMS else ""
     is_companion_wiki = "Yes" if (r["stem"] in RPCE_COMPANION_STEMS or r["stem"] in vanilla_companion_stems or r["section"] == "Player characters") else ""
-    wiki_link_wiki = f"https://fallout.fandom.com/wiki/{r['name'].replace(' ', '_')}" if r["name"] else ""
+    wiki_link_wiki = (
+        wiki_link_by_stem.get(r["stem"])
+        or wiki_link_by_name.get(r["name"], "")
+        or (f"https://fallout.fandom.com/wiki/{r['name'].replace(' ', '_')}" if r["name"] else "")
+    )
     rows.append({
         "Name": r["name"], "MsgStem": r["stem"], "Prefix": "", "Location": best_location,
         "Mod": wiki_mod_value, "Status": "Not in VOCK scope", "CastStatus": "", "VoiceActor": "",

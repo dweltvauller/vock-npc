@@ -119,22 +119,22 @@ try {
 
     table = new Tabulator("#table", {
       data: data,
-      layout: "fitDataStretch",
-      responsiveLayout: "collapse",
-      responsiveLayoutCollapseStartOpen: false,
+      layout: "fitData", // natural column widths -- every column stays reachable via horizontal scroll,
+                          // nothing silently disappears the way auto-collapse could hide a column
+                          // that this page's custom detail panel didn't happen to also show
+      responsiveLayout: false,
       pagination: false, // show every filtered row at once -- no more "can't see all rows" from pagination
       initialSort: [{ column: "Name", dir: "asc" }],
       initialFilter: [{ field: "InVockScope", type: "=", value: "Yes" }],
       columns: [
-        { formatter: "responsiveCollapse", width: 30, minWidth: 30, hozAlign: "center", resizable: false, headerSort: false },
         {
-          title: "Photo", field: "ImageFile", width: 180, hozAlign: "center", headerSort: false,
+          title: "Photo", field: "ImageFile", width: 180, hozAlign: "center", headerSort: false, frozen: true,
           formatter: (cell) => {
             const f = cell.getValue();
             return f ? `<img class="th-photo" src="images/${f}" onerror="this.style.display='none'">` : "";
           }
         },
-        { title: "Name", field: "Name", width: 170, headerFilter: "input" },
+        { title: "Name", field: "Name", width: 170, headerFilter: "input", frozen: true },
         { title: "Location", field: "Location", width: 140, headerFilter: "input" },
         {
           title: "Status", field: "Status", width: 150,
@@ -174,19 +174,6 @@ try {
         { title: "Line B", field: "AuditionLineB", width: 260 },
         { title: "Line C", field: "AuditionLineC", width: 260 },
       ],
-      responsiveLayoutCollapseFormatter: function(data){
-        let el = document.createElement("div");
-        el.classList.add("lines-detail");
-        el.innerHTML =
-          (data.AuditionLineA ? `<div><b>Line A:</b> ${data.AuditionLineA}</div>` : "") +
-          (data.AuditionLineB ? `<div><b>Line B:</b> ${data.AuditionLineB}</div>` : "") +
-          (data.AuditionLineC ? `<div><b>Line C:</b> ${data.AuditionLineC}</div>` : "") +
-          (data.Notes ? `<div><b>Notes:</b> ${data.Notes}</div>` : "") +
-          (data.THATVoiceActor ? `<div><b>THAT mod VA (3rd-party, unverified):</b> ${data.THATVoiceActor}</div>` : "") +
-          (data.Companion === "Yes" ? `<div><b>Companion:</b> Yes${data.CompanionMod ? " (via " + data.CompanionMod + " mod)" : " (vanilla)"}</div>` : "") +
-          `<div><b>Msg stem:</b> ${data.MsgStem||""} &nbsp; <b>Prefix:</b> ${data.Prefix||""} &nbsp; <b>Mod:</b> ${data.Mod||""}</div>`;
-        return el;
-      },
     });
 
     document.getElementById("quickSearch").addEventListener("input", applyAllFilters);
