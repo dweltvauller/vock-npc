@@ -369,9 +369,14 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
     if audit.get("_audit_path"):
         notes.append("audit: " + os.path.relpath(audit["_audit_path"], ROOT))
 
+    mod_list = ["vock-fo2"]
+    if that_entry.get("va"):
+        mod_list.append("THAT")
+    mod_value = ", ".join(mod_list)
+
     rows.append({
         "Name": name, "MsgStem": stem, "Prefix": prefix, "Location": location,
-        "Mod": "vock-fo2", "Status": status, "CastStatus": cast_status,
+        "Mod": mod_value, "Status": status, "CastStatus": cast_status,
         "VoiceActor": voice_actor, "VoiceType": voice_type,
         "THAudio": th_audio, "FloatAudio": float_audio,
         "AuditionLineA": a, "AuditionLineB": b, "AuditionLineC": c,
@@ -395,9 +400,10 @@ for r in wiki_rows:
     if key in added_stem_keys:
         continue
     added_stem_keys.add(key)
+    that_entry_wiki = that_by_name.get(canon(r["name"]), {})
     rows.append({
         "Name": r["name"], "MsgStem": r["stem"], "Prefix": "", "Location": r["section"],
-        "Mod": "", "Status": "Not in VOCK scope", "CastStatus": "", "VoiceActor": "",
+        "Mod": "THAT" if that_entry_wiki.get("va") else "", "Status": "Not in VOCK scope", "CastStatus": "", "VoiceActor": "",
         "VoiceType": "", "THAudio": "", "FloatAudio": "", "AuditionLineA": "", "AuditionLineB": "",
         "AuditionLineC": "", "Notes": "Wiki-only; no VOCK dialogue tagging", "WikiLink": "",
         "ImageFile": "", "InVockScope": "No",
