@@ -396,6 +396,22 @@ def normalize_location(loc):
 
 # ---------- TH Images matching ----------
 os.makedirs(IMG_OUT, exist_ok=True)
+
+# A portrait can also be dropped straight into the OUTPUT images/ folder,
+# named exactly after its msg_stem (e.g. "steve.png") -- this is how Fede
+# adds one-off portraits (THAT-mod talking heads, etc.) that don't come
+# from the "TH Images" source folder's "NNN_Full Name.png" naming scheme,
+# so they'd never be found by the name-matching pass below. Any such file
+# always wins for its stem, VOCK-scope or wiki-only alike.
+IMG_EXTS = (".png", ".jpg", ".jpeg", ".gif", ".webp")
+def _direct_image_for_stem(s):
+    if not s:
+        return None
+    for ext in IMG_EXTS:
+        if os.path.isfile(os.path.join(IMG_OUT, s + ext)):
+            return s + ext
+    return None
+
 img_files = [f for f in os.listdir(TH_IMAGES_SRC) if os.path.isfile(os.path.join(TH_IMAGES_SRC, f))]
 img_by_canon = {}
 for fn in img_files:
@@ -443,7 +459,10 @@ for stem, name, prefix, ssl_stems, head, all_stems in MERGED_CHARACTERS:
 used_images = {v for v in matched_images.values()}
 unmatched_images = [f for f in img_files if f not in used_images]
 
+_prefix_by_stem = {c[0]: c[2] for c in CHARACTERS}
 for stem, fn in matched_images.items():
+    if _direct_image_for_stem(stem) or _direct_image_for_stem(_prefix_by_stem.get(stem, "")):
+        continue  # a manually-placed portrait for this stem/prefix wins; don't overwrite it
     src = os.path.join(TH_IMAGES_SRC, fn)
     ext = os.path.splitext(fn)[1].lower()
     dst = os.path.join(IMG_OUT, f"{stem}{ext}")
@@ -630,6 +649,21 @@ for stem, name, prefix, ssl_stems, head, all_stems in MERGED_CHARACTERS:
     is_companion = "Yes" if (stem in RPCE_COMPANION_STEMS or stem in vanilla_companion_stems) else ""
     display_stem = ", ".join(all_stems) if len(all_stems) > 1 else stem
 
+    # Image file actually sitting in images/: a manually-placed portrait
+    # wins, checked against every underlying stem (e.g. any of Kaga's 5)
+    # and then the audio-tag prefix -- Fede names these files either way
+    # (e.g. "vcconnar.png" by msg_stem, or "steve.png" by prefix for a
+    # character whose real stem is "hcsteve"). Otherwise fall back to
+    # whatever the TH-Images name-match copied there.
+    image_file = ""
+    for _s in list(all_stems) + [prefix]:
+        _f = _direct_image_for_stem(_s)
+        if _f:
+            image_file = _f
+            break
+    if not image_file and stem in matched_images:
+        image_file = stem + os.path.splitext(matched_images[stem])[1].lower()
+
     rows.append({
         "Name": name, "MsgStem": display_stem, "Prefix": prefix, "Location": location,
         "Mod": mod_value, "Status": status, "CastStatus": cast_status,
@@ -637,7 +671,7 @@ for stem, name, prefix, ssl_stems, head, all_stems in MERGED_CHARACTERS:
         "THAudio": th_audio, "FloatAudio": float_audio,
         "AuditionLineA": a, "AuditionLineB": b, "AuditionLineC": c,
         "Notes": "; ".join(notes), "WikiLink": wiki_link,
-        "ImageFile": (stem + os.path.splitext(matched_images[stem])[1].lower()) if stem in matched_images else "",
+        "ImageFile": image_file,
         "InVockScope": "Yes",
         "THATVoiceActor": that_entry.get("va", ""),
         "THATLink": that_entry.get("links", ""),
@@ -695,12 +729,16 @@ for r in wiki_rows:
         or wiki_link_by_name.get(r["name"], "")
         or (f"https://fallout.fandom.com/wiki/{r['name'].replace(' ', '_')}" if r["name"] else "")
     )
+    # Wiki-only characters have no characters.py stem to run the TH-Images
+    # name-match against, but a manually-placed portrait keyed by the Wiki
+    # row's own dialogue-file stem still applies directly.
+    image_file_wiki = _direct_image_for_stem(r["stem"]) or ""
     rows.append({
         "Name": r["name"], "MsgStem": r["stem"], "Prefix": "", "Location": best_location,
         "Mod": wiki_mod_value, "Status": "Not in VOCK scope", "CastStatus": "", "VoiceActor": "",
         "VoiceType": "", "THAudio": "", "FloatAudio": "", "AuditionLineA": "", "AuditionLineB": "",
         "AuditionLineC": "", "Notes": "Wiki-only; no VOCK dialogue tagging", "WikiLink": wiki_link_wiki,
-        "ImageFile": "", "InVockScope": "No",
+        "ImageFile": image_file_wiki, "InVockScope": "No",
         "THATVoiceActor": that_by_name.get(canon(r["name"]), {}).get("va", ""),
         "THATLink": that_by_name.get(canon(r["name"]), {}).get("links", ""),
         "Companion": is_companion_wiki,
@@ -708,6 +746,7 @@ for r in wiki_rows:
     })
 
 print(f"Total rows: {len(rows)} ({sum(1 for r in rows if r['InVockScope']=='Yes')} VOCK-scope, {sum(1 for r in rows if r['InVockScope']=='No')} wiki-only)")
+print(f"Rows with a portrait: {sum(1 for r in rows if r['ImageFile'])} of {len(rows)}")
 
 # ---------- write CSV ----------
 csv_path = os.path.join(DATA_DIR, "character_table.csv")
