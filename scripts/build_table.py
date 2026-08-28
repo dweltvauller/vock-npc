@@ -168,6 +168,31 @@ if os.path.isfile(THAT_MD):
         that_by_name[key] = {"location": location, "va": va, "links": links}
 print(f"THAT.md: {len(that_by_name)} named entries")
 
+# ---------- FO2 (vanilla game) / RPU voiced-NPC list (Fede-curated, 2026-08-28) ----------
+# These are characters that already have existing spoken audio shipped either with
+# vanilla Fallout 2 itself, or added by the (unofficial) Restoration Project (RPU) --
+# distinct from VOCK's own recording effort and from the third-party THAT mod.
+FO2_RPU_VOICED = [
+    # (mod, msg_stem, location)
+    ("FO2", "ahelder",  "Arroyo"),
+    ("FO2", "ahhakun",  "Arroyo"),
+    ("FO2", "hcmarcus", "Broken Hills"),
+    ("FO2", "qcfrank",  "Enclave Oil Rig"),
+    ("FO2", "qhprzrch", "Enclave Oil Rig"),
+    ("FO2", "gcharold", "Gecko"),
+    ("FO2", "kcsulik",  "Klamath"),
+    ("FO2", "ccdrill",  "Navarro"),
+    ("FO2", "ccgguard", "Navarro"),
+    ("FO2", "shtandi",  "NCR"),
+    ("FO2", "nhmyron",  "Stables"),
+    ("FO2", "vclynett", "Vault City"),
+    ("RPU", "vccasidy", "Vault City"),
+    # gcpacoff (Enclave communications officer, FO2-voiced) has no characters.py row yet -- not applied.
+]
+fo2rpu_by_stem = {}
+for mod, stem, loc in FO2_RPU_VOICED:
+    fo2rpu_by_stem.setdefault(stem, []).append((mod, loc))
+
 # ---------- wav/ -> recorded tag numbers per prefix ----------
 prefixes_sorted = sorted({c[2] for c in CHARACTERS}, key=len, reverse=True)
 recorded_by_prefix = {}
@@ -311,6 +336,9 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
         location = wiki_hit_stem[0]["section"]
     if not location and wiki_hit_name:
         location = wiki_hit_name[0]["section"]
+    fo2rpu_hits = fo2rpu_by_stem.get(stem, [])
+    if not location and fo2rpu_hits:
+        location = fo2rpu_hits[0][1]
     seen_stems_in_wiki.add(stem)
 
     # status
@@ -369,9 +397,12 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
     if audit.get("_audit_path"):
         notes.append("audit: " + os.path.relpath(audit["_audit_path"], ROOT))
 
-    mod_list = ["vock-fo2"]
+    mod_list = ["VOCK"]
     if that_entry.get("va"):
         mod_list.append("THAT")
+    for m, _loc in fo2rpu_hits:
+        if m not in mod_list:
+            mod_list.append(m)
     mod_value = ", ".join(mod_list)
 
     rows.append({
@@ -401,9 +432,13 @@ for r in wiki_rows:
         continue
     added_stem_keys.add(key)
     that_entry_wiki = that_by_name.get(canon(r["name"]), {})
+    fo2rpu_wiki = fo2rpu_by_stem.get(r["stem"], [])
+    wiki_mod_list = [m for m, _l in fo2rpu_wiki]
+    if that_entry_wiki.get("va"):
+        wiki_mod_list.append("THAT")
     rows.append({
         "Name": r["name"], "MsgStem": r["stem"], "Prefix": "", "Location": r["section"],
-        "Mod": "THAT" if that_entry_wiki.get("va") else "", "Status": "Not in VOCK scope", "CastStatus": "", "VoiceActor": "",
+        "Mod": ", ".join(wiki_mod_list), "Status": "Not in VOCK scope", "CastStatus": "", "VoiceActor": "",
         "VoiceType": "", "THAudio": "", "FloatAudio": "", "AuditionLineA": "", "AuditionLineB": "",
         "AuditionLineC": "", "Notes": "Wiki-only; no VOCK dialogue tagging", "WikiLink": "",
         "ImageFile": "", "InVockScope": "No",

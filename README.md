@@ -13,6 +13,16 @@ forked scripts, audit links), a Fallout Wiki link, the Talking Head portrait, an
 Talking Heads Mod") casting-call project, kept separate from VOCK's own casting
 since it's a different mod with its own cast.
 
+The `Mod` column can hold any combination of `VOCK`, `THAT`, `FO2`, `RPU`
+(comma-separated) -- `FO2` and `RPU` mean the character already has spoken
+audio shipped with vanilla Fallout 2 itself, or added by the (unofficial)
+Restoration Project, respectively, independent of VOCK's or THAT's own casting.
+Source: a short list Fede supplied directly (2026-08-28) -- see
+`FO2_RPU_VOICED` in `scripts/build_table.py`. Example: John Cassidy is
+`VOCK, RPU` -- RPU voiced him, vanilla FO2 did not. One entry in that list
+(`gcpacoff`, the Enclave communications officer, FO2-voiced) has no
+`characters.py` row yet, so it isn't reflected in the table.
+
 ## Files
 
 - `data/character_table.csv` — the flat data file. Open in Excel/Sheets, or load
