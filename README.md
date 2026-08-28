@@ -101,9 +101,30 @@ previous run except what's re-derived from those source files.
   For NPCs with no audit yet, these are blank.
 - **Location** comes from (in order of preference) the audit file, then
   `CREDITS.md`, then the Wiki roster match by name+dialogue-file, then a
-  looser wiki match by name alone. A handful of characters (mostly ones the
-  Wiki lists without a location bucket, or edge cases in name matching) are
-  still blank — worth a manual pass.
+  looser wiki match by name alone, then the FO2/RPU list. A few cleanup rules
+  keep it from being a mess: the Wiki's "Player characters" grouping (all
+  companions listed together) is never used as a Location -- a companion's
+  real hometown is preferred instead, falling back to blank rather than the
+  misleading "Player characters" label. A name-only Wiki match is dropped
+  entirely if that Wiki row's own dialogue file points to a different
+  character (e.g. our Monty-Python "John" vs. the Wiki's unrelated
+  "John"/Bcjohn.msg in Vault 15) -- same name, different NPC, no guess made.
+  Audit `location` fields that are really flavor text ("Random encounter
+  (Monty Python parody) -- one of Arthur's knights...") are detected and
+  moved to Notes instead, falling through to a real place. A small
+  `LOCATION_ALIASES` table folds a couple of casing/wording duplicates
+  together ("The Den" -> "Den", "Vault City courtyard" -> "Vault City
+  Courtyard"). After all that, a handful of characters (mostly ones the Wiki
+  lists without a location bucket at all) are still blank — that's an honest
+  "we don't know," not a bug.
+- **Status** is one of exactly 5 values: `Not started`, `Tagged (pending)`,
+  `Tagged, needs compile`, `Recorded`, `Not in VOCK scope` (the last one only
+  ever applies to wiki-only rows).
+- **WikiLink** is a hand-confirmed URL from `CREDITS.md` when one exists,
+  otherwise a best-effort guess built from the Fallout Wiki's standard
+  article-slug pattern (character name with spaces -> underscores). Every row
+  now has a link, but the guessed ones aren't guaranteed to resolve for every
+  obscure/minor NPC -- only the `CREDITS.md`-sourced links are confirmed.
 - **"Not in VOCK scope" rows** are wiki characters with no corresponding entry
   in `characters.py` — mostly filler NPCs with no unique dialogue, or ones
   VOCK's RPU baseline handles differently than the wiki's vanilla-game

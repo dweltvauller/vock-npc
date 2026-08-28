@@ -296,6 +296,20 @@ for r in wiki_rows:
 # characters page.
 vanilla_companion_stems = {r["stem"] for r in wiki_rows if r["section"] == "Player characters" and r["stem"]}
 
+# Wiki sections that group characters by role/rarity rather than by place --
+# never good Location values on their own.
+NON_LOCATION_WIKI_SECTIONS = {"Player characters", "Special Encounter", "Random Encounter"}
+
+# A couple of Location spellings collide once you ignore case/wording --
+# normalize them to one canonical form so the filter dropdown doesn't show
+# the same place twice.
+LOCATION_ALIASES = {
+    "the den": "Den",
+    "vault city courtyard": "Vault City Courtyard",
+}
+def normalize_location(loc):
+    return LOCATION_ALIASES.get(loc.lower(), loc) if loc else loc
+
 # ---------- TH Images matching ----------
 os.makedirs(IMG_OUT, exist_ok=True)
 img_files = [f for f in os.listdir(TH_IMAGES_SRC) if os.path.isfile(os.path.join(TH_IMAGES_SRC, f))]
@@ -342,22 +356,64 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
     credit = credits_by_name.get(ck, {})
     that_entry = that_by_name.get(ck, {})
 
-    # location precedence: audit > credits > wiki(by name+stem) > wiki(by stem only)
-    location = audit.get("location") or credit.get("location") or ""
+    # location precedence: audit > credits > wiki(by name+stem) > wiki(by stem only) > FO2/RPU list
+    # A few audit files put flavor text in `location` instead of a place
+    # ("Random encounter (Monty Python parody) -- one of Arthur's knights,
+    # first encounter (rndholy1)"). Anything that long or that descriptive
+    # isn't a location -- keep it as a note instead and fall through to a
+    # real place.
+    raw_audit_loc = audit.get("location") or ""
+    location_note = ""
+    _descriptive = raw_audit_loc and (
+        len(raw_audit_loc) > 45
+        or " -- " in raw_audit_loc
+        or " — " in raw_audit_loc
+        or (len(raw_audit_loc) > 20 and raw_audit_loc.lower().startswith(("random encounter", "special encounter")))
+    )
+    if _descriptive:
+        location_note = raw_audit_loc
+        raw_audit_loc = ""
+    location = raw_audit_loc or credit.get("location") or ""
+
     wiki_hit_stem = wiki_by_stem.get(stem, [])
-    wiki_hit_name = wiki_by_canonname.get(ck, [])
+    # A canon-name match whose Wiki row names a DIFFERENT dialogue file is a
+    # different character wearing the same display name (e.g. our
+    # Monty-Python "John" vs. the Wiki's unrelated Vault-15 "John",
+    # Bcjohn.msg) -- drop those, keep only hits that don't contradict our
+    # own stem (either they agree, or the Wiki row has no dialogue file to
+    # check against).
+    wiki_hit_name = [r for r in wiki_by_canonname.get(ck, []) if not r["stem"] or r["stem"] == stem]
+    # "Player characters" is the Wiki's companion-roster grouping, not a
+    # place -- never use it as a Location when a real town is available.
+    # "Special Encounter"/"Random Encounter" are fine as a last resort
+    # (some characters genuinely have no fixed town).
+    def _real_place_hit(hits):
+        for r in hits:
+            if r["section"] not in NON_LOCATION_WIKI_SECTIONS:
+                return r["section"]
+        return ""
+    def _any_hit(hits):
+        return hits[0]["section"] if hits else ""
+
     if not location:
-        # prefer a wiki row that matches both name and stem
-        for r in wiki_hit_name:
-            if r["stem"] == stem:
-                location = r["section"]; break
-    if not location and wiki_hit_stem:
-        location = wiki_hit_stem[0]["section"]
-    if not location and wiki_hit_name:
-        location = wiki_hit_name[0]["section"]
+        # prefer a wiki row that matches both name and stem, real place first
+        name_stem_hits = [r for r in wiki_hit_name if r["stem"] == stem]
+        location = _real_place_hit(name_stem_hits)
+    if not location:
+        location = _real_place_hit(wiki_hit_stem)
+    if not location:
+        location = _real_place_hit(wiki_hit_name)
     fo2rpu_hits = fo2rpu_by_stem.get(stem, [])
     if not location and fo2rpu_hits:
         location = fo2rpu_hits[0][1]
+    # last resort: fall back to a categorical wiki section (Special/Random
+    # Encounter) rather than leave a real-place-less row totally blank.
+    if not location:
+        name_stem_hits = [r for r in wiki_hit_name if r["stem"] == stem]
+        location = _any_hit(name_stem_hits) or _any_hit(wiki_hit_stem) or _any_hit(wiki_hit_name)
+        if location in ("Player characters",):
+            location = ""  # still never show the companion-roster grouping itself
+    location = normalize_location(location)
     seen_stems_in_wiki.add(stem)
 
     # status
@@ -370,7 +426,14 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
 
     cast_status = credit.get("cast_status", "Not cast")
     voice_actor = credit.get("va", "")
-    wiki_link = credit.get("wiki_url", "")
+    # Best-effort fallback: the Fallout Wiki's standard article-slug pattern
+    # is the character's display name with spaces -> underscores. CREDITS.md
+    # links (when present) are hand-confirmed and always win; this fallback
+    # covers everyone else so most rows get a clickable link instead of a
+    # blank cell. Not guaranteed to resolve for every obscure/minor NPC.
+    wiki_link = credit.get("wiki_url", "") or (
+        f"https://fallout.fandom.com/wiki/{name.replace(' ', '_')}" if name else ""
+    )
 
     tags_total = audit.get("tags_total")
     float_nums = float_by_prefix.get(prefix, set())
@@ -407,6 +470,8 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
             a, b, c = "", "", ""
 
     notes = []
+    if location_note:
+        notes.append(location_note)
     if audit.get("concat_bug") not in (None, False, "n/a"):
         notes.append(f"concat_bug={audit.get('concat_bug')}")
     if audit.get("forked_script"):
@@ -449,6 +514,24 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
 # ---------- wiki-only additions ----------
 existing_stems = {c[0] for c in CHARACTERS}
 existing_names_canon = {canon(c[1]) for c in CHARACTERS}
+# Group every wiki row by the same key the dedup below uses, so a character
+# who shows up under more than one section (e.g. their hometown AND the
+# "Player characters" companion roster) gets its real place, not whichever
+# section happened to appear first in the scrape.
+wiki_sections_by_key = {}
+for r in wiki_rows:
+    key = r["stem"] if r["stem"] else f"__nostem__{canon(r['name'])}"
+    wiki_sections_by_key.setdefault(key, []).append(r["section"])
+
+def _best_wiki_location(sections):
+    for sec in sections:
+        if sec not in NON_LOCATION_WIKI_SECTIONS:
+            return sec
+    for sec in sections:
+        if sec != "Player characters":
+            return sec
+    return ""
+
 added_stem_keys = set()
 for r in wiki_rows:
     key = r["stem"] if r["stem"] else f"__nostem__{canon(r['name'])}"
@@ -459,6 +542,7 @@ for r in wiki_rows:
     if key in added_stem_keys:
         continue
     added_stem_keys.add(key)
+    best_location = normalize_location(_best_wiki_location(wiki_sections_by_key.get(key, [r["section"]])))
     that_entry_wiki = that_by_name.get(canon(r["name"]), {})
     fo2rpu_wiki = fo2rpu_by_stem.get(r["stem"], [])
     fo2rpu_mods_wiki = {m for m, _l in fo2rpu_wiki}
@@ -472,11 +556,12 @@ for r in wiki_rows:
         wiki_mod_value = ""
     companion_mod_wiki = "RPCE" if r["stem"] in RPCE_COMPANION_STEMS else ""
     is_companion_wiki = "Yes" if (r["stem"] in RPCE_COMPANION_STEMS or r["stem"] in vanilla_companion_stems or r["section"] == "Player characters") else ""
+    wiki_link_wiki = f"https://fallout.fandom.com/wiki/{r['name'].replace(' ', '_')}" if r["name"] else ""
     rows.append({
-        "Name": r["name"], "MsgStem": r["stem"], "Prefix": "", "Location": r["section"],
+        "Name": r["name"], "MsgStem": r["stem"], "Prefix": "", "Location": best_location,
         "Mod": wiki_mod_value, "Status": "Not in VOCK scope", "CastStatus": "", "VoiceActor": "",
         "VoiceType": "", "THAudio": "", "FloatAudio": "", "AuditionLineA": "", "AuditionLineB": "",
-        "AuditionLineC": "", "Notes": "Wiki-only; no VOCK dialogue tagging", "WikiLink": "",
+        "AuditionLineC": "", "Notes": "Wiki-only; no VOCK dialogue tagging", "WikiLink": wiki_link_wiki,
         "ImageFile": "", "InVockScope": "No",
         "THATVoiceActor": that_by_name.get(canon(r["name"]), {}).get("va", ""),
         "THATLink": that_by_name.get(canon(r["name"]), {}).get("links", ""),

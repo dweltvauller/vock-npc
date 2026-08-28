@@ -122,9 +122,7 @@ try {
       layout: "fitDataStretch",
       responsiveLayout: "collapse",
       responsiveLayoutCollapseStartOpen: false,
-      pagination: true,
-      paginationSize: 25,
-      paginationSizeSelector: [10, 25, 50, 100, true],
+      pagination: false, // show every filtered row at once -- no more "can't see all rows" from pagination
       initialSort: [{ column: "Name", dir: "asc" }],
       initialFilter: [{ field: "InVockScope", type: "=", value: "Yes" }],
       columns: [
