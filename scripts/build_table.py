@@ -404,7 +404,7 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
         mod_value = "FO2"
     elif "RPU" in fo2rpu_mods_here:
         mod_value = "RPU"
-    elif that_entry.get("va"):
+    elif that_entry:  # matched a THAT.md row at all, VA confirmed or not
         mod_value = "THAT"
     else:
         mod_value = "VOCK"
@@ -442,7 +442,7 @@ for r in wiki_rows:
         wiki_mod_value = "FO2"
     elif "RPU" in fo2rpu_mods_wiki:
         wiki_mod_value = "RPU"
-    elif that_entry_wiki.get("va"):
+    elif that_entry_wiki:
         wiki_mod_value = "THAT"
     else:
         wiki_mod_value = ""

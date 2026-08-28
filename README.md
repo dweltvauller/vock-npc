@@ -16,8 +16,9 @@ since it's a different mod with its own cast.
 The `Mod` column is a single, mutually-exclusive value: `FO2`, `RPU`, `THAT`,
 or `VOCK`, in that priority order. `FO2`/`RPU` mean the character already has
 spoken audio shipped with vanilla Fallout 2 itself, or added by the
-(unofficial) Restoration Project; `THAT` means the third-party Talking Heads
-mod already cast them. `VOCK` only shows when none of those three apply --
+(unofficial) Restoration Project; `THAT` means the character is on the third-party Talking Heads mod's roster
+at all (whether or not a voice actor is confirmed in the public listings --
+`THATVoiceActor` is left blank when unconfirmed, but the Mod tag still applies). `VOCK` only shows when none of those three apply --
 VOCK doesn't re-voice a character that already has audio elsewhere. Source for
 FO2/RPU: a short list Fede supplied directly (2026-08-28) -- see
 `FO2_RPU_VOICED` in `scripts/build_table.py`. Example: John Cassidy is `RPU`
