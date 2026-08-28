@@ -20,6 +20,7 @@ MSG_PENDING_DIR = os.path.join(FO2, "msg", "pending")
 WAV_DIR = os.path.join(FO2, "wav")
 RPU_DIALOG_DIR = os.path.join(ROOT, "rpu", "data", "text", "english", "dialog")
 CREDITS_MD = os.path.join(FO2, "CREDITS.md")
+CHANGELOG_MD = os.path.join(FO2, "CHANGELOG.md")
 THAT_MD = os.path.join(FO2, "THAT.md")
 FLOAT_CFG = os.path.join(FO2, "float_filter.cfg")
 WIKI_TSV = os.path.join(DATA_DIR, "wiki_roster.tsv")
@@ -70,6 +71,7 @@ NAME_ALIASES = {
     norm("Keith Wright"): norm("Keith Wright"),
     norm("Bridge Keeper"): norm("Bridge Keeper"),
     norm("Bridgekeeper"): norm("Bridge Keeper"),
+    norm("Zomak"): norm("Zomak The Destroyer"),
 }
 
 def canon(n):
@@ -255,6 +257,48 @@ for line in credits_txt.splitlines():
         elif section == "ai" and len(cells) >= 2:
             credits_by_name[key] = {"wiki_url": wiki_url, "location": cells[1], "va": "AI (temp, to be replaced)", "cast_status": "AI-voiced (temp)"}
 
+# ---------- CHANGELOG.md (Status is derived from this + CREDITS.md, not from
+# internal script-tagging file presence -- these are the two documents Fede
+# actually writes and reads by hand, so Status stays in his own words).
+# "## WIP" lists characters currently being worked on. Each numbered version
+# heading ("## v1.x") lists "- Added voice(s): Name (Location), ..." for a
+# real recorded performance, or "- Added AI voice(s): ..." for a temporary
+# AI placeholder -- kept separate so a still-AI-only character (e.g. Morlis)
+# doesn't get miscounted as done just because *something* shipped for them.
+changelog_wip_canon = set()
+changelog_completed_canon = set()   # real, recorded voice shipped in-game
+changelog_ai_canon = set()          # temp AI voice shipped, still needs a real actor
+if os.path.isfile(CHANGELOG_MD):
+    with open(CHANGELOG_MD, encoding="utf-8") as f:
+        changelog_txt = f.read()
+    _cl_section = None
+    for line in changelog_txt.splitlines():
+        line = line.strip()
+        if line.startswith("## "):
+            _cl_section = line[3:].strip()
+            continue
+        if not line.startswith("- "):
+            continue
+        body = line[2:]
+        if _cl_section == "WIP":
+            for item in body.split(","):
+                m = re.match(r"^(.*?)\s*\(", item.strip())
+                nm = m.group(1).strip() if m else item.strip()
+                if nm:
+                    changelog_wip_canon.add(canon(nm))
+        else:
+            m = re.match(r"^Added (AI )?voices?:\s*(.+)$", body, re.IGNORECASE)
+            if m:
+                is_ai = bool(m.group(1))
+                dest = changelog_ai_canon if is_ai else changelog_completed_canon
+                for item in m.group(2).split(","):
+                    mm = re.match(r"^(.*?)\s*\(", item.strip())
+                    nm = mm.group(1).strip() if mm else item.strip()
+                    if nm:
+                        dest.add(canon(nm))
+print(f"CHANGELOG.md: {len(changelog_wip_canon)} WIP, {len(changelog_completed_canon)} completed (real), "
+      f"{len(changelog_ai_canon)} completed (AI, still needs a real actor)")
+
 # ---------- THAT.md (third-party Talking Heads mod VA reference) ----------
 that_by_name = {}
 if os.path.isfile(THAT_MD):
@@ -326,10 +370,6 @@ for fn in os.listdir(WAV_DIR):
         if stem.startswith(p) and stem[len(p):].isdigit():
             recorded_by_prefix.setdefault(p, set()).add(int(stem[len(p):]))
             break
-
-# ---------- msg presence ----------
-done_stems = {os.path.splitext(f)[0].lower() for f in os.listdir(MSG_DIR) if f.lower().endswith(".msg")}
-pending_stems = {os.path.splitext(f)[0].lower() for f in os.listdir(MSG_PENDING_DIR) if f.lower().endswith(".msg")}
 
 # ---------- va-scripts ----------
 va_by_canon = {}
@@ -589,16 +629,12 @@ for stem, name, prefix, ssl_stems, head, all_stems in MERGED_CHARACTERS:
         location_note = (location_note + "; " if location_note else "") + f"Area: {_detailed_location}"
     seen_stems_in_wiki.add(stem)
 
-    # status
-    if stem in done_stems:
-        status = "Recorded" if not audit.get("needs_compile") else "Tagged, needs compile"
-    elif stem in pending_stems:
-        status = "Tagged (pending)"
-    else:
-        status = "Not started"
-
-    cast_status = credit.get("cast_status", "Not cast")
-    voice_actor = credit.get("va", "")
+    # Status is computed later, once mod_value (FO2/RPU/THAT/VOCK) is known --
+    # see below. Voice Actors: VOCK's own credited actor wins; a THAT
+    # (third-party Talking Heads mod) actor fills in when VOCK hasn't cast
+    # this NPC itself (the two never both apply -- credits_by_name and
+    # that_by_name key off the same name, and no character has both today).
+    voice_actor = credit.get("va") or that_entry.get("va") or ""
     # Real link, scraped straight off the Wiki's own characters page, wins.
     # CREDITS.md's hand-confirmed link is next (Fede may have picked a more
     # specific target). Last resort: a guessed article-slug -- not
@@ -671,6 +707,23 @@ for stem, name, prefix, ssl_stems, head, all_stems in MERGED_CHARACTERS:
     else:
         mod_value = "VOCK"
 
+    # Status: reused audio (FO2/RPU/THAT) needed no VOCK production of its
+    # own, so it's simply done. VOCK's own pipeline reads off CHANGELOG.md
+    # and CREDITS.md -- the two documents Fede maintains by hand -- rather
+    # than internal script-tagging file presence.
+    if mod_value in ("FO2", "RPU", "THAT"):
+        status = "Completed"
+    elif ck in changelog_wip_canon:
+        status = "Work In Progress"
+    elif ck in changelog_completed_canon:
+        status = "Completed"
+    elif credit.get("cast_status") == "Cast":
+        status = "Cast"
+    elif ck in changelog_ai_canon or credit.get("cast_status") == "AI-voiced (temp)":
+        status = "Auditioning"  # temp AI voice is in-game; still looking for a real actor
+    else:
+        status = "NA"
+
     companion_mod = "RPCE" if stem in RPCE_COMPANION_STEMS else ""
     is_companion = "Yes" if (stem in RPCE_COMPANION_STEMS or stem in vanilla_companion_stems) else ""
     display_stem = ", ".join(all_stems) if len(all_stems) > 1 else stem
@@ -692,15 +745,13 @@ for stem, name, prefix, ssl_stems, head, all_stems in MERGED_CHARACTERS:
 
     rows.append({
         "Name": name, "MsgStem": display_stem, "Prefix": prefix, "Location": location,
-        "Mod": mod_value, "Status": status, "CastStatus": cast_status,
+        "Mod": mod_value, "Status": status,
         "VoiceActor": voice_actor, "VoiceType": voice_type,
         "THAudio": th_audio, "FloatAudio": float_audio,
         "AuditionLineA": a, "AuditionLineB": b, "AuditionLineC": c,
         "Notes": "; ".join(notes), "WikiLink": wiki_link,
         "ImageFile": image_file,
         "InVockScope": "Yes",
-        "THATVoiceActor": that_entry.get("va", ""),
-        "THATLink": that_entry.get("links", ""),
         "Companion": is_companion,
         "CompanionMod": companion_mod,
     })
@@ -759,14 +810,16 @@ for r in wiki_rows:
     # name-match against, but a manually-placed portrait keyed by the Wiki
     # row's own dialogue-file stem still applies directly.
     image_file_wiki = _direct_image_for_stem(r["stem"]) or ""
+    # Not part of VOCK's own casting/production pipeline -- Status is left
+    # blank rather than given a Status-column value of its own, since these
+    # rows exist for wiki reference only (Notes says why).
+    wiki_voice_actor = that_by_name.get(canon(r["name"]), {}).get("va", "")
     rows.append({
         "Name": r["name"], "MsgStem": r["stem"], "Prefix": "", "Location": best_location,
-        "Mod": wiki_mod_value, "Status": "Not in VOCK scope", "CastStatus": "", "VoiceActor": "",
+        "Mod": wiki_mod_value, "Status": "", "VoiceActor": wiki_voice_actor,
         "VoiceType": "", "THAudio": "", "FloatAudio": "", "AuditionLineA": "", "AuditionLineB": "",
         "AuditionLineC": "", "Notes": "Wiki-only; no VOCK dialogue tagging", "WikiLink": wiki_link_wiki,
         "ImageFile": image_file_wiki, "InVockScope": "No",
-        "THATVoiceActor": that_by_name.get(canon(r["name"]), {}).get("va", ""),
-        "THATLink": that_by_name.get(canon(r["name"]), {}).get("links", ""),
         "Companion": is_companion_wiki,
         "CompanionMod": companion_mod_wiki,
     })
@@ -776,9 +829,9 @@ print(f"Rows with a portrait: {sum(1 for r in rows if r['ImageFile'])} of {len(r
 
 # ---------- write CSV ----------
 csv_path = os.path.join(DATA_DIR, "character_table.csv")
-fieldnames = ["Name","MsgStem","Prefix","Location","Mod","Status","CastStatus","VoiceActor","VoiceType",
+fieldnames = ["Name","MsgStem","Prefix","Location","Mod","Status","VoiceActor","VoiceType",
               "THAudio","FloatAudio","AuditionLineA","AuditionLineB","AuditionLineC","Notes","WikiLink","ImageFile","InVockScope",
-              "THATVoiceActor","THATLink","Companion","CompanionMod"]
+              "Companion","CompanionMod"]
 with open(csv_path, "w", newline="", encoding="utf-8") as f:
     w = csv.DictWriter(f, fieldnames=fieldnames)
     w.writeheader()
