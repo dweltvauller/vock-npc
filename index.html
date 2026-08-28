@@ -147,7 +147,12 @@ try {
         { title: "Voice Type", field: "VoiceType", width: 130 },
         { title: "TH Audio", field: "THAudio", width: 90, hozAlign: "center" },
         { title: "Float Audio", field: "FloatAudio", width: 100, hozAlign: "center" },
-        { title: "Mod", field: "Mod", width: 90 },
+        {
+          title: "Mod", field: "Mod", width: 110,
+          headerFilter: "list",
+          headerFilterParams: { valuesLookup: true, clearable: true, sort: "asc", placeholder: "All" },
+          headerFilterFunc: "=",
+        },
         { title: "Cast Status", field: "CastStatus", width: 130 },
         {
           title: "Companion", field: "Companion", width: 100, hozAlign: "center",
