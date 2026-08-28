@@ -8,7 +8,10 @@ cast is represented even where VOCK has no plans (yet).
 Live columns: name, dialogue-file/prefix IDs, location, mod, production status,
 casting status, voice actor, voice type, TH-audio and float-audio completion
 (recorded/total), three auto-picked audition lines (A/B/C), notes (concat bugs,
-forked scripts, audit links), a Fallout Wiki link, and the Talking Head portrait.
+forked scripts, audit links), a Fallout Wiki link, the Talking Head portrait, and
+(where one exists) the voice actor from the third-party **THAT** ("Fallout 2
+Talking Heads Mod") casting-call project, kept separate from VOCK's own casting
+since it's a different mod with its own cast.
 
 ## Files
 
@@ -18,6 +21,12 @@ forked scripts, audit links), a Fallout Wiki link, and the Talking Head portrait
 - `data/wiki_roster.tsv` — cached raw extract from the Fallout Wiki page
   (section, character name, dialogue file). Re-fetch and overwrite this if the
   wiki page changes.
+- Source: `vock-fo2/THAT.md` — a reference table Fede compiled from the public
+  Casting Call Club listings for THAT (the *Fallout 2 Talking Heads* mod, a
+  third-party project, not VOCK). Feeds the `THATVoiceActor`/`THATLink` columns.
+  Per THAT.md's own disclaimer: third-party info, may be outdated, blank means
+  no confirmed actor was found in the public listings — treat as a lead, not a
+  confirmed credit.
 - `images/` — Talking Head portraits copied from `../TH Images/` and renamed to
   `<msg_stem>.<ext>` so they can be looked up programmatically. Not every
   character has a portrait yet — the TH Images folder only covers a portion of

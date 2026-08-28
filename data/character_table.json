@@ -17,7 +17,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "abmatt.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Abbey Merchant",
@@ -37,7 +39,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Peterson",
@@ -57,7 +61,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "abpetson.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Klint",
@@ -77,7 +83,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Morlis",
@@ -97,7 +105,9 @@
   "Notes": "concat_bug=fixed; forked script; audit: claude/audit/vock-fo2/acmorlis_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Morlis",
   "ImageFile": "acmorlis.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Mynoc",
@@ -117,7 +127,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Cameron",
@@ -137,7 +149,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "Tom Demont",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/tomdiamond) \u00b7 [Portfolio](https://tomdemont.carrd.co/)"
  },
  {
   "Name": "Arroyo Elder",
@@ -157,7 +171,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Hakunin",
@@ -177,7 +193,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Abbot",
@@ -197,7 +215,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Brother Paul",
@@ -217,7 +237,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/amonk5_va_tagging.md",
   "WikiLink": "https://f2rp.bgforge.net/abbey/",
   "ImageFile": "amonk5.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Chrissy",
@@ -237,7 +259,9 @@
   "Notes": "concat_bug=none; forked script; audit: claude/audit/vock-fo2/bccrissy_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Chrissy",
   "ImageFile": "bccrissy.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Dalia",
@@ -257,7 +281,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Darion",
@@ -277,7 +303,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "bcdarion.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Doc Jones",
@@ -297,7 +325,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "bcjones.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Rebecca",
@@ -317,7 +347,9 @@
   "Notes": "concat_bug=none_found; audit: claude/audit/vock-fo2/bcrebecc_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "bcrebecc.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Zeke",
@@ -337,7 +369,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "bczeke.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Chris",
@@ -357,7 +391,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ccchris.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Doctor Schreber",
@@ -377,7 +413,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "SoldierHobbes",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/soldierhobbes) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1057349)"
  },
  {
   "Name": "Sergeant Arch Dornan",
@@ -397,7 +435,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Enclave Gate Guard",
@@ -417,7 +457,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "K-9",
@@ -437,7 +479,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Navarro Base Commander",
@@ -457,7 +501,9 @@
   "Notes": "concat_bug=none; forked script; audit: claude/audit/vock-fo2/ccmandr_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "ccmandr.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Quartermaster",
@@ -477,7 +523,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ccmaster.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Quartermaster",
@@ -497,7 +545,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ccqmstr.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Quincy",
@@ -517,7 +567,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ccquincy.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Raul",
@@ -537,7 +589,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ccraul.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Xarn",
@@ -557,7 +611,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ccxarn.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "TonyTwoTap",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/tonytwotap)"
  },
  {
   "Name": "Great Ananias",
@@ -577,7 +633,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/dcanan_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "dcanan.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Anna Winslow",
@@ -597,7 +655,9 @@
   "Notes": "concat_bug=none_found; audit: claude/audit/vock-fo2/dcanna_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "dcanna.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Flick",
@@ -617,7 +677,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/dcflick_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "dcflick.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Frankie",
@@ -637,7 +699,9 @@
   "Notes": "concat_bug=fixed; audit: claude/audit/vock-fo2/dcfranki_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "dcfranki.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Joey",
@@ -657,7 +721,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Lara",
@@ -677,7 +743,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/dclara_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "dclara.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Metzger",
@@ -697,7 +765,9 @@
   "Notes": "concat_bug=fixed; forked script; audit: claude/audit/vock-fo2/dcmetzge_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Metzger",
   "ImageFile": "dcmetzge.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Mom",
@@ -717,7 +787,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "coolartist1110",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/coolartist1110) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole962495)"
  },
  {
   "Name": "Rebecca Dyer",
@@ -737,7 +809,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/dcrebecc_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "dcrebecc.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Sheila",
@@ -757,7 +831,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/dcsheila_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "dcsheila.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Smitty",
@@ -777,7 +853,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Tubby",
@@ -797,7 +875,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/dctubby_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Tubby",
   "ImageFile": "dctubby.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Tyler",
@@ -817,7 +897,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Vic",
@@ -837,7 +919,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "dcvic.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Arthur Pendragon",
@@ -857,7 +941,9 @@
   "Notes": "concat_bug=none; forked script; audit: claude/audit/vock-fo2/ecarthur_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Arthur_Pendragon",
   "ImageFile": "ecarthur.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Sir Bedemir",
@@ -877,7 +963,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/ecbedemi_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Bridge Keeper",
@@ -897,7 +985,9 @@
   "Notes": "concat_bug=none; forked script; audit: claude/audit/vock-fo2/ecbridge_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Bridgekeeper",
   "ImageFile": "ecbridge.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Concorde",
@@ -917,7 +1007,9 @@
   "Notes": "concat_bug=none; untagged, vanilla RPU baseline text; audit: claude/audit/vock-fo2/ecconcor_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Dogmeat",
@@ -937,7 +1029,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ecdogmet.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Eric",
@@ -957,7 +1051,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/eceric_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Eric_(Broken_Hills)",
   "ImageFile": "eceric.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Sir Galahad",
@@ -977,7 +1073,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/ecgalaha_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "John",
@@ -997,7 +1095,9 @@
   "Notes": "concat_bug=none; untagged, vanilla RPU baseline text; audit: claude/audit/vock-fo2/ecjohn_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Joshua",
@@ -1017,7 +1117,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/ecjoshua_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Kaga",
@@ -1037,7 +1139,9 @@
   "Notes": "",
   "WikiLink": "https://f2rp.bgforge.net/random-encounters/",
   "ImageFile": "eckaga1.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Kaga",
@@ -1057,7 +1161,9 @@
   "Notes": "",
   "WikiLink": "https://f2rp.bgforge.net/random-encounters/",
   "ImageFile": "eckaga2.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Kaga",
@@ -1077,7 +1183,9 @@
   "Notes": "",
   "WikiLink": "https://f2rp.bgforge.net/random-encounters/",
   "ImageFile": "eckaga3.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Kaga",
@@ -1097,7 +1205,9 @@
   "Notes": "",
   "WikiLink": "https://f2rp.bgforge.net/random-encounters/",
   "ImageFile": "eckaga4.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Kaga",
@@ -1117,7 +1227,9 @@
   "Notes": "",
   "WikiLink": "https://f2rp.bgforge.net/random-encounters/",
   "ImageFile": "eckaga5.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Patsy",
@@ -1137,7 +1249,9 @@
   "Notes": "concat_bug=none; untagged, vanilla RPU baseline text; audit: claude/audit/vock-fo2/ecpatsy_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Sir Robin",
@@ -1157,7 +1271,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/ecrobin_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Sir Launcelot",
@@ -1177,7 +1293,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/ecsirlau_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Dex",
@@ -1197,7 +1315,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "epac10.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Sergeant Cat Jules",
@@ -1217,7 +1337,9 @@
   "Notes": "concat_bug=none; forked script; untagged, vanilla RPU baseline text; audit: claude/audit/vock-fo2/epac11_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Kitsune",
@@ -1237,7 +1359,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "epac12.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Badger",
@@ -1257,7 +1381,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "fcbadger.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Chip",
@@ -1277,7 +1403,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "fcchip.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Dragon",
@@ -1297,7 +1425,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Dr. Fung",
@@ -1317,7 +1447,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "fcdrfung.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Wong Yi Tze",
@@ -1337,7 +1469,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "fcdrwong.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Matthew",
@@ -1357,7 +1491,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Vikki Goldman & Juan Cruz",
@@ -1377,7 +1513,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "fcjuavki.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Ken Lee",
@@ -1397,7 +1535,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Lao Chou",
@@ -1417,7 +1557,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Lo Pan",
@@ -1437,7 +1579,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "fclopan.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "AHS-7",
@@ -1457,7 +1601,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/fcoz7_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "fcoz7.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "AHS-9",
@@ -1477,7 +1623,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "fcoz9.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "BenjangoVA",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/benjango) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole978145)"
  },
  {
   "Name": "Ron Meyers",
@@ -1497,7 +1645,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Suze",
@@ -1517,7 +1667,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/fcsuze_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "fcsuze.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Brain (Mole Rat)",
@@ -1537,7 +1689,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Festus",
@@ -1557,7 +1711,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Gordon",
@@ -1577,7 +1733,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "Jerkytown",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/jerkytown) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole978127)"
  },
  {
   "Name": "Hank",
@@ -1597,7 +1755,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/gchank_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Hank_(Fallout_2)",
   "ImageFile": "gchank.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Harold",
@@ -1617,7 +1777,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Lenny",
@@ -1637,7 +1799,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "gclenny.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Skeeter",
@@ -1657,7 +1821,9 @@
   "Notes": "concat_bug=fixed; forked script; audit: claude/audit/vock-fo2/gcskeetr_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Skeeter",
   "ImageFile": "gcskeetr.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Wooz",
@@ -1677,7 +1843,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Zomak The Destroyer",
@@ -1697,7 +1865,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/gczomak_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Zomak",
   "ImageFile": "gczomak.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Chad",
@@ -1717,7 +1887,9 @@
   "Notes": "concat_bug=fixed; forked script; audit: claude/audit/vock-fo2/chad_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Chad_(Fallout_2)",
   "ImageFile": "hcchad.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Dan",
@@ -1737,7 +1909,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "hcdan.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Doc Holliday",
@@ -1757,7 +1931,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "hcdoc.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Eric",
@@ -1777,7 +1953,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/hceric_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Eric_(Broken_Hills)",
   "ImageFile": "hceric.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Francis",
@@ -1797,7 +1975,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/hcfranci_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Francis_(Fallout_2)",
   "ImageFile": "hcfranci.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Phil (bartender, arm-wrestle commentary)",
@@ -1817,7 +1997,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/hcfranci_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "hcfranci.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Jacob",
@@ -1837,7 +2019,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "hcjacob.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "Martin L.",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/laston) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1057345) \u00b7 [Portfolio](https://martinlaston.carrd.co/)"
  },
  {
   "Name": "Marcus",
@@ -1857,7 +2041,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Seymour",
@@ -1877,7 +2063,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "hcseymor.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Steve",
@@ -1897,7 +2085,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Typhon",
@@ -1917,7 +2107,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Zaius",
@@ -1937,7 +2129,9 @@
   "Notes": "concat_bug=false_positive; audit: claude/audit/vock-fo2/hczaius_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Zaius",
   "ImageFile": "hczaius.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Aldo",
@@ -1957,7 +2151,9 @@
   "Notes": "concat_bug=fixed; forked script; audit: claude/audit/vock-fo2/kcaldo_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "kcaldo.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Ardin Buckner",
@@ -1977,7 +2173,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/kcardin_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "kcardin.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Chuck or Buck Dunton",
@@ -1997,7 +2195,9 @@
   "Notes": "concat_bug=fixed; forked script; audit: claude/audit/vock-fo2/kcdunton_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Chuck_Dunton",
   "ImageFile": "kcdunton.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Jenny",
@@ -2017,7 +2217,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/kcjenny_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Jenny_(Fallout_2)",
   "ImageFile": "kcjenny.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Maida Buckner",
@@ -2037,7 +2239,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/kcmaida_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "kcmaida.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Sajag",
@@ -2057,7 +2261,9 @@
   "Notes": "concat_bug=fixed; forked script; audit: claude/audit/vock-fo2/kcsajag_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "kcsajag.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Sally Dunton",
@@ -2077,7 +2283,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/kcsally_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Sally_Dunton",
   "ImageFile": "kcsally.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Slim Picket",
@@ -2097,7 +2305,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Smiley",
@@ -2117,7 +2327,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Sulik",
@@ -2137,7 +2349,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Torr Buckner",
@@ -2157,7 +2371,9 @@
   "Notes": "concat_bug=fixed; forked script; audit: claude/audit/vock-fo2/kctorr_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Torr_Buckner",
   "ImageFile": "kctorr.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Balthas",
@@ -2177,7 +2393,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "gnetlemant-rex",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/gnetlemant-rex) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1057801)"
  },
  {
   "Name": "Cornelius",
@@ -2197,7 +2415,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "mccornel.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Davin",
@@ -2217,7 +2437,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/mcdavin_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "mcdavin.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Farrel",
@@ -2237,7 +2459,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "mcfarrel.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Grisham",
@@ -2257,7 +2481,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "mcgrisha.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Jo",
@@ -2277,7 +2503,9 @@
   "Notes": "concat_bug=fixed; forked script; audit: claude/audit/vock-fo2/mcjo_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "mcjo.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Jonny",
@@ -2297,7 +2525,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "mcjonny.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "Mousepelt",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/mousepelt) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1057802) \u00b7 [Portfolio](https://mouselps.wixsite.com/mousepeltvoiceacting)"
  },
  {
   "Name": "Laddie",
@@ -2317,7 +2547,9 @@
   "Notes": "concat_bug=false_positive; audit: claude/audit/vock-fo2/mcladdie_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "mcladdie.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Miria",
@@ -2337,7 +2569,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "mcmiria.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "Ueichi",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/ueichi) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole955622)"
  },
  {
   "Name": "Rose",
@@ -2357,7 +2591,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "mcrose.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Vegeir",
@@ -2377,7 +2613,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/mcvegeir_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Vegeir",
   "ImageFile": "mcvegeir.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Angela Bishop",
@@ -2397,7 +2635,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "coolartist1110",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/coolartist1110) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole955628)"
  },
  {
   "Name": "Big Jesus Mordino",
@@ -2417,7 +2657,9 @@
   "Notes": "concat_bug=fixed; forked script; audit: claude/audit/vock-fo2/ncbigjes_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Big_Jesus_Mordino",
   "ImageFile": "ncbigjes.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "John Bishop",
@@ -2437,7 +2679,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ncbishop.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Christopher Wright",
@@ -2457,7 +2701,9 @@
   "Notes": "concat_bug=fixed; forked script; audit: claude/audit/vock-fo2/ncchrwri_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Christopher_Wright",
   "ImageFile": "ncchrwri.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Eldridge",
@@ -2477,7 +2723,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "nceldrid.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Ethyl Wright",
@@ -2497,7 +2745,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ncethwri.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Father Tully",
@@ -2517,7 +2767,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "*(cast, unnamed)*",
+  "THATLink": "Closed on CCC as \"cast offsite\" \u2014 no username published"
  },
  {
   "Name": "Jagged Jimmy J",
@@ -2537,7 +2789,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ncjimmyj.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Jules",
@@ -2557,7 +2811,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ncjules.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Keith Wright",
@@ -2577,7 +2833,9 @@
   "Notes": "concat_bug=fixed; forked script; audit: claude/audit/vock-fo2/nckeiwri_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Keith_Wright",
   "ImageFile": "nckeiwri.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Miss Kitty",
@@ -2597,7 +2855,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "nckitty.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "Katie",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/kati3_dear) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole978143)"
  },
  {
   "Name": "Leslie Anne Bishop",
@@ -2617,7 +2877,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "nclabish.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Lil' Jesus Mordino",
@@ -2637,7 +2899,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ncliljes.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "*(cast, unnamed)*",
+  "THATLink": "Closed on CCC as \"cast offsite\" \u2014 no username published"
  },
  {
   "Name": "Mason",
@@ -2657,7 +2921,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "Krimson Graey",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/kamelot777) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1052555) \u00b7 [Portfolio](https://krimsongraey.carrd.co/) \u00b7 **[Listen \u2014 YouTube](https://www.youtube.com/watch?v=p-T_r2VoC_Q)**"
  },
  {
   "Name": "Darlin' Nikki",
@@ -2677,7 +2943,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ncnikki.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Orville Wright",
@@ -2697,7 +2965,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ncorvill.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Renesco",
@@ -2717,7 +2987,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "Krimson Graey",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/kamelot777) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1052553) \u00b7 [Portfolio](https://krimsongraey.carrd.co/) \u00b7 **[Listen \u2014 YouTube](https://www.youtube.com/watch?v=p-T_r2VoC_Q)**"
  },
  {
   "Name": "Marjorie Reed",
@@ -2737,7 +3009,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ncresear.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Louis Salvatore",
@@ -2757,7 +3031,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "SoldierHobbes",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/soldierhobbes) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1052554)"
  },
  {
   "Name": "Stuart Little",
@@ -2777,7 +3053,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ncstulit.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "T-Ray",
@@ -2797,7 +3075,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "nctray.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Myron",
@@ -2817,7 +3097,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Ariel",
@@ -2837,7 +3119,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ocariel.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Dalia",
@@ -2857,7 +3141,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Goris",
@@ -2877,7 +3163,9 @@
   "Notes": "concat_bug=fixed; forked script; audit: claude/audit/vock-fo2/ocgoris_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "ocgoris.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Gruthar",
@@ -2897,7 +3185,9 @@
   "Notes": "concat_bug=fixed; forked script; audit: claude/audit/vock-fo2/ocgrutha_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "ocgrutha.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Joseph",
@@ -2917,7 +3207,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "ocjoseph.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Vice President Bird",
@@ -2937,7 +3229,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "qcbird.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Charles Curling",
@@ -2957,7 +3251,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "qccurlng.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Frank Horrigan",
@@ -2977,7 +3273,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/qcfrank_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Sergeant Granite",
@@ -2997,7 +3295,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "qcgranit.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Dick Richardson",
@@ -3017,7 +3317,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Mayor Ascorti",
@@ -3037,7 +3339,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "rcascort.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Painless Doc Johnson",
@@ -3057,7 +3361,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/docj_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "rcdrjohn.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Fannie Mae",
@@ -3077,7 +3383,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/rcfannie_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "rcfannie.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Obidiah Hakeswill",
@@ -3097,7 +3405,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "Dylan_B_VO",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/dylan_b_vo) \u00b7 **[YouTube Channel](https://youtube.com/@deconvo?si=83VKqUmXEjG8CnY_)**"
  },
  {
   "Name": "Louise",
@@ -3117,7 +3427,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/rclou_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Louise",
   "ImageFile": "rclou.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Marge LeBarge",
@@ -3137,7 +3449,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "rcmarge.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Earl Marion",
@@ -3157,7 +3471,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Dan McGrew",
@@ -3177,7 +3493,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Ben Wade",
@@ -3197,7 +3515,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Doctor Jubilee",
@@ -3217,7 +3537,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "scdocjub.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Ranger Chief Elise",
@@ -3237,7 +3559,9 @@
   "Notes": "concat_bug=none; forked script; audit: claude/audit/vock-fo2/scelise_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "scelise.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Enlightened One",
@@ -3257,7 +3581,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "scenlone.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Doctor Henry",
@@ -3277,7 +3603,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "matthewmeadows4",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/deleted457292) *(account appears deleted)* \u00b7 **[Listen \u2014 YouTube](https://www.youtube.com/watch?v=WcNgjDRoGUs&t=39s&ab_channel=Black_Electric)**"
  },
  {
   "Name": "Merk",
@@ -3297,7 +3625,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "scmerk.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Mira",
@@ -3317,7 +3647,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Robodog",
@@ -3337,7 +3669,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/scrobo_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "scrobo.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Sheriff Dumont",
@@ -3357,7 +3691,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "scsherif.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Vortis",
@@ -3377,7 +3713,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/scvortis_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Vortis",
   "ImageFile": "scvortis.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Roger Westin",
@@ -3397,7 +3735,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "scwestin.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "Dark Lore Dash",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/dashington) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole962489)"
  },
  {
   "Name": "Tandi",
@@ -3417,7 +3757,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Don",
@@ -3437,7 +3779,9 @@
   "Notes": "concat_bug=none; forked script; audit: claude/audit/vock-fo2/slvcc1_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "slvcc1.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Krom",
@@ -3457,7 +3801,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/krom_va_tagging.md",
   "WikiLink": "https://f2rp.bgforge.net/umbra-tribe/",
   "ImageFile": "tribec1.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Chieftain",
@@ -3477,7 +3823,9 @@
   "Notes": "concat_bug=none; forked script; audit: claude/audit/vock-fo2/tribec12_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "tribec12.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Shaman",
@@ -3497,7 +3845,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "wykton",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/wykton) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1054730)"
  },
  {
   "Name": "Kurisu",
@@ -3517,7 +3867,9 @@
   "Notes": "concat_bug=none; forked script; audit: claude/audit/vock-fo2/kur_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "tribec7.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Amanda",
@@ -3537,7 +3889,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/vcamanda_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "vcamanda.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Doctor Andrew",
@@ -3557,7 +3911,9 @@
   "Notes": "concat_bug=fixed; forked script; audit: claude/audit/vock-fo2/vcandy_va_tagging.md",
   "WikiLink": "",
   "ImageFile": "vcandy.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Barkus",
@@ -3577,7 +3933,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "John Cassidy",
@@ -3597,7 +3955,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Connar",
@@ -3617,7 +3977,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "vcconnar.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Doctor Troy",
@@ -3637,7 +3999,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "vcdrtroy.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "Dylan_B_VO",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/dylan_b_vo) \u00b7 **[YouTube Channel](https://youtube.com/@deconvo?si=83VKqUmXEjG8CnY_)**"
  },
  {
   "Name": "Lydia",
@@ -3657,7 +4021,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/vcdwnbar_va_tagging.md",
   "WikiLink": "https://fallout.fandom.com/wiki/Lydia_(Fallout_2)",
   "ImageFile": "vcdwnbar.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Gregory",
@@ -3677,7 +4043,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Happy Harry",
@@ -3697,7 +4065,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "vcharry.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Joanne Lynette",
@@ -3717,7 +4087,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Valerie",
@@ -3737,7 +4109,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "vcmainwk.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "Krissey",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/krisseycrystal) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole955625)"
  },
  {
   "Name": "McClure",
@@ -3757,7 +4131,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "Tom Demont",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/tomdiamond) \u00b7 **[Listen \u2014 YouTube](https://www.youtube.com/watch?v=WcNgjDRoGUs&t=39s&ab_channel=Black_Electric)** \u00b7 [Portfolio](https://tomdemont.carrd.co/)"
  },
  {
   "Name": "Thomas Moore",
@@ -3777,7 +4153,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "vcmoore.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Phyllis",
@@ -3797,7 +4175,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "vcnancy.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Old Joe",
@@ -3817,7 +4197,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/vcoldjoe_va_tagging.md",
   "WikiLink": "https://f2rp.bgforge.net/vault-village/",
   "ImageFile": "vcoldjoe.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Stark",
@@ -3837,7 +4219,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "Dylan_B_VO",
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/dylan_b_vo) \u00b7 **[Listen \u2014 YouTube](https://www.youtube.com/watch?v=XJnkoUigQiE&ab_channel=Black_Electric)** \u00b7 **[YouTube Channel](https://youtube.com/@deconvo?si=83VKqUmXEjG8CnY_)**"
  },
  {
   "Name": "Wallace",
@@ -3857,7 +4241,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "vcwalace.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Ann",
@@ -3877,7 +4263,9 @@
   "Notes": "concat_bug=none; audit: claude/audit/vock-fo2/vilann_va_tagging.md",
   "WikiLink": "https://f2rp.bgforge.net/vault-village/",
   "ImageFile": "vilann.png",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Skynet",
@@ -3897,7 +4285,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Private Dobbs",
@@ -3917,7 +4307,9 @@
   "Notes": "untagged, vanilla RPU baseline text",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "Yes"
+  "InVockScope": "Yes",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Brahmin Bess",
@@ -3937,7 +4329,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Pariah dog",
@@ -3957,7 +4351,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Feargus",
@@ -3977,7 +4373,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Jordan",
@@ -3997,7 +4395,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Lucas",
@@ -4017,7 +4417,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Nagor",
@@ -4037,7 +4439,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Smoke",
@@ -4057,7 +4461,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "John L. Sullivan",
@@ -4077,7 +4483,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Keeng Ra'at",
@@ -4097,7 +4505,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Whiskey Bob",
@@ -4117,7 +4527,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Fred",
@@ -4137,7 +4549,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Leanne",
@@ -4157,7 +4571,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Aidan",
@@ -4177,7 +4593,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Billy",
@@ -4197,7 +4615,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Derek",
@@ -4217,7 +4637,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Karl",
@@ -4237,7 +4659,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Marc",
@@ -4257,7 +4681,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Stacy",
@@ -4277,7 +4703,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Balthas' wife",
@@ -4297,7 +4725,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Bo",
@@ -4317,7 +4747,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Biff",
@@ -4337,7 +4769,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Charlie",
@@ -4357,7 +4791,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Curtis",
@@ -4377,7 +4813,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Ed",
@@ -4397,7 +4835,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Mary Smith",
@@ -4417,7 +4857,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Melinda",
@@ -4437,7 +4879,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Smith",
@@ -4457,7 +4901,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Darrow",
@@ -4477,7 +4923,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Holden",
@@ -4497,7 +4945,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Kohl",
@@ -4517,7 +4967,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Randal",
@@ -4537,7 +4989,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Martin",
@@ -4557,7 +5011,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Jeremy",
@@ -4577,7 +5033,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Lumpy",
@@ -4597,7 +5055,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Aileen",
@@ -4617,7 +5077,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Bill",
@@ -4637,7 +5099,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Brian",
@@ -4657,7 +5121,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Elmo",
@@ -4677,7 +5143,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Franc",
@@ -4697,7 +5165,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Feuding couple",
@@ -4717,7 +5187,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Liz",
@@ -4737,7 +5209,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Lumpy",
@@ -4757,7 +5231,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Manson",
@@ -4777,7 +5253,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Micky",
@@ -4797,7 +5275,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Phil",
@@ -4817,7 +5297,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Refinery supervisor",
@@ -4837,7 +5319,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Chuck Stodgers",
@@ -4857,7 +5341,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Professor",
@@ -4877,7 +5363,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Professor's radscorpion",
@@ -4897,7 +5385,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Dan's wife",
@@ -4917,7 +5407,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Athabaska Dick",
@@ -4937,7 +5429,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Blasphemous Bette",
@@ -4957,7 +5451,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Caminetto",
@@ -4977,7 +5473,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Melchior Jr.",
@@ -4997,7 +5495,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Madame Modjeska",
@@ -5017,7 +5517,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Rattray",
@@ -5037,7 +5539,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Rooney",
@@ -5057,7 +5561,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Enrico Savinelli",
@@ -5077,7 +5583,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Ferndown",
@@ -5097,7 +5605,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Frog Morton",
@@ -5117,7 +5627,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Jackpot Jane",
@@ -5137,7 +5649,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "James Hoffy",
@@ -5157,7 +5671,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Josh Laurence",
@@ -5177,7 +5693,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Nording",
@@ -5197,7 +5715,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Stanwell",
@@ -5217,7 +5737,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Velani",
@@ -5237,7 +5759,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Cody",
@@ -5257,7 +5781,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Pretty Boy Lloyd",
@@ -5277,7 +5803,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Sheb",
@@ -5297,7 +5825,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Bill",
@@ -5317,7 +5847,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Corsican Brothers",
@@ -5337,7 +5869,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Evan Holyfeld",
@@ -5357,7 +5891,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Frenchy",
@@ -5377,7 +5913,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Mark Torrance",
@@ -5397,7 +5935,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Masticator",
@@ -5417,7 +5957,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Old Man McGee",
@@ -5437,7 +5979,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Pete McKneely",
@@ -5457,7 +6001,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Joqq",
@@ -5477,7 +6023,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Tony Gunn",
@@ -5497,7 +6045,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Xander Holyland",
@@ -5517,7 +6067,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Algernon",
@@ -5537,7 +6089,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Buck",
@@ -5557,7 +6111,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Missy",
@@ -5577,7 +6133,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Packard",
@@ -5597,7 +6155,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Ramirez",
@@ -5617,7 +6177,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Buster",
@@ -5637,7 +6199,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Doofus",
@@ -5657,7 +6221,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Mikey Frazier",
@@ -5677,7 +6243,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Ratch Scratch",
@@ -5697,7 +6265,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Dorothy",
@@ -5717,7 +6287,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Duppo",
@@ -5737,7 +6309,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Dusty",
@@ -5757,7 +6331,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Gond",
@@ -5777,7 +6353,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Hoss",
@@ -5797,7 +6375,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Jack",
@@ -5817,7 +6397,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Karl",
@@ -5837,7 +6419,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Luke",
@@ -5857,7 +6441,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Oswald",
@@ -5877,7 +6463,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Rondo",
@@ -5897,7 +6485,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Toto",
@@ -5917,7 +6507,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Felix",
@@ -5937,7 +6529,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Grant",
@@ -5957,7 +6551,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Saltbeef Bob",
@@ -5977,7 +6573,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Feargus",
@@ -5997,7 +6595,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Frank Carlson",
@@ -6017,7 +6617,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Gunther",
@@ -6037,7 +6639,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Bill",
@@ -6057,7 +6661,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Roberta",
@@ -6077,7 +6683,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Baddog",
@@ -6097,7 +6705,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Karla",
@@ -6117,7 +6727,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Phil",
@@ -6137,7 +6749,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Baby deathclaws",
@@ -6157,7 +6771,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Dar",
@@ -6177,7 +6793,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Jul",
@@ -6197,7 +6815,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Kerith",
@@ -6217,7 +6837,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Thearn",
@@ -6237,7 +6859,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Valdis",
@@ -6257,7 +6881,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Dave",
@@ -6277,7 +6903,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Jimmy",
@@ -6297,7 +6925,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Matt",
@@ -6317,7 +6947,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Sandy",
@@ -6337,7 +6969,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Melchior",
@@ -6357,7 +6991,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Grundel",
@@ -6377,7 +7013,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "ACE",
@@ -6397,7 +7035,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Jing Tie Gahng",
@@ -6417,7 +7057,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Mai Da Chiang",
@@ -6437,7 +7079,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Shi Emperor",
@@ -6457,7 +7101,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Cal",
@@ -6477,7 +7123,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Jenna",
@@ -6497,7 +7145,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Marc",
@@ -6517,7 +7167,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Slim",
@@ -6537,7 +7189,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Crocket",
@@ -6557,7 +7211,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Dave Handy",
@@ -6577,7 +7233,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Harry",
@@ -6597,7 +7255,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Commander's door guard",
@@ -6617,7 +7277,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Cookie",
@@ -6637,7 +7299,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Kevin",
@@ -6657,7 +7321,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Snookie",
@@ -6677,7 +7343,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Martin Frobisher",
@@ -6697,7 +7365,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Secretary",
@@ -6717,7 +7387,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Tom Murray",
@@ -6737,7 +7409,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Alexand",
@@ -6757,7 +7431,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Amish commando",
@@ -6777,7 +7453,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "BlueCross",
@@ -6797,7 +7475,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Buffy",
@@ -6817,7 +7497,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Doombot",
@@ -6837,7 +7519,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Hatchetman",
@@ -6857,7 +7541,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Iguana Eater",
@@ -6877,7 +7563,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Lerk",
@@ -6897,7 +7585,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Night Owl",
@@ -6917,7 +7607,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Panoply",
@@ -6937,7 +7629,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Pariah dog",
@@ -6957,7 +7651,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Set",
@@ -6977,7 +7673,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Shadow Dancer",
@@ -6997,7 +7695,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Ymir",
@@ -7017,7 +7717,9 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  },
  {
   "Name": "Willy",
@@ -7037,6 +7739,8 @@
   "Notes": "Wiki-only; no VOCK dialogue tagging",
   "WikiLink": "",
   "ImageFile": "",
-  "InVockScope": "No"
+  "InVockScope": "No",
+  "THATVoiceActor": "",
+  "THATLink": ""
  }
 ]

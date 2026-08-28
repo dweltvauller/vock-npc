@@ -110,7 +110,8 @@ try {
   if (!data.length) throw new Error("window.CHARACTER_TABLE is empty or missing -- check data/character_table.js loaded");
     document.getElementById("stats").innerHTML =
       `<span><b>${data.filter(d=>d.InVockScope==="Yes").length}</b> VOCK-tracked NPCs</span>` +
-      `<span><b>${data.filter(d=>d.CastStatus==="Cast").length}</b> cast</span>` +
+      `<span><b>${data.filter(d=>d.CastStatus==="Cast").length}</b> cast (VOCK)</span>` +
+      `<span><b>${data.filter(d=>d.THATVoiceActor).length}</b> cast (THAT mod, 3rd-party)</span>` +
       `<span><b>${data.filter(d=>d.Status==="Recorded").length}</b> fully recorded</span>` +
       `<span><b>${data.length}</b> total rows (incl. full wiki roster)</span>`;
 
@@ -154,6 +155,15 @@ try {
         },
         { title: "MsgStem", field: "MsgStem", width: 100 },
         { title: "Prefix", field: "Prefix", width: 90 },
+        { title: "THAT VA (3rd-party)", field: "THATVoiceActor", width: 150, headerFilter: "input" },
+        {
+          title: "THAT Link", field: "THATLink", width: 70, hozAlign: "center", headerSort: false,
+          formatter: (cell) => {
+            const v = cell.getValue() || "";
+            const m = v.match(/\]\((.*?)\)/);
+            return m ? `<a href="${m[1]}" target="_blank">link</a>` : "";
+          }
+        },
         { title: "Notes", field: "Notes", width: 260 },
         { title: "Line A", field: "AuditionLineA", width: 260 },
         { title: "Line B", field: "AuditionLineB", width: 260 },
@@ -167,6 +177,7 @@ try {
           (data.AuditionLineB ? `<div><b>Line B:</b> ${data.AuditionLineB}</div>` : "") +
           (data.AuditionLineC ? `<div><b>Line C:</b> ${data.AuditionLineC}</div>` : "") +
           (data.Notes ? `<div><b>Notes:</b> ${data.Notes}</div>` : "") +
+          (data.THATVoiceActor ? `<div><b>THAT mod VA (3rd-party, unverified):</b> ${data.THATVoiceActor}</div>` : "") +
           `<div><b>Msg stem:</b> ${data.MsgStem||""} &nbsp; <b>Prefix:</b> ${data.Prefix||""} &nbsp; <b>Mod:</b> ${data.Mod||""}</div>`;
         return el;
       },

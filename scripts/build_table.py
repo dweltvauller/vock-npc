@@ -20,6 +20,7 @@ MSG_PENDING_DIR = os.path.join(FO2, "msg", "pending")
 WAV_DIR = os.path.join(FO2, "wav")
 RPU_DIALOG_DIR = os.path.join(ROOT, "rpu", "data", "text", "english", "dialog")
 CREDITS_MD = os.path.join(FO2, "CREDITS.md")
+THAT_MD = os.path.join(FO2, "THAT.md")
 FLOAT_CFG = os.path.join(FO2, "float_filter.cfg")
 WIKI_TSV = os.path.join(DATA_DIR, "wiki_roster.tsv")
 
@@ -146,6 +147,26 @@ for line in credits_txt.splitlines():
             credits_by_name[key] = {"wiki_url": wiki_url, "location": cells[1], "va": cells[2], "cast_status": "Cast"}
         elif section == "ai" and len(cells) >= 2:
             credits_by_name[key] = {"wiki_url": wiki_url, "location": cells[1], "va": "AI (temp, to be replaced)", "cast_status": "AI-voiced (temp)"}
+
+# ---------- THAT.md (third-party Talking Heads mod VA reference) ----------
+that_by_name = {}
+if os.path.isfile(THAT_MD):
+    with open(THAT_MD, encoding="utf-8") as f:
+        that_txt = f.read()
+    for line in that_txt.splitlines():
+        if not line.startswith("|") or "---" in line or line.lower().startswith("| npc"):
+            continue
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if len(cells) < 3:
+            continue
+        name_cell, location, va = cells[0], cells[1], cells[2]
+        mlink = re.match(r"\[(.*?)\]\((.*)\)$", name_cell)
+        disp_name = mlink.group(1) if mlink else name_cell
+        disp_name = re.sub(r"\s*\(Companion\)\s*", "", disp_name).strip()
+        key = canon(disp_name)
+        links = cells[3] if len(cells) > 3 else ""
+        that_by_name[key] = {"location": location, "va": va, "links": links}
+print(f"THAT.md: {len(that_by_name)} named entries")
 
 # ---------- wav/ -> recorded tag numbers per prefix ----------
 prefixes_sorted = sorted({c[2] for c in CHARACTERS}, key=len, reverse=True)
@@ -275,6 +296,7 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
     ck = canon(name)
     audit = audit_by_stem.get(stem, {})
     credit = credits_by_name.get(ck, {})
+    that_entry = that_by_name.get(ck, {})
 
     # location precedence: audit > credits > wiki(by name+stem) > wiki(by stem only)
     location = audit.get("location") or credit.get("location") or ""
@@ -356,6 +378,8 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
         "Notes": "; ".join(notes), "WikiLink": wiki_link,
         "ImageFile": (stem + os.path.splitext(matched_images[stem])[1].lower()) if stem in matched_images else "",
         "InVockScope": "Yes",
+        "THATVoiceActor": that_entry.get("va", ""),
+        "THATLink": that_entry.get("links", ""),
     })
 
 # ---------- wiki-only additions ----------
@@ -377,6 +401,8 @@ for r in wiki_rows:
         "VoiceType": "", "THAudio": "", "FloatAudio": "", "AuditionLineA": "", "AuditionLineB": "",
         "AuditionLineC": "", "Notes": "Wiki-only; no VOCK dialogue tagging", "WikiLink": "",
         "ImageFile": "", "InVockScope": "No",
+        "THATVoiceActor": that_by_name.get(canon(r["name"]), {}).get("va", ""),
+        "THATLink": that_by_name.get(canon(r["name"]), {}).get("links", ""),
     })
 
 print(f"Total rows: {len(rows)} ({sum(1 for r in rows if r['InVockScope']=='Yes')} VOCK-scope, {sum(1 for r in rows if r['InVockScope']=='No')} wiki-only)")
@@ -384,7 +410,8 @@ print(f"Total rows: {len(rows)} ({sum(1 for r in rows if r['InVockScope']=='Yes'
 # ---------- write CSV ----------
 csv_path = os.path.join(DATA_DIR, "character_table.csv")
 fieldnames = ["Name","MsgStem","Prefix","Location","Mod","Status","CastStatus","VoiceActor","VoiceType",
-              "THAudio","FloatAudio","AuditionLineA","AuditionLineB","AuditionLineC","Notes","WikiLink","ImageFile","InVockScope"]
+              "THAudio","FloatAudio","AuditionLineA","AuditionLineB","AuditionLineC","Notes","WikiLink","ImageFile","InVockScope",
+              "THATVoiceActor","THATLink"]
 with open(csv_path, "w", newline="", encoding="utf-8") as f:
     w = csv.DictWriter(f, fieldnames=fieldnames)
     w.writeheader()
