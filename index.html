@@ -49,7 +49,7 @@
     padding: 5px 8px; border-radius: 3px; font-family: inherit;
   }
   #table { border: 1px solid var(--border); }
-  .th-photo { width: 40px; height: 50px; object-fit: cover; border-radius: 2px; background: #000; }
+  .th-photo { width: 170px; height: 96px; object-fit: contain; border-radius: 4px; background: transparent; }
   .status-badge { padding: 2px 6px; border-radius: 3px; font-size: 0.8em; }
   .status-recorded { background: #1f4d22; color: #a6e6a9; }
   .status-tagged { background: #4d3f1f; color: #e6cfa6; }
@@ -121,14 +121,14 @@ try {
       responsiveLayout: "collapse",
       responsiveLayoutCollapseStartOpen: false,
       pagination: true,
-      paginationSize: 50,
-      paginationSizeSelector: [25, 50, 100, true],
+      paginationSize: 25,
+      paginationSizeSelector: [10, 25, 50, 100, true],
       initialSort: [{ column: "Name", dir: "asc" }],
       initialFilter: [{ field: "InVockScope", type: "=", value: "Yes" }],
       columns: [
         { formatter: "responsiveCollapse", width: 30, minWidth: 30, hozAlign: "center", resizable: false, headerSort: false },
         {
-          title: "Photo", field: "ImageFile", width: 60, hozAlign: "center", headerSort: false,
+          title: "Photo", field: "ImageFile", width: 180, hozAlign: "center", headerSort: false,
           formatter: (cell) => {
             const f = cell.getValue();
             return f ? `<img class="th-photo" src="images/${f}" onerror="this.style.display='none'">` : "";
