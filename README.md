@@ -72,6 +72,7 @@ previous run except what's re-derived from those source files.
   description. These are hidden by default in `index.html`.
 - Conversely, some `characters.py`/RPU entries have no Wiki match at all
   (RPU adds/changes some things vs. vanilla) — expected, per Fede.
+- **Kaga (`eckaga1`-`eckaga5`) shows identical TH/Float audio totals on all 5 rows** — this is correct, not a bug: those 5 files share one continuous tag space (`kaga1`-`kaga49`) per VOCK convention, so the combined total is the only meaningful number.
 - TH Images matching is name-based fuzzy matching (handles "Dr."/"Doc" vs
   "Doctor", articles, punctuation, curly quotes) — about 128/196 VOCK-scope
   characters matched a portrait; the rest simply aren't in the TH Images
