@@ -19,7 +19,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "abmatt.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Abbey Merchant",
@@ -41,7 +43,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Peterson",
@@ -63,7 +67,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "abpetson.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Klint",
@@ -85,7 +91,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Morlis",
@@ -107,7 +115,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "acmorlis.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Mynoc",
@@ -129,7 +139,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Cameron",
@@ -151,7 +163,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "Tom Demont",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/tomdiamond) \u00b7 [Portfolio](https://tomdemont.carrd.co/)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/tomdiamond) \u00b7 [Portfolio](https://tomdemont.carrd.co/)",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Arroyo Elder",
@@ -173,7 +187,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Hakunin",
@@ -195,7 +211,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Abbot",
@@ -217,7 +235,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Brother Paul",
@@ -239,7 +259,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "amonk5.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Chrissy",
@@ -261,7 +283,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "bccrissy.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Dalia",
@@ -283,7 +307,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Darion",
@@ -305,7 +331,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "bcdarion.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Doc Jones",
@@ -327,7 +355,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "bcjones.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": "RPCE"
  },
  {
   "Name": "Rebecca",
@@ -349,7 +379,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "bcrebecc.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Zeke",
@@ -371,7 +403,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "bczeke.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Chris",
@@ -393,7 +427,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ccchris.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Doctor Schreber",
@@ -415,7 +451,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "SoldierHobbes",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/soldierhobbes) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1057349)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/soldierhobbes) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1057349)",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Sergeant Arch Dornan",
@@ -437,7 +475,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Enclave Gate Guard",
@@ -459,7 +499,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "K-9",
@@ -481,7 +523,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": ""
  },
  {
   "Name": "Navarro Base Commander",
@@ -503,7 +547,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ccmandr.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Quartermaster",
@@ -525,7 +571,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ccmaster.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Quartermaster",
@@ -547,7 +595,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ccqmstr.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Quincy",
@@ -569,7 +619,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ccquincy.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Raul",
@@ -591,7 +643,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ccraul.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Xarn",
@@ -613,7 +667,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ccxarn.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "TonyTwoTap",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/tonytwotap)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/tonytwotap)",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Great Ananias",
@@ -635,7 +691,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "dcanan.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Anna Winslow",
@@ -657,7 +715,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "dcanna.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Flick",
@@ -679,7 +739,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "dcflick.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Frankie",
@@ -701,7 +763,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "dcfranki.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Joey",
@@ -723,7 +787,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Lara",
@@ -745,7 +811,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "dclara.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": "RPCE"
  },
  {
   "Name": "Metzger",
@@ -767,7 +835,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "dcmetzge.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Mom",
@@ -789,7 +859,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "coolartist1110",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/coolartist1110) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole962495)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/coolartist1110) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole962495)",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Rebecca Dyer",
@@ -811,7 +883,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "dcrebecc.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Sheila",
@@ -833,7 +907,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "dcsheila.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Smitty",
@@ -855,7 +931,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "Aaren Kelley",
-  "THATLink": "**[YouTube Channel](https://www.youtube.com/@shesafuzy)**"
+  "THATLink": "**[YouTube Channel](https://www.youtube.com/@shesafuzy)**",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Tubby",
@@ -877,7 +955,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "dctubby.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Tyler",
@@ -899,7 +979,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Vic",
@@ -921,7 +1003,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "dcvic.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": ""
  },
  {
   "Name": "Arthur Pendragon",
@@ -943,7 +1027,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ecarthur.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Sir Bedemir",
@@ -965,7 +1051,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Bridge Keeper",
@@ -987,7 +1075,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ecbridge.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Concorde",
@@ -1009,7 +1099,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Dogmeat",
@@ -1031,7 +1123,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ecdogmet.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": ""
  },
  {
   "Name": "Eric",
@@ -1053,7 +1147,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "eceric.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Sir Galahad",
@@ -1075,7 +1171,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "John",
@@ -1097,7 +1195,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Joshua",
@@ -1119,7 +1219,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Kaga",
@@ -1141,7 +1243,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "eckaga1.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Kaga",
@@ -1163,7 +1267,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "eckaga2.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Kaga",
@@ -1185,7 +1291,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "eckaga3.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Kaga",
@@ -1207,7 +1315,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "eckaga4.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Kaga",
@@ -1229,7 +1339,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "eckaga5.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Patsy",
@@ -1251,7 +1363,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Sir Robin",
@@ -1273,7 +1387,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Sir Launcelot",
@@ -1295,7 +1411,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Dex",
@@ -1317,7 +1435,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "epac10.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Sergeant Cat Jules",
@@ -1339,7 +1459,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Kitsune",
@@ -1361,7 +1483,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "epac12.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Badger",
@@ -1383,7 +1507,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "fcbadger.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Chip",
@@ -1405,7 +1531,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "fcchip.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Dragon",
@@ -1427,7 +1555,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Dr. Fung",
@@ -1449,7 +1579,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "fcdrfung.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Wong Yi Tze",
@@ -1471,7 +1603,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "fcdrwong.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Matthew",
@@ -1493,7 +1627,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Vikki Goldman & Juan Cruz",
@@ -1515,7 +1651,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "fcjuavki.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Ken Lee",
@@ -1537,7 +1675,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Lao Chou",
@@ -1559,7 +1699,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Lo Pan",
@@ -1581,7 +1723,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "fclopan.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "AHS-7",
@@ -1603,7 +1747,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "fcoz7.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "AHS-9",
@@ -1625,7 +1771,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "fcoz9.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "BenjangoVA",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/benjango) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole978145)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/benjango) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole978145)",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Ron Meyers",
@@ -1647,7 +1795,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Suze",
@@ -1669,7 +1819,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "fcsuze.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Brain (Mole Rat)",
@@ -1691,7 +1843,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "Aaren Kelley",
-  "THATLink": "**[YouTube Channel](https://www.youtube.com/@shesafuzy)**"
+  "THATLink": "**[YouTube Channel](https://www.youtube.com/@shesafuzy)**",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Festus",
@@ -1713,7 +1867,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Gordon",
@@ -1735,7 +1891,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "Jerkytown",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/jerkytown) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole978127)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/jerkytown) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole978127)",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Hank",
@@ -1757,7 +1915,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "gchank.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Harold",
@@ -1779,7 +1939,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Lenny",
@@ -1801,7 +1963,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "gclenny.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": ""
  },
  {
   "Name": "Skeeter",
@@ -1823,7 +1987,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "gcskeetr.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Wooz",
@@ -1845,7 +2011,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Zomak The Destroyer",
@@ -1867,7 +2035,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "gczomak.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Chad",
@@ -1889,7 +2059,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "hcchad.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Dan",
@@ -1911,7 +2083,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "hcdan.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Doc Holliday",
@@ -1933,7 +2107,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "hcdoc.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Eric",
@@ -1955,7 +2131,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "hceric.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Francis",
@@ -1977,7 +2155,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "hcfranci.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Phil (bartender, arm-wrestle commentary)",
@@ -1999,7 +2179,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "hcfranci.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Jacob",
@@ -2021,7 +2203,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "hcjacob.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "Martin L.",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/laston) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1057345) \u00b7 [Portfolio](https://martinlaston.carrd.co/)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/laston) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1057345) \u00b7 [Portfolio](https://martinlaston.carrd.co/)",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Marcus",
@@ -2043,7 +2227,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": ""
  },
  {
   "Name": "Seymour",
@@ -2065,7 +2251,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "hcseymor.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Steve",
@@ -2087,7 +2275,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Typhon",
@@ -2109,7 +2299,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Zaius",
@@ -2131,7 +2323,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "hczaius.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Aldo",
@@ -2153,7 +2347,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "kcaldo.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Ardin Buckner",
@@ -2175,7 +2371,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "kcardin.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Chuck or Buck Dunton",
@@ -2197,7 +2395,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "kcdunton.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Jenny",
@@ -2219,7 +2419,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "kcjenny.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Maida Buckner",
@@ -2241,7 +2443,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "kcmaida.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Sajag",
@@ -2263,7 +2467,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "kcsajag.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Sally Dunton",
@@ -2285,7 +2491,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "kcsally.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Slim Picket",
@@ -2307,7 +2515,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Smiley",
@@ -2329,7 +2539,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Sulik",
@@ -2351,7 +2563,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": ""
  },
  {
   "Name": "Torr Buckner",
@@ -2373,7 +2587,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "kctorr.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Balthas",
@@ -2395,7 +2611,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "gnetlemant-rex",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/gnetlemant-rex) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1057801)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/gnetlemant-rex) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1057801)",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Cornelius",
@@ -2417,7 +2635,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "mccornel.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Davin",
@@ -2439,7 +2659,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "mcdavin.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": ""
  },
  {
   "Name": "Farrel",
@@ -2461,7 +2683,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "mcfarrel.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Grisham",
@@ -2483,7 +2707,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "mcgrisha.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Jo",
@@ -2505,7 +2731,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "mcjo.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Jonny",
@@ -2527,7 +2755,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "mcjonny.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "Mousepelt",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/mousepelt) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1057802) \u00b7 [Portfolio](https://mouselps.wixsite.com/mousepeltvoiceacting)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/mousepelt) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1057802) \u00b7 [Portfolio](https://mouselps.wixsite.com/mousepeltvoiceacting)",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Laddie",
@@ -2549,7 +2779,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "mcladdie.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": ""
  },
  {
   "Name": "Miria",
@@ -2571,7 +2803,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "mcmiria.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "Ueichi",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/ueichi) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole955622)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/ueichi) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole955622)",
+  "Companion": "Yes",
+  "CompanionMod": "RPCE"
  },
  {
   "Name": "Rose",
@@ -2593,7 +2827,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "mcrose.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Vegeir",
@@ -2615,7 +2851,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "mcvegeir.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Angela Bishop",
@@ -2637,7 +2875,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "coolartist1110",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/coolartist1110) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole955628)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/coolartist1110) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole955628)",
+  "Companion": "Yes",
+  "CompanionMod": "RPCE"
  },
  {
   "Name": "Big Jesus Mordino",
@@ -2659,7 +2899,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ncbigjes.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "John Bishop",
@@ -2681,7 +2923,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ncbishop.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Christopher Wright",
@@ -2703,7 +2947,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ncchrwri.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": "RPCE"
  },
  {
   "Name": "Eldridge",
@@ -2725,7 +2971,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "nceldrid.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Ethyl Wright",
@@ -2747,7 +2995,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ncethwri.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Father Tully",
@@ -2769,7 +3019,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "*(cast, unnamed)*",
-  "THATLink": "Closed on CCC as \"cast offsite\" \u2014 no username published"
+  "THATLink": "Closed on CCC as \"cast offsite\" \u2014 no username published",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Jagged Jimmy J",
@@ -2791,7 +3043,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ncjimmyj.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Jules",
@@ -2813,7 +3067,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ncjules.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Keith Wright",
@@ -2835,7 +3091,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "nckeiwri.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Miss Kitty",
@@ -2857,7 +3115,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "nckitty.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "Katie",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/kati3_dear) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole978143)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/kati3_dear) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole978143)",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Leslie Anne Bishop",
@@ -2879,7 +3139,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "nclabish.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Lil' Jesus Mordino",
@@ -2901,7 +3163,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ncliljes.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "*(cast, unnamed)*",
-  "THATLink": "Closed on CCC as \"cast offsite\" \u2014 no username published"
+  "THATLink": "Closed on CCC as \"cast offsite\" \u2014 no username published",
+  "Companion": "Yes",
+  "CompanionMod": "RPCE"
  },
  {
   "Name": "Mason",
@@ -2923,7 +3187,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "Krimson Graey",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/kamelot777) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1052555) \u00b7 [Portfolio](https://krimsongraey.carrd.co/) \u00b7 **[Listen \u2014 YouTube](https://www.youtube.com/watch?v=p-T_r2VoC_Q)**"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/kamelot777) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1052555) \u00b7 [Portfolio](https://krimsongraey.carrd.co/) \u00b7 **[Listen \u2014 YouTube](https://www.youtube.com/watch?v=p-T_r2VoC_Q)**",
+  "Companion": "Yes",
+  "CompanionMod": "RPCE"
  },
  {
   "Name": "Darlin' Nikki",
@@ -2945,7 +3211,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ncnikki.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Orville Wright",
@@ -2967,7 +3235,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ncorvill.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Renesco",
@@ -2989,7 +3259,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "Krimson Graey",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/kamelot777) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1052553) \u00b7 [Portfolio](https://krimsongraey.carrd.co/) \u00b7 **[Listen \u2014 YouTube](https://www.youtube.com/watch?v=p-T_r2VoC_Q)**"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/kamelot777) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1052553) \u00b7 [Portfolio](https://krimsongraey.carrd.co/) \u00b7 **[Listen \u2014 YouTube](https://www.youtube.com/watch?v=p-T_r2VoC_Q)**",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Marjorie Reed",
@@ -3011,7 +3283,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ncresear.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Louis Salvatore",
@@ -3033,7 +3307,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "SoldierHobbes",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/soldierhobbes) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1052554)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/soldierhobbes) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1052554)",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Stuart Little",
@@ -3055,7 +3331,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ncstulit.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "T-Ray",
@@ -3077,7 +3355,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "nctray.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Myron",
@@ -3099,7 +3379,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": ""
  },
  {
   "Name": "Ariel",
@@ -3121,7 +3403,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ocariel.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Dalia",
@@ -3143,7 +3427,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Goris",
@@ -3165,7 +3451,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ocgoris.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": ""
  },
  {
   "Name": "Gruthar",
@@ -3187,7 +3475,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ocgrutha.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Joseph",
@@ -3209,7 +3499,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "ocjoseph.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Vice President Bird",
@@ -3231,7 +3523,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "qcbird.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Charles Curling",
@@ -3253,7 +3547,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "qccurlng.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Frank Horrigan",
@@ -3275,7 +3571,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Sergeant Granite",
@@ -3297,7 +3595,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "qcgranit.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Dick Richardson",
@@ -3319,7 +3619,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Mayor Ascorti",
@@ -3341,7 +3643,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "rcascort.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Painless Doc Johnson",
@@ -3363,7 +3667,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "rcdrjohn.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Fannie Mae",
@@ -3385,7 +3691,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "rcfannie.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Obidiah Hakeswill",
@@ -3407,7 +3715,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "Dylan_B_VO",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/dylan_b_vo) \u00b7 **[YouTube Channel](https://youtube.com/@deconvo?si=83VKqUmXEjG8CnY_)**"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/dylan_b_vo) \u00b7 **[YouTube Channel](https://youtube.com/@deconvo?si=83VKqUmXEjG8CnY_)**",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Louise",
@@ -3429,7 +3739,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "rclou.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Marge LeBarge",
@@ -3451,7 +3763,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "rcmarge.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Earl Marion",
@@ -3473,7 +3787,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Dan McGrew",
@@ -3495,7 +3811,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Ben Wade",
@@ -3517,7 +3835,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Doctor Jubilee",
@@ -3539,7 +3859,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "scdocjub.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Ranger Chief Elise",
@@ -3561,7 +3883,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "scelise.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Enlightened One",
@@ -3583,7 +3907,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "scenlone.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Doctor Henry",
@@ -3605,7 +3931,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "matthewmeadows4",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/deleted457292) *(account appears deleted)* \u00b7 **[Listen \u2014 YouTube](https://www.youtube.com/watch?v=WcNgjDRoGUs&t=39s&ab_channel=Black_Electric)**"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/deleted457292) *(account appears deleted)* \u00b7 **[Listen \u2014 YouTube](https://www.youtube.com/watch?v=WcNgjDRoGUs&t=39s&ab_channel=Black_Electric)**",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Merk",
@@ -3627,7 +3955,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "scmerk.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Mira",
@@ -3649,7 +3979,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Robodog",
@@ -3671,7 +4003,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "scrobo.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": ""
  },
  {
   "Name": "Sheriff Dumont",
@@ -3693,7 +4027,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "scsherif.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Vortis",
@@ -3715,7 +4051,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "scvortis.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Roger Westin",
@@ -3737,7 +4075,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "scwestin.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "Dark Lore Dash",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/dashington) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole962489)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/dashington) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole962489)",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Tandi",
@@ -3759,7 +4099,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Don",
@@ -3781,7 +4123,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "slvcc1.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Krom",
@@ -3803,7 +4147,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "tribec1.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Chieftain",
@@ -3825,7 +4171,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "tribec12.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Shaman",
@@ -3847,7 +4195,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "wykton",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/wykton) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1054730)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/wykton) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole1054730)",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Kurisu",
@@ -3869,7 +4219,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "tribec7.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Amanda",
@@ -3891,7 +4243,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "vcamanda.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Doctor Andrew",
@@ -3913,7 +4267,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "vcandy.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Barkus",
@@ -3935,7 +4291,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "John Cassidy",
@@ -3957,7 +4315,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": ""
  },
  {
   "Name": "Connar",
@@ -3979,7 +4339,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "vcconnar.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Doctor Troy",
@@ -4001,7 +4363,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "vcdrtroy.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "Dylan_B_VO",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/dylan_b_vo) \u00b7 **[YouTube Channel](https://youtube.com/@deconvo?si=83VKqUmXEjG8CnY_)**"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/dylan_b_vo) \u00b7 **[YouTube Channel](https://youtube.com/@deconvo?si=83VKqUmXEjG8CnY_)**",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Lydia",
@@ -4023,7 +4387,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "vcdwnbar.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Gregory",
@@ -4045,7 +4411,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Happy Harry",
@@ -4067,7 +4435,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "vcharry.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Joanne Lynette",
@@ -4089,7 +4459,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Valerie",
@@ -4111,7 +4483,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "vcmainwk.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "Krissey",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/krisseycrystal) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole955625)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/krisseycrystal) \u00b7 [Role page](https://www.castingcall.club/projects/fallout-2-talking-heads-project#jumptorole955625)",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "McClure",
@@ -4133,7 +4507,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "Tom Demont",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/tomdiamond) \u00b7 **[Listen \u2014 YouTube](https://www.youtube.com/watch?v=WcNgjDRoGUs&t=39s&ab_channel=Black_Electric)** \u00b7 [Portfolio](https://tomdemont.carrd.co/)"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/tomdiamond) \u00b7 **[Listen \u2014 YouTube](https://www.youtube.com/watch?v=WcNgjDRoGUs&t=39s&ab_channel=Black_Electric)** \u00b7 [Portfolio](https://tomdemont.carrd.co/)",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Thomas Moore",
@@ -4155,7 +4531,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "vcmoore.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Phyllis",
@@ -4177,7 +4555,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "vcnancy.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Old Joe",
@@ -4199,7 +4579,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "vcoldjoe.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Stark",
@@ -4221,7 +4603,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "Dylan_B_VO",
-  "THATLink": "[CCC Profile](https://www.castingcall.club/m/dylan_b_vo) \u00b7 **[Listen \u2014 YouTube](https://www.youtube.com/watch?v=XJnkoUigQiE&ab_channel=Black_Electric)** \u00b7 **[YouTube Channel](https://youtube.com/@deconvo?si=83VKqUmXEjG8CnY_)**"
+  "THATLink": "[CCC Profile](https://www.castingcall.club/m/dylan_b_vo) \u00b7 **[Listen \u2014 YouTube](https://www.youtube.com/watch?v=XJnkoUigQiE&ab_channel=Black_Electric)** \u00b7 **[YouTube Channel](https://youtube.com/@deconvo?si=83VKqUmXEjG8CnY_)**",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Wallace",
@@ -4243,7 +4627,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "vcwalace.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Ann",
@@ -4265,7 +4651,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "vilann.png",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Skynet",
@@ -4287,7 +4675,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": ""
  },
  {
   "Name": "Private Dobbs",
@@ -4309,7 +4699,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "Yes",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Brahmin Bess",
@@ -4331,7 +4723,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": ""
  },
  {
   "Name": "Pariah dog",
@@ -4353,7 +4747,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "Yes",
+  "CompanionMod": ""
  },
  {
   "Name": "Feargus",
@@ -4375,7 +4771,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Jordan",
@@ -4397,7 +4795,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Lucas",
@@ -4419,7 +4819,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Nagor",
@@ -4441,7 +4843,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Smoke",
@@ -4463,7 +4867,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "John L. Sullivan",
@@ -4485,7 +4891,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Keeng Ra'at",
@@ -4507,7 +4915,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Whiskey Bob",
@@ -4529,7 +4939,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Fred",
@@ -4551,7 +4963,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Leanne",
@@ -4573,7 +4987,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Aidan",
@@ -4595,7 +5011,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Billy",
@@ -4617,7 +5035,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Derek",
@@ -4639,7 +5059,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Karl",
@@ -4661,7 +5083,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Marc",
@@ -4683,7 +5107,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Stacy",
@@ -4705,7 +5131,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Balthas' wife",
@@ -4727,7 +5155,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Bo",
@@ -4749,7 +5179,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Biff",
@@ -4771,7 +5203,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Charlie",
@@ -4793,7 +5227,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Curtis",
@@ -4815,7 +5251,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Ed",
@@ -4837,7 +5275,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Mary Smith",
@@ -4859,7 +5299,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Melinda",
@@ -4881,7 +5323,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Smith",
@@ -4903,7 +5347,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Darrow",
@@ -4925,7 +5371,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Holden",
@@ -4947,7 +5395,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Kohl",
@@ -4969,7 +5419,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Randal",
@@ -4991,7 +5443,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Martin",
@@ -5013,7 +5467,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Jeremy",
@@ -5035,7 +5491,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Lumpy",
@@ -5057,7 +5515,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Aileen",
@@ -5079,7 +5539,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Bill",
@@ -5101,7 +5563,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Brian",
@@ -5123,7 +5587,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Elmo",
@@ -5145,7 +5611,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Franc",
@@ -5167,7 +5635,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Feuding couple",
@@ -5189,7 +5659,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Liz",
@@ -5211,7 +5683,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Lumpy",
@@ -5233,7 +5707,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Manson",
@@ -5255,7 +5731,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Micky",
@@ -5277,7 +5755,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Phil",
@@ -5299,7 +5779,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Refinery supervisor",
@@ -5321,7 +5803,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Chuck Stodgers",
@@ -5343,7 +5827,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Professor",
@@ -5365,7 +5851,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Professor's radscorpion",
@@ -5387,7 +5875,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Dan's wife",
@@ -5409,7 +5899,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Athabaska Dick",
@@ -5431,7 +5923,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Blasphemous Bette",
@@ -5453,7 +5947,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Caminetto",
@@ -5475,7 +5971,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Melchior Jr.",
@@ -5497,7 +5995,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Madame Modjeska",
@@ -5519,7 +6019,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Rattray",
@@ -5541,7 +6043,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Rooney",
@@ -5563,7 +6067,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Enrico Savinelli",
@@ -5585,7 +6091,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Ferndown",
@@ -5607,7 +6115,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Frog Morton",
@@ -5629,7 +6139,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Jackpot Jane",
@@ -5651,7 +6163,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "James Hoffy",
@@ -5673,7 +6187,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Josh Laurence",
@@ -5695,7 +6211,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Nording",
@@ -5717,7 +6235,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Stanwell",
@@ -5739,7 +6259,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Velani",
@@ -5761,7 +6283,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Cody",
@@ -5783,7 +6307,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Pretty Boy Lloyd",
@@ -5805,7 +6331,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Sheb",
@@ -5827,7 +6355,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Bill",
@@ -5849,7 +6379,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Corsican Brothers",
@@ -5871,7 +6403,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Evan Holyfeld",
@@ -5893,7 +6427,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Frenchy",
@@ -5915,7 +6451,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Mark Torrance",
@@ -5937,7 +6475,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Masticator",
@@ -5959,7 +6499,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Old Man McGee",
@@ -5981,7 +6523,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Pete McKneely",
@@ -6003,7 +6547,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Joqq",
@@ -6025,7 +6571,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Tony Gunn",
@@ -6047,7 +6595,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Xander Holyland",
@@ -6069,7 +6619,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Algernon",
@@ -6091,7 +6643,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Buck",
@@ -6113,7 +6667,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Missy",
@@ -6135,7 +6691,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Packard",
@@ -6157,7 +6715,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Ramirez",
@@ -6179,7 +6739,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Buster",
@@ -6201,7 +6763,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Doofus",
@@ -6223,7 +6787,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Mikey Frazier",
@@ -6245,7 +6811,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Ratch Scratch",
@@ -6267,7 +6835,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Dorothy",
@@ -6289,7 +6859,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Duppo",
@@ -6311,7 +6883,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Dusty",
@@ -6333,7 +6907,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Gond",
@@ -6355,7 +6931,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Hoss",
@@ -6377,7 +6955,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Jack",
@@ -6399,7 +6979,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Karl",
@@ -6421,7 +7003,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Luke",
@@ -6443,7 +7027,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Oswald",
@@ -6465,7 +7051,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Rondo",
@@ -6487,7 +7075,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Toto",
@@ -6509,7 +7099,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Felix",
@@ -6531,7 +7123,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Grant",
@@ -6553,7 +7147,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Saltbeef Bob",
@@ -6575,7 +7171,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Feargus",
@@ -6597,7 +7195,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Frank Carlson",
@@ -6619,7 +7219,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Gunther",
@@ -6641,7 +7243,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Bill",
@@ -6663,7 +7267,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Roberta",
@@ -6685,7 +7291,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Baddog",
@@ -6707,7 +7315,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Karla",
@@ -6729,7 +7339,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Phil",
@@ -6751,7 +7363,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Baby deathclaws",
@@ -6773,7 +7387,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Dar",
@@ -6795,7 +7411,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Jul",
@@ -6817,7 +7435,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Kerith",
@@ -6839,7 +7459,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Thearn",
@@ -6861,7 +7483,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Valdis",
@@ -6883,7 +7507,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Dave",
@@ -6905,7 +7531,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Jimmy",
@@ -6927,7 +7555,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Matt",
@@ -6949,7 +7579,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Sandy",
@@ -6971,7 +7603,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Melchior",
@@ -6993,7 +7627,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Grundel",
@@ -7015,7 +7651,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "ACE",
@@ -7037,7 +7675,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Jing Tie Gahng",
@@ -7059,7 +7699,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Mai Da Chiang",
@@ -7081,7 +7723,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Shi Emperor",
@@ -7103,7 +7747,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Cal",
@@ -7125,7 +7771,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Jenna",
@@ -7147,7 +7795,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Marc",
@@ -7169,7 +7819,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Slim",
@@ -7191,7 +7843,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Crocket",
@@ -7213,7 +7867,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Dave Handy",
@@ -7235,7 +7891,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Harry",
@@ -7257,7 +7915,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Commander's door guard",
@@ -7279,7 +7939,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Cookie",
@@ -7301,7 +7963,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Kevin",
@@ -7323,7 +7987,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Snookie",
@@ -7345,7 +8011,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Martin Frobisher",
@@ -7367,7 +8035,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Secretary",
@@ -7389,7 +8059,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Tom Murray",
@@ -7411,7 +8083,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Alexand",
@@ -7433,7 +8107,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Amish commando",
@@ -7455,7 +8131,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "BlueCross",
@@ -7477,7 +8155,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Buffy",
@@ -7499,7 +8179,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Doombot",
@@ -7521,7 +8203,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Hatchetman",
@@ -7543,7 +8227,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Iguana Eater",
@@ -7565,7 +8251,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Lerk",
@@ -7587,7 +8275,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Night Owl",
@@ -7609,7 +8299,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Panoply",
@@ -7631,7 +8323,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Pariah dog",
@@ -7653,7 +8347,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Set",
@@ -7675,7 +8371,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Shadow Dancer",
@@ -7697,7 +8395,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Ymir",
@@ -7719,7 +8419,9 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  },
  {
   "Name": "Willy",
@@ -7741,6 +8443,8 @@ window.CHARACTER_TABLE = [
   "ImageFile": "",
   "InVockScope": "No",
   "THATVoiceActor": "",
-  "THATLink": ""
+  "THATLink": "",
+  "Companion": "",
+  "CompanionMod": ""
  }
 ];

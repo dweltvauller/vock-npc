@@ -8,10 +8,10 @@ cast is represented even where VOCK has no plans (yet).
 Live columns: name, dialogue-file/prefix IDs, location, mod, production status,
 casting status, voice actor, voice type, TH-audio and float-audio completion
 (recorded/total), three auto-picked audition lines (A/B/C), notes (concat bugs,
-forked scripts, audit links), a Fallout Wiki link, the Talking Head portrait, and
+forked scripts, audit links), a Fallout Wiki link, the Talking Head portrait,
 (where one exists) the voice actor from the third-party **THAT** ("Fallout 2
 Talking Heads Mod") casting-call project, kept separate from VOCK's own casting
-since it's a different mod with its own cast.
+since it's a different mod with its own cast, and a companion flag (see below).
 
 The `Mod` column is a single, mutually-exclusive value: `FO2`, `RPU`, `THAT`,
 or `VOCK`, in that priority order. `FO2`/`RPU` mean the character already has
@@ -25,6 +25,22 @@ FO2/RPU: a short list Fede supplied directly (2026-08-28) -- see
 (Restoration Project voiced him; vanilla FO2 did not). One entry in that list
 (`gcpacoff`, the Enclave communications officer, FO2-voiced) has no
 `characters.py` row yet, so it isn't reflected in the table.
+
+`Companion` / `CompanionMod` are separate from the `Mod` column above --
+`Mod` is about who *voiced* a character, `Companion`/`CompanionMod` is about
+whether the game lets you recruit them into your party. `Companion` is `Yes`
+for vanilla FO2 companions (per the Wiki's "Player characters" section --
+Cassidy, Sulik, Vic, Marcus, Myron, Goris, Lenny, Skynet, Davin, Laddie,
+Dogmeat, Pariah dog, K-9, Robodog, Miria, Brahmin Bess) plus everyone added as
+a companion by the **RPCE** mod. `CompanionMod` is blank for vanilla
+companions (no mod needed) and `RPCE` for characters recruited via
+[Restoration Project - Companion Expansion](https://www.nexusmods.com/fallout2/mods/70),
+which turns 6 existing NPCs into full companions and expands a 7th (Miria, via
+its "Better Miria" integration): Lara, Doc Jones, Angela Bishop, Mason, Lil'
+Jesus Mordino, Christopher Wright, and Miria. RPCE also introduces 3 brand-new
+characters with no `characters.py`/Wiki entry at all yet (Red-Knuckle Rhea,
+Ceri, and an unnamed Den slave) -- not reflected in this table since there's
+no msg_stem or dialogue source to key them on.
 
 ## Files
 
@@ -99,6 +115,11 @@ previous run except what's re-derived from those source files.
   "Doctor", articles, punctuation, curly quotes) — about 128/196 VOCK-scope
   characters matched a portrait; the rest simply aren't in the TH Images
   folder yet.
+- **RPCE's 3 new companions aren't rows yet** (Red-Knuckle Rhea, Ceri, Den
+  slave) — they have no `characters.py` entry, msg_stem, or Wiki page to key
+  on. If/when VOCK starts tracking them, add `characters.py` rows first and
+  they'll pick up automatically once their stems are added to
+  `RPCE_COMPANION_STEMS`.
 
 ## Publishing to GitHub Pages
 

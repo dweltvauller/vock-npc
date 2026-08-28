@@ -193,6 +193,21 @@ fo2rpu_by_stem = {}
 for mod, stem, loc in FO2_RPU_VOICED:
     fo2rpu_by_stem.setdefault(stem, []).append((mod, loc))
 
+# ---------- Companion flag + companion-adding mod ----------
+# RPCE = "Restoration Project - Companion Expansion" (nexusmods.com/fallout2/mods/70) --
+# the one mod (as of 2026-08-28) that turns additional vanilla NPCs into full companions.
+# Only characters with an existing characters.py row are listed here; the mod also adds
+# 3 wholly new characters (Red-Knuckle Rhea, Ceri, a Den slave) with no VOCK/wiki msg_stem yet.
+RPCE_COMPANION_STEMS = {
+    "dclara",    # Lara
+    "bcjones",   # Doc Jones
+    "ncangbis",  # Angela Bishop
+    "ncmason",   # Mason
+    "ncliljes",  # Lil' Jesus Mordino
+    "ncchrwri",  # Christopher Wright
+    "mcmiria",   # Miria (expanded via "Better Miria" integration)
+}
+
 # ---------- wav/ -> recorded tag numbers per prefix ----------
 prefixes_sorted = sorted({c[2] for c in CHARACTERS}, key=len, reverse=True)
 recorded_by_prefix = {}
@@ -276,6 +291,10 @@ for r in wiki_rows:
 wiki_by_canonname = {}
 for r in wiki_rows:
     wiki_by_canonname.setdefault(canon(r["name"]), []).append(r)
+
+# Vanilla companions per the Fallout Wiki's "Player characters" section of the
+# characters page.
+vanilla_companion_stems = {r["stem"] for r in wiki_rows if r["section"] == "Player characters" and r["stem"]}
 
 # ---------- TH Images matching ----------
 os.makedirs(IMG_OUT, exist_ok=True)
@@ -409,6 +428,9 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
     else:
         mod_value = "VOCK"
 
+    companion_mod = "RPCE" if stem in RPCE_COMPANION_STEMS else ""
+    is_companion = "Yes" if (stem in RPCE_COMPANION_STEMS or stem in vanilla_companion_stems) else ""
+
     rows.append({
         "Name": name, "MsgStem": stem, "Prefix": prefix, "Location": location,
         "Mod": mod_value, "Status": status, "CastStatus": cast_status,
@@ -420,6 +442,8 @@ for stem, name, prefix, ssl_stems, head in CHARACTERS:
         "InVockScope": "Yes",
         "THATVoiceActor": that_entry.get("va", ""),
         "THATLink": that_entry.get("links", ""),
+        "Companion": is_companion,
+        "CompanionMod": companion_mod,
     })
 
 # ---------- wiki-only additions ----------
@@ -446,6 +470,8 @@ for r in wiki_rows:
         wiki_mod_value = "THAT"
     else:
         wiki_mod_value = ""
+    companion_mod_wiki = "RPCE" if r["stem"] in RPCE_COMPANION_STEMS else ""
+    is_companion_wiki = "Yes" if (r["stem"] in RPCE_COMPANION_STEMS or r["stem"] in vanilla_companion_stems or r["section"] == "Player characters") else ""
     rows.append({
         "Name": r["name"], "MsgStem": r["stem"], "Prefix": "", "Location": r["section"],
         "Mod": wiki_mod_value, "Status": "Not in VOCK scope", "CastStatus": "", "VoiceActor": "",
@@ -454,6 +480,8 @@ for r in wiki_rows:
         "ImageFile": "", "InVockScope": "No",
         "THATVoiceActor": that_by_name.get(canon(r["name"]), {}).get("va", ""),
         "THATLink": that_by_name.get(canon(r["name"]), {}).get("links", ""),
+        "Companion": is_companion_wiki,
+        "CompanionMod": companion_mod_wiki,
     })
 
 print(f"Total rows: {len(rows)} ({sum(1 for r in rows if r['InVockScope']=='Yes')} VOCK-scope, {sum(1 for r in rows if r['InVockScope']=='No')} wiki-only)")
@@ -462,7 +490,7 @@ print(f"Total rows: {len(rows)} ({sum(1 for r in rows if r['InVockScope']=='Yes'
 csv_path = os.path.join(DATA_DIR, "character_table.csv")
 fieldnames = ["Name","MsgStem","Prefix","Location","Mod","Status","CastStatus","VoiceActor","VoiceType",
               "THAudio","FloatAudio","AuditionLineA","AuditionLineB","AuditionLineC","Notes","WikiLink","ImageFile","InVockScope",
-              "THATVoiceActor","THATLink"]
+              "THATVoiceActor","THATLink","Companion","CompanionMod"]
 with open(csv_path, "w", newline="", encoding="utf-8") as f:
     w = csv.DictWriter(f, fieldnames=fieldnames)
     w.writeheader()

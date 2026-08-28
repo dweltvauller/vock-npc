@@ -71,6 +71,7 @@
   <div class="controls">
     <input type="text" id="quickSearch" placeholder="Search name, location, VA...">
     <label><input type="checkbox" id="scopeToggle"> Show wiki-only characters (no VOCK plans)</label>
+    <label><input type="checkbox" id="companionToggle"> Companions only</label>
     <select id="statusFilter">
       <option value="">All statuses</option>
       <option value="Recorded">Recorded</option>
@@ -113,6 +114,7 @@ try {
       `<span><b>${data.filter(d=>d.CastStatus==="Cast").length}</b> cast (VOCK)</span>` +
       `<span><b>${data.filter(d=>d.THATVoiceActor).length}</b> cast (THAT mod, 3rd-party)</span>` +
       `<span><b>${data.filter(d=>d.Status==="Recorded").length}</b> fully recorded</span>` +
+      `<span><b>${data.filter(d=>d.Companion==="Yes").length}</b> companions</span>` +
       `<span><b>${data.length}</b> total rows (incl. full wiki roster)</span>`;
 
     table = new Tabulator("#table", {
@@ -150,6 +152,11 @@ try {
         { title: "Mod", field: "Mod", width: 90 },
         { title: "Cast Status", field: "CastStatus", width: 130 },
         {
+          title: "Companion", field: "Companion", width: 100, hozAlign: "center",
+          formatter: (cell) => cell.getValue() === "Yes" ? "✓" : ""
+        },
+        { title: "Companion Mod", field: "CompanionMod", width: 130 },
+        {
           title: "Wiki", field: "WikiLink", width: 70, hozAlign: "center", headerSort: false,
           formatter: (cell) => cell.getValue() ? `<a href="${cell.getValue()}" target="_blank">link</a>` : ""
         },
@@ -178,6 +185,7 @@ try {
           (data.AuditionLineC ? `<div><b>Line C:</b> ${data.AuditionLineC}</div>` : "") +
           (data.Notes ? `<div><b>Notes:</b> ${data.Notes}</div>` : "") +
           (data.THATVoiceActor ? `<div><b>THAT mod VA (3rd-party, unverified):</b> ${data.THATVoiceActor}</div>` : "") +
+          (data.Companion === "Yes" ? `<div><b>Companion:</b> Yes${data.CompanionMod ? " (via " + data.CompanionMod + " mod)" : " (vanilla)"}</div>` : "") +
           `<div><b>Msg stem:</b> ${data.MsgStem||""} &nbsp; <b>Prefix:</b> ${data.Prefix||""} &nbsp; <b>Mod:</b> ${data.Mod||""}</div>`;
         return el;
       },
@@ -188,16 +196,19 @@ try {
     document.getElementById("scopeToggle").addEventListener("change", applyAllFilters);
     document.getElementById("statusFilter").addEventListener("change", applyAllFilters);
     document.getElementById("castFilter").addEventListener("change", applyAllFilters);
+    document.getElementById("companionToggle").addEventListener("change", applyAllFilters);
 
     function applyAllFilters() {
       const q = document.getElementById("quickSearch").value.toLowerCase();
       const showAll = document.getElementById("scopeToggle").checked;
       const statusV = document.getElementById("statusFilter").value;
       const castV = document.getElementById("castFilter").value;
+      const companionOnly = document.getElementById("companionToggle").checked;
       table.setFilter((row) => {
         if (!showAll && row.InVockScope !== "Yes") return false;
         if (statusV && row.Status !== statusV) return false;
         if (castV && row.CastStatus !== castV) return false;
+        if (companionOnly && row.Companion !== "Yes") return false;
         if (q) {
           const hay = [row.Name, row.Location, row.VoiceActor, row.Notes].join(" ").toLowerCase();
           if (!hay.includes(q)) return false;
