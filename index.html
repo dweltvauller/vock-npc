@@ -111,6 +111,7 @@
   .tabulator .tabulator-row.tabulator-selectable:hover,
   .tabulator .tabulator-row:hover { background: #0f2110; }
   .tabulator .tabulator-cell { border-right: 1px solid var(--border); }
+  .tabulator .tabulator-cell.wiki-cell { padding-left: 14px; }
   .tabulator .tabulator-header .tabulator-header-filter input,
   .tabulator .tabulator-header .tabulator-header-filter select {
     background: #08100d; color: var(--text); border: 1px solid var(--border);
@@ -259,7 +260,7 @@ try {
         // ImageFile can hold more than one filename (one per line) when an NPC has
         // more than one msg/int file and the portrait differs between them (e.g.
         // Dalia, now split into two rows -- one talking head each).
-        title: "Photo", field: "ImageFile", width: 360, hozAlign: "center", headerSort: false, frozen: true,
+        title: "Photo", field: "ImageFile", width: 360, hozAlign: "center", vertAlign: "middle", headerSort: false, frozen: true,
         formatter: (cell) => {
           const f = cell.getValue();
           if (!f) return "";
@@ -349,7 +350,7 @@ try {
         },
       },
       {
-        title: "Wiki", field: "WikiLink", hozAlign: "center", headerSort: false,
+        title: "Wiki", field: "WikiLink", headerSort: false, cssClass: "wiki-cell",
         formatter: (cell) => {
           const u = cell.getValue();
           if (!u) return "";
