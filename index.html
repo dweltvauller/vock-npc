@@ -282,16 +282,17 @@ try {
         title: "Status", field: "Status",
         formatter: (cell) => {
           const v = cell.getValue() || "";
-          return `<span class="status-badge ${statusClass(v)}">${v}</span>`;
+          return v ? `<span class="status-badge ${statusClass(v)}">${v}</span>` : "";
         },
         headerFilter: "list", headerFilterParams: multiListParams({ values: genValues("Status") }),
         headerFilterFunc: listMatch,
       },
       {
         // a row can list more than one VA (e.g. Cassidy's restored head has two),
-        // one per line -- render each on its own line.
+        // one per line -- render each on its own line. esc() so "<unknown>"
+        // shows literally instead of being parsed as a tag.
         title: "Voice Actors", field: "VoiceActor", headerFilter: "input",
-        formatter: (cell) => (cell.getValue() || "").replace(/\n/g, "<br>")
+        formatter: (cell) => esc(cell.getValue() || "").replace(/\n/g, "<br>")
       },
       {
         title: "Voiced By", field: "Mod",
