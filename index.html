@@ -272,7 +272,11 @@ try {
           return imgs ? `<div class="th-photo-stack">${imgs}</div>` : "";
         }
       },
-      { title: "Name", field: "Name", headerFilter: "input", frozen: true },
+      {
+        // a Name can hold more than one line (e.g. "Chuck Dunton" / "Buck Dunton")
+        title: "Name", field: "Name", headerFilter: "input", frozen: true,
+        formatter: (cell) => esc(cell.getValue() || "").replace(/\n/g, "<br>")
+      },
       {
         title: "Location", field: "Location",
         formatter: (cell) => { const v = cell.getValue() || ""; return v ? chip(v) : ""; },

@@ -1880,7 +1880,7 @@ window.CHARACTER_TABLE = [
   "CompanionMod": ""
  },
  {
-  "Name": "Chuck or Buck Dunton",
+  "Name": "Chuck Dunton\nBuck Dunton",
   "Msg File": "kcdunton",
   "FRM file": "buck",
   "Prefix": "buck",
