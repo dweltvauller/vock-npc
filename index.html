@@ -47,10 +47,10 @@
   h1 {
     color: var(--accent);
     font-family: 'Fallout', var(--display);
-    font-weight: normal;
-    letter-spacing: 2px;
+    font-weight: light;
+    letter-spacing: 1px;
     margin: 0 0 4px 0;
-    font-size: 1.7em;
+    font-size: 2em;
     text-shadow: var(--glow);
   }
   .subtitle { color: var(--text-dim); margin-bottom: 16px; font-size: 0.9em; font-family: var(--display); }
@@ -220,9 +220,9 @@ try {
   const vock = data.filter(d => d.Mod === "VOCK");
   document.getElementById("stats").innerHTML =
     `<span><b>${vock.length}</b> VOCK NPCs</span>` +
-    `<span><b>${vock.filter(d=>d.Status==="Completed").length}</b> completed</span>` +
-    `<span><b>${vock.filter(d=>d.Status==="Auditioning").length}</b> auditioning</span>` +
-    `<span><b>${data.length}</b> total rows (incl. full wiki roster)</span>`;
+    `<span><b>${vock.filter(d=>d.Status==="Completed").length}</b> Completed</span>` +
+    `<span><b>${vock.filter(d=>d.Status==="Auditioning").length}</b> Auditioning</span>` +
+    `<span><b>${data.length}</b> Total rows</span>`;
   document.getElementById("totalCount").textContent = data.length;
 
   const multiListParams = extra => Object.assign(

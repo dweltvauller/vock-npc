@@ -71,16 +71,4 @@ match 1:1.
   `Yes` for vanilla FO2 companions, `RPCE` in `CompanionMod` for ones the
   [RPU Companion Expansion](https://www.nexusmods.com/fallout2/mods/70) adds.
 - **InVockScope** — `No` rows are hidden by default in the page (a "Show non
-  Talking Head NPCs" toggle reveals them). They're wiki-roster reference rows
-  plus the deliberately-parked Monty Python Holy Grail retinue (Sir Bedemir,
-  Concorde, Eric `eceric`, John, Joshua, Patsy, Sir Robin, Sir Launcelot, Sir
-  Galahad — `Mod` blanked, only `Location` + `WikiLink` kept).
-
-## Notes
-
-- **Same display name, different NPC**: `Eric` (Broken Hills `hceric` vs.
-  Special-Encounter `eceric`) and `Quartermaster` (`ccqmstr` vs `ccmaster`)
-  are unrelated characters — keep them as separate rows.
-- Some `characters.py` / RPU entries have no fandom Wiki article — expected.
-- `Frank Horrigan`'s `FRM file` (`bosss`) was filled by hand; he isn't in
-  `characters.py`.
+  Talking Head NPCs" toggle reveals them).
