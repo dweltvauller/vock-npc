@@ -3,94 +3,158 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VOCK Character Table</title>
+<title>V.O.C.K. - NPC Table</title>
 <link href="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.2/dist/css/tabulator_midnight.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.2/dist/js/tabulator.min.js"></script>
 <script src="data/character_table.js"></script>
 <style>
+  /* Fallout display faces, same files the dweltvauller.github.io site ships.
+     Fallout.otf = the blocky green Pip-Boy face (used for the title and the
+     whole top menu); FalloutFont4.ttf = a fallback only. Chrome only --
+     cell data stays in a plain monospace so dense text and audition lines
+     stay readable. */
+  @font-face {
+    font-family: 'Fallout';
+    src: url('assets/fonts/Fallout.otf') format('opentype');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'FalloutFont4';
+    src: url('assets/fonts/FalloutFont4.ttf') format('truetype');
+    font-display: swap;
+  }
   :root {
-    --bg: #0c1210;
-    --panel: #121a17;
-    --accent: #4caf50;
-    --accent-dim: #2e5a31;
-    --text: #cdeccf;
-    --text-dim: #7fa583;
-    --border: #24322a;
+    /* phosphor-green palette, matched to dweltvauller.github.io (--green: #3cf800) */
+    --bg: #050805;
+    --panel: #0a1109;
+    --accent: #3cf800;       /* bright Pip-Boy green -- numbers, links, headings */
+    --accent-dim: #1c7a08;   /* borders, button outlines, hover */
+    --text: #b9f7a3;         /* softer green shade for body / cell text */
+    --text-dim: #6fbf5a;     /* secondary labels */
+    --border: #16330c;
+    --glow: 0 0 3px rgba(60, 248, 0, 0.45);
+    --mono: "Courier New", Consolas, monospace;
+    --display: 'Fallout', 'FalloutFont4', var(--mono);
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: "Courier New", Consolas, monospace;
+    font-family: var(--mono);
     padding: 20px;
   }
   h1 {
     color: var(--accent);
-    letter-spacing: 1px;
+    font-family: 'Fallout', var(--display);
+    font-weight: normal;
+    letter-spacing: 2px;
     margin: 0 0 4px 0;
-    font-size: 1.6em;
+    font-size: 1.7em;
+    text-shadow: var(--glow);
   }
-  .subtitle { color: var(--text-dim); margin-bottom: 16px; font-size: 0.9em; }
-  .stats { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 14px; font-size: 0.85em; color: var(--text-dim); }
-  .stats b { color: var(--accent); }
+  .subtitle { color: var(--text-dim); margin-bottom: 16px; font-size: 0.9em; font-family: var(--display); }
+  .stats { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 14px; font-size: 0.85em; color: var(--text-dim); font-family: var(--display); }
+  .stats b { color: var(--accent); font-weight: normal; }
   .controls {
     display: flex; gap: 14px; align-items: center; flex-wrap: wrap;
     margin-bottom: 14px; padding: 10px 14px; background: var(--panel);
     border: 1px solid var(--border); border-radius: 4px;
+    font-family: var(--display);
   }
   .controls input[type="text"] {
     background: #08100d; border: 1px solid var(--border); color: var(--text);
-    padding: 6px 10px; border-radius: 3px; width: 240px; font-family: inherit;
+    padding: 6px 10px; border-radius: 3px; width: 240px; font-family: var(--mono);
   }
   .controls label { font-size: 0.85em; color: var(--text-dim); display: flex; gap: 6px; align-items: center; cursor: pointer; }
-  .controls select {
-    background: #08100d; border: 1px solid var(--border); color: var(--text);
-    padding: 5px 8px; border-radius: 3px; font-family: inherit;
+  .controls button {
+    background: #08100d; border: 1px solid var(--accent-dim); color: var(--text);
+    padding: 6px 12px; border-radius: 3px; font-family: var(--display); cursor: pointer;
+    letter-spacing: 1px;
   }
+  .controls button:hover { border-color: var(--accent); color: #fff; }
+  .count { font-size: 0.85em; color: var(--text-dim); margin-left: auto; }
+  .count b { color: var(--accent); font-weight: normal; }
   #table { border: 1px solid var(--border); }
-  .th-photo { width: 170px; height: 96px; object-fit: contain; border-radius: 4px; background: transparent; }
-  .status-badge { padding: 2px 6px; border-radius: 3px; font-size: 0.8em; }
-  .status-recorded { background: #1f4d22; color: #a6e6a9; }
-  .status-tagged { background: #4d3f1f; color: #e6cfa6; }
-  .status-cast { background: #1f3d4d; color: #a6d8e6; }
-  .status-pending { background: #3d1f4d; color: #d3a6e6; }
-  .status-notstarted { background: #2a2a2a; color: #999; }
+  /* Retint Tabulator's "midnight" theme to the phosphor-green palette and put
+     the Fallout face on the cell contents too (per request -- note the blocky
+     face makes long audition lines denser to read). */
+  .tabulator { background: var(--bg); }
+  /* keep the horizontal scrollbar on screen at all times and make it chunky */
+  .tabulator .tabulator-tableholder { overflow-x: scroll; scrollbar-color: var(--accent-dim) var(--panel); scrollbar-width: auto; }
+  .tabulator .tabulator-tableholder::-webkit-scrollbar { height: 14px; width: 14px; }
+  .tabulator .tabulator-tableholder::-webkit-scrollbar-track { background: var(--panel); }
+  .tabulator .tabulator-tableholder::-webkit-scrollbar-thumb {
+    background: var(--accent-dim); border-radius: 7px; border: 3px solid var(--panel);
+  }
+  .tabulator .tabulator-tableholder::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+  .tabulator, .tabulator-tableholder, .tabulator .tabulator-row {
+    color: var(--text); font-family: var(--display);
+  }
+  .tabulator .tabulator-header,
+  .tabulator .tabulator-header .tabulator-col {
+    background: var(--panel); border-color: var(--border); color: var(--accent);
+  }
+  .tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title {
+    font-family: var(--display);
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    color: var(--accent);
+    /* let the title report its true width so fitData sizes the column to hold
+       it -- default is overflow:hidden + ellipsis, which hides it from fitData */
+    overflow: visible;
+    text-overflow: clip;
+  }
+  .tabulator .tabulator-header .tabulator-col .tabulator-col-content { overflow: visible; }
+  .tabulator .tabulator-row { background: var(--bg); border-bottom: 1px solid var(--border); }
+  .tabulator .tabulator-row.tabulator-row-even { background: #081007; }
+  .tabulator .tabulator-row.tabulator-selectable:hover,
+  .tabulator .tabulator-row:hover { background: #0f2110; }
+  .tabulator .tabulator-cell { border-right: 1px solid var(--border); }
+  .tabulator .tabulator-header .tabulator-header-filter input,
+  .tabulator .tabulator-header .tabulator-header-filter select {
+    background: #08100d; color: var(--text); border: 1px solid var(--border);
+  }
+  .tabulator .tabulator-edit-list, .tabulator-edit-list {
+    background: var(--panel); color: var(--text); border: 1px solid var(--accent-dim);
+  }
+  .tabulator-edit-list .tabulator-edit-list-item.active,
+  .tabulator-edit-list .tabulator-edit-list-item:hover { background: #0f2110; color: var(--accent); }
+  .th-photo-stack { display: flex; flex-direction: column; gap: 4px; align-items: center; }
+  .th-photo { width: 340px; height: 192px; object-fit: contain; border-radius: 4px; background: transparent; }
+  /* fixed-meaning badges: distinct hues (dark bg + bright fg) so values like
+     VOCK vs THAT are told apart at a glance */
+  .status-badge { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 0.8em; border: 1px solid var(--border); }
+  .status-recorded   { background: #0c2408; color: #3cf800; }  /* Completed  -> green */
+  .status-pending     { background: #06282a; color: #5ff0e0; }  /* Auditioning -> cyan */
+  .status-cast        { background: #2a1e05; color: #ffc247; }  /* Cast -> amber */
+  .status-tagged      { background: #2e1608; color: #ff9a52; }  /* Work In Progress -> orange */
+  .status-notstarted  { background: #17170f; color: #9a9a8a; }  /* NA -> grey */
+  .mod-vock  { background: #0c2408; color: #3cf800; }  /* green */
+  .mod-that  { background: #2a1e05; color: #ffc247; }  /* amber */
+  .mod-fo2   { background: #0b2233; color: #6cc8ff; }  /* blue */
+  .mod-rpu   { background: #28102e; color: #e39bff; }  /* magenta */
+  .thmod-fo2  { background: #0b2233; color: #6cc8ff; }  /* blue */
+  .thmod-rpu  { background: #28102e; color: #e39bff; }  /* magenta */
+  .thmod-that { background: #2a1e05; color: #ffc247; }  /* amber */
   a { color: var(--accent); }
-  footer { margin-top: 16px; font-size: 0.75em; color: var(--text-dim); }
-  .lines-detail { padding: 10px; font-size: 0.9em; line-height: 1.5; background: #08100d; }
-  .lines-detail b { color: var(--accent); }
 </style>
 </head>
 <body>
-  <h1>V.O.C.K. — Fallout 2 Character Table</h1>
+  <h1>V.O.C.K. - NPC Table</h1>
   <div class="subtitle">Voice-acting roster: casting status, audio completion, and audition lines for every VOCK-tracked NPC, plus the full Fallout 2 cast for reference.</div>
 
   <div class="stats" id="stats"></div>
 
   <div class="controls">
     <input type="text" id="quickSearch" placeholder="Search name, location, VA...">
-    <label><input type="checkbox" id="scopeToggle"> Show wiki-only characters (no VOCK plans)</label>
+    <label><input type="checkbox" id="scopeToggle"> Show non Talking Head NPCs</label>
     <label><input type="checkbox" id="companionToggle"> Companions only</label>
-    <select id="statusFilter">
-      <option value="">All statuses</option>
-      <option value="Completed">Completed</option>
-      <option value="Work In Progress">Work In Progress</option>
-      <option value="Cast">Cast</option>
-      <option value="Auditioning">Auditioning</option>
-      <option value="NA">NA</option>
-    </select>
+    <button type="button" id="clearFilters">Clear all filters</button>
+    <span class="count">Showing <b id="visibleCount">0</b> of <b id="totalCount">0</b> rows</span>
   </div>
 
   <div id="table"></div>
-
-  <footer>
-    Data generated by <code>scripts/build_table.py</code> from vock-fo2/characters.py, claude/audit/*, CREDITS.md,
-    CHANGELOG.md, float_filter.cfg, va-scripts/, msg/, rpu baseline text, and the
-    <a href="https://fallout.fandom.com/wiki/Fallout_2_characters" target="_blank">Fallout Wiki characters page</a>.
-    Status is read from CHANGELOG.md and CREDITS.md. Re-run the build script to refresh after an update to either.
-    Click a row's arrow for full audition lines and notes.
-  </footer>
 
 <script>
 const statusClass = s => ({
@@ -101,94 +165,254 @@ const statusClass = s => ({
   "NA": "status-notstarted",
 }[s] || "");
 
+const modClass = m => ({
+  "VOCK": "mod-vock",
+  "THAT": "mod-that",
+  "FO2": "mod-fo2",
+  "RPU": "mod-rpu",
+}[m] || "");
+
+const modLabel = m => ({ "FO2": "Fallout 2" }[m] || m);
+
+// Deterministic chip colour: a hue derived from the string, kept dark-on-dim
+// so chips stay in the phosphor aesthetic while still reading as distinct.
+const hueColor = (s) => {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) % 360;
+  return { bg: `hsl(${h} 40% 12%)`, fg: `hsl(${h} 65% 72%)` };
+};
+const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const chip = (v) => {
+  const c = hueColor(v);
+  return `<span class="status-badge" style="background:${c.bg};color:${c.fg}">${esc(v)}</span>`;
+};
+// one chip per newline-separated value in a multi-value cell
+const multiChip = (cell) => (cell.getValue() || "")
+  .split("\n").map(s => s.trim()).filter(Boolean).map(chip).join("<br>");
+
+const thModClass = m => ({
+  "Fallout 2": "thmod-fo2",
+  "RPU": "thmod-rpu",
+  "Talking Heads": "thmod-that",
+}[m] || "");
+
+// The "<Empty>" dropdown option is carried as this sentinel filter value
+// (a real blank can't be a <select> option value in the list editor).
+const EMPTY = "␀";
+
+// Header filters are multi-select (headerFilterParams.multiselect), so the
+// filter value arrives as an array. Treat "" / [] / null as "no filter".
+// A selected EMPTY sentinel matches rows whose cell is blank.
+const listMatch = (headerValue, rowValue) => {
+  if (headerValue == null || headerValue === "") return true;
+  const arr = Array.isArray(headerValue) ? headerValue : [headerValue];
+  if (arr.length === 0) return true;
+  const rv = (rowValue == null ? "" : String(rowValue)).trim();
+  return arr.some(hv => hv === EMPTY ? rv === "" : hv === rv);
+};
+
 let table;
 try {
   const data = window.CHARACTER_TABLE || [];
   if (!data.length) throw new Error("window.CHARACTER_TABLE is empty or missing -- check data/character_table.js loaded");
-    document.getElementById("stats").innerHTML =
-      `<span><b>${data.filter(d=>d.InVockScope==="Yes").length}</b> VOCK-tracked NPCs</span>` +
-      `<span><b>${data.filter(d=>d.Status==="Completed").length}</b> completed</span>` +
-      `<span><b>${data.filter(d=>d.Status==="Cast").length}</b> cast, not yet recorded</span>` +
-      `<span><b>${data.filter(d=>d.Status==="Auditioning").length}</b> auditioning</span>` +
-      `<span><b>${data.filter(d=>d.Companion==="Yes").length}</b> companions</span>` +
-      `<span><b>${data.length}</b> total rows (incl. full wiki roster)</span>`;
 
-    table = new Tabulator("#table", {
-      data: data,
-      layout: "fitData", // natural column widths -- every column stays reachable via horizontal scroll,
-                          // nothing silently disappears the way auto-collapse could hide a column
-                          // that this page's custom detail panel didn't happen to also show
-      responsiveLayout: false,
-      pagination: false, // show every filtered row at once -- no more "can't see all rows" from pagination
-      initialSort: [{ column: "Name", dir: "asc" }],
-      initialFilter: [{ field: "InVockScope", type: "=", value: "Yes" }],
-      columns: [
-        {
-          title: "Photo", field: "ImageFile", width: 180, hozAlign: "center", headerSort: false, frozen: true,
-          formatter: (cell) => {
-            const f = cell.getValue();
-            return f ? `<img class="th-photo" src="images/${f}" onerror="this.style.display='none'">` : "";
-          }
-        },
-        { title: "Name", field: "Name", width: 170, headerFilter: "input", frozen: true },
-        { title: "Location", field: "Location", width: 140, headerFilter: "input" },
-        {
-          title: "Status", field: "Status", width: 150,
-          formatter: (cell) => {
-            const v = cell.getValue() || "";
-            return `<span class="status-badge ${statusClass(v)}">${v}</span>`;
-          }
-        },
-        { title: "Voice Actors", field: "VoiceActor", width: 150, headerFilter: "input" },
-        { title: "Voice Type", field: "VoiceType", width: 130 },
-        { title: "TH Audio", field: "THAudio", width: 90, hozAlign: "center" },
-        { title: "Float Audio", field: "FloatAudio", width: 100, hozAlign: "center" },
-        {
-          title: "Mod", field: "Mod", width: 110,
-          headerFilter: "list",
-          headerFilterParams: { valuesLookup: true, clearable: true, sort: "asc", placeholder: "All" },
-          headerFilterFunc: "=",
-        },
-        {
-          title: "Companion", field: "Companion", width: 100, hozAlign: "center",
-          formatter: (cell) => cell.getValue() === "Yes" ? "✓" : ""
-        },
-        { title: "Companion Mod", field: "CompanionMod", width: 130 },
-        {
-          title: "Wiki", field: "WikiLink", width: 70, hozAlign: "center", headerSort: false,
-          formatter: (cell) => cell.getValue() ? `<a href="${cell.getValue()}" target="_blank">link</a>` : ""
-        },
-        { title: "MsgStem", field: "MsgStem", width: 100 },
-        { title: "Prefix", field: "Prefix", width: 90 },
-        { title: "Notes", field: "Notes", width: 260 },
-        { title: "Line A", field: "AuditionLineA", width: 260 },
-        { title: "Line B", field: "AuditionLineB", width: 260 },
-        { title: "Line C", field: "AuditionLineC", width: 260 },
-      ],
-    });
+  const vock = data.filter(d => d.Mod === "VOCK");
+  document.getElementById("stats").innerHTML =
+    `<span><b>${vock.length}</b> VOCK NPCs</span>` +
+    `<span><b>${vock.filter(d=>d.Status==="Completed").length}</b> completed</span>` +
+    `<span><b>${vock.filter(d=>d.Status==="Auditioning").length}</b> auditioning</span>` +
+    `<span><b>${data.length}</b> total rows (incl. full wiki roster)</span>`;
+  document.getElementById("totalCount").textContent = data.length;
 
-    document.getElementById("quickSearch").addEventListener("input", applyAllFilters);
+  const multiListParams = extra => Object.assign(
+    { clearable: true, multiselect: true, placeholder: "All" },
+    extra || {}
+  );
 
-    document.getElementById("scopeToggle").addEventListener("change", applyAllFilters);
-    document.getElementById("statusFilter").addEventListener("change", applyAllFilters);
-    document.getElementById("companionToggle").addEventListener("change", applyAllFilters);
+  // {value: label} map for a column's dropdown, built from the values actually
+  // present in the data. Prepends an "<Empty>" option whenever some row has a
+  // blank cell in that column, so blanks are filterable like any other value.
+  const genValues = (field, labels) => {
+    const present = new Set(data.map(d => (d[field] || "").trim()));
+    const out = {};
+    // label is rendered as innerHTML by Tabulator's list editor, so keep it
+    // plain text -- "<Empty>" would parse as a bogus tag and show nothing.
+    if (present.has("")) out[EMPTY] = "(empty)";
+    [...present].filter(Boolean).sort((a, b) => a.localeCompare(b))
+      .forEach(v => { out[v] = (labels && labels[v]) || v; });
+    return out;
+  };
 
-    function applyAllFilters() {
-      const q = document.getElementById("quickSearch").value.toLowerCase();
-      const showAll = document.getElementById("scopeToggle").checked;
-      const statusV = document.getElementById("statusFilter").value;
-      const companionOnly = document.getElementById("companionToggle").checked;
-      table.setFilter((row) => {
-        if (!showAll && row.InVockScope !== "Yes") return false;
-        if (statusV && row.Status !== statusV) return false;
-        if (companionOnly && row.Companion !== "Yes") return false;
-        if (q) {
-          const hay = [row.Name, row.Location, row.VoiceActor, row.Notes].join(" ").toLowerCase();
-          if (!hay.includes(q)) return false;
+  table = new Tabulator("#table", {
+    data: data,
+    nestedFieldSeparator: false, // treat CSV header strings as flat field names, never dotted paths
+    layout: "fitData", // size each column to its content AND its title (columns with
+                       // no explicit width auto-fit; Photo + prose columns keep a set width)
+    columnDefaults: { minWidth: 70 },
+    height: "calc(100vh - 215px)", // fixed viewport so the horizontal scrollbar
+                                   // stays pinned at the bottom of the table, always visible
+    responsiveLayout: false,
+    pagination: false, // show every filtered row at once (scrolls inside the table)
+    initialSort: [{ column: "Name", dir: "asc" }],
+    columns: [
+      {
+        // ImageFile can hold more than one filename (one per line) when an NPC has
+        // more than one msg/int file and the portrait differs between them (e.g.
+        // Dalia, now split into two rows -- one talking head each).
+        title: "Photo", field: "ImageFile", width: 360, hozAlign: "center", headerSort: false, frozen: true,
+        formatter: (cell) => {
+          const f = cell.getValue();
+          if (!f) return "";
+          const imgs = f.split("\n")
+            .map(name => name.trim())
+            .filter(Boolean)
+            .map(name => `<img class="th-photo" src="images/${name}" onerror="this.style.display='none'">`)
+            .join("");
+          return imgs ? `<div class="th-photo-stack">${imgs}</div>` : "";
         }
-        return true;
-      });
-    }
+      },
+      { title: "Name", field: "Name", headerFilter: "input", frozen: true },
+      {
+        title: "Location", field: "Location",
+        formatter: (cell) => { const v = cell.getValue() || ""; return v ? chip(v) : ""; },
+        headerFilter: "list", headerFilterParams: multiListParams({ values: genValues("Location") }),
+        headerFilterFunc: listMatch,
+      },
+      {
+        title: "Status", field: "Status",
+        formatter: (cell) => {
+          const v = cell.getValue() || "";
+          return `<span class="status-badge ${statusClass(v)}">${v}</span>`;
+        },
+        headerFilter: "list", headerFilterParams: multiListParams({ values: genValues("Status") }),
+        headerFilterFunc: listMatch,
+      },
+      {
+        // a row can list more than one VA (e.g. Cassidy's restored head has two),
+        // one per line -- render each on its own line.
+        title: "Voice Actors", field: "VoiceActor", headerFilter: "input",
+        formatter: (cell) => (cell.getValue() || "").replace(/\n/g, "<br>")
+      },
+      {
+        title: "Voiced By", field: "Mod",
+        formatter: (cell) => {
+          const v = cell.getValue() || "";
+          return v ? `<span class="status-badge ${modClass(v)}">${modLabel(v)}</span>` : "";
+        },
+        headerFilter: "list",
+        headerFilterParams: multiListParams({ values: genValues("Mod", { "FO2": "Fallout 2" }) }),
+        headerFilterFunc: listMatch,
+      },
+      {
+        // Which project made this NPC's talking-head art: "Fallout 2" (vanilla
+        // -- exactly the Mod=FO2 set), "RPU" (only John Cassidy), or
+        // "Talking Heads" (the THAT mod -- every other head). Blank = no head.
+        // Distinct from "Voiced By", which is about the audio.
+        title: "TH Mod", field: "TH Mod",
+        formatter: (cell) => {
+          const v = cell.getValue() || "";
+          return v ? `<span class="status-badge ${thModClass(v)}">${v}</span>` : "";
+        },
+        headerFilter: "list",
+        headerFilterParams: multiListParams({
+          values: { [EMPTY]: "(empty)", "Fallout 2": "Fallout 2", "RPU": "RPU", "Talking Heads": "Talking Heads" },
+        }),
+        headerFilterFunc: listMatch,
+      },
+      {
+        // Merges the old Companion (Yes/blank) + CompanionMod (blank/RPCE) pair into
+        // one chip: which mod actually makes this NPC recruitable.
+        title: "Companion", field: "Companion", hozAlign: "center",
+        formatter: (cell) => {
+          const d = cell.getData();
+          if (d.Companion !== "Yes") return "";
+          const isRPCE = d.CompanionMod === "RPCE";
+          const label = isRPCE ? "RPU Companion Expansion Mod" : "Fallout 2";
+          return `<span class="status-badge ${isRPCE ? "mod-rpu" : "mod-fo2"}">${label}</span>`;
+        },
+        headerFilter: "list",
+        // dropdown values are the rendered chip labels, not the raw Companion
+        // field -- "(empty)" here means "not a companion".
+        headerFilterParams: multiListParams({
+          values: {
+            [EMPTY]: "(empty)",
+            "Fallout 2": "Fallout 2",
+            "RPU Companion Expansion Mod": "RPU Companion Expansion Mod",
+          },
+        }),
+        headerFilterFunc: (headerValue, rowValue, rowData) => {
+          const label = rowData.Companion === "Yes"
+            ? (rowData.CompanionMod === "RPCE" ? "RPU Companion Expansion Mod" : "Fallout 2")
+            : "";
+          return listMatch(headerValue, label);
+        },
+      },
+      {
+        title: "Wiki", field: "WikiLink", hozAlign: "center", headerSort: false,
+        formatter: (cell) => {
+          const u = cell.getValue();
+          if (!u) return "";
+          const label = u.includes("f2rp.bgforge.net") ? "RPU guide" : "wiki";
+          return `<a href="${u}" target="_blank">${label}</a>`;
+        }
+      },
+      {
+        // Multi-value cells (an NPC with more than one msg/int file or audio-tag
+        // prefix, e.g. Kaga's 5 encounter files or Quartermaster's 2 prefixes) use
+        // a literal newline between values -- one chip per value.
+        title: "Msg File", field: "Msg File", formatter: multiChip, headerFilter: "input"
+      },
+      { title: "FRM file", field: "FRM file", formatter: multiChip, headerFilter: "input" },
+      { title: "Prefix", field: "Prefix", formatter: multiChip, headerFilter: "input" },
+      // prose columns: "textarea" wraps the text; variableHeight lets the row
+      // grow to show the whole thing instead of clipping to one line.
+      { title: "Description", field: "Description", width: 300, formatter: "textarea", variableHeight: true },
+      { title: "Line A", field: "AuditionLineA", width: 300, formatter: "textarea", variableHeight: true },
+      { title: "Line B", field: "AuditionLineB", width: 300, formatter: "textarea", variableHeight: true },
+      { title: "Line C", field: "AuditionLineC", width: 300, formatter: "textarea", variableHeight: true },
+    ],
+  });
+
+  table.on("tableBuilt", applyAllFilters);
+  table.on("dataFiltered", (filters, rows) => {
+    document.getElementById("visibleCount").textContent = rows.length;
+  });
+
+  document.getElementById("quickSearch").addEventListener("input", applyAllFilters);
+  document.getElementById("scopeToggle").addEventListener("change", applyAllFilters);
+  document.getElementById("companionToggle").addEventListener("change", applyAllFilters);
+  document.getElementById("clearFilters").addEventListener("click", clearAllFilters);
+
+  // the Fallout face loads async (font-display: swap); once it's in, recompute
+  // column widths so titles measured with the fallback font don't stay clipped.
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => { try { table.redraw(true); } catch (e) {} });
+  }
+
+  function applyAllFilters() {
+    const q = document.getElementById("quickSearch").value.toLowerCase();
+    const showAll = document.getElementById("scopeToggle").checked;
+    const companionOnly = document.getElementById("companionToggle").checked;
+    // Non-column filters go through a single function filter; column dropdowns
+    // are separate header filters and AND with this.
+    table.setFilter((row) => {
+      if (!showAll && row.InVockScope !== "Yes") return false;
+      if (companionOnly && row.Companion !== "Yes") return false;
+      if (q) {
+        const hay = [row.Name, row.Location, row.VoiceActor, row.Description].join(" ").toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+  }
+
+  function clearAllFilters() {
+    document.getElementById("quickSearch").value = "";
+    document.getElementById("scopeToggle").checked = false;
+    document.getElementById("companionToggle").checked = false;
+    table.clearHeaderFilter();
+    applyAllFilters();
+  }
 } catch (err) {
   document.getElementById("table").innerText = "Failed to load character table data: " + err;
 }

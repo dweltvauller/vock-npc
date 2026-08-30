@@ -1,10 +1,22 @@
 #!/usr/bin/env python3
-"""VOCK character table builder.
-Merges vock-fo2/characters.py roster with the Fallout Wiki's Fallout 2
-characters page, plus VOCK's own audit/credits/audio data, into one CSV.
-Re-run this any time source data changes; it is fully regenerated, not edited by hand.
+"""VOCK character table builder -- DEPRECATED, DO NOT RUN.
+
+As of 2026-08-28, data/character_table.csv is a hand-edited master file.
+Running this script will merge vock-fo2/characters.py, the Wiki roster,
+audit files, etc. back in from scratch and silently wipe out hand edits
+(merged rows like Dalia, multi-line MsgStem/Prefix/Photo cells, msg_stem
+image renames). Kept only for historical reference on how the table was
+originally compiled. To regenerate data/character_table.json and .js from
+the hand-edited CSV, use scripts/csv_to_json.py instead.
 """
-import os, re, sys, csv, glob, shutil, json, unicodedata, statistics
+import sys
+sys.exit(
+    "build_table.py is deprecated -- data/character_table.csv is now hand-edited "
+    "and running this would overwrite manual changes. Use csv_to_json.py instead. "
+    "See README.md."
+)
+
+import os, re, csv, glob, shutil, json, unicodedata, statistics
 import yaml
 
 ROOT = os.path.expanduser("~/mnt/VOCK")
