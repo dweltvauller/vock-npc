@@ -162,7 +162,7 @@ window.CHARACTER_TABLE = [
  {
   "Name": "Hakunin",
   "Msg File": "ahhakun",
-  "FRM file": "hakun\nhaku2\nhaku3",
+  "FRM file": "hakun\r\nhaku2\r\nhaku3",
   "Prefix": "",
   "Location": "Arroyo",
   "Mod": "FO2",
@@ -287,8 +287,8 @@ window.CHARACTER_TABLE = [
   "Location": "Vault 15",
   "Mod": "VOCK",
   "TH Mod": "Talking Heads",
-  "Status": "Auditioning",
-  "VoiceActor": "",
+  "Status": "Cast",
+  "VoiceActor": "Dmitry Medvedenko",
   "Description": "Darion is the leader of the New Khans raiders. His band is a derivative of The Great Khans of which he is the only survivor after The Chosen One’s ancestor, the Vault Dweller, wiped them out while rescuing a young President Tandi. He now lives in fear inside of Vault 15, ready to incinerate any trespassers with his flame thrower. He has a dog called \"Baddog\".",
   "AuditionLineA": "So, here you are at last. The savior of the downtrodden, the righter of wrongs, the icon of hope for humanity. What a dumb-ass!",
   "AuditionLineB": "Well, before you start any boring speeches, I'd just like to say that I'm not fucking interested.",
@@ -481,9 +481,9 @@ window.CHARACTER_TABLE = [
  },
  {
   "Name": "Quartermaster",
-  "Msg File": "ccmaster\nccqmstr",
-  "FRM file": "qm2\nqm",
-  "Prefix": "qm2\nqm",
+  "Msg File": "ccmaster\r\nccqmstr",
+  "FRM file": "qm2\r\nqm",
+  "Prefix": "qm2\r\nqm",
   "Location": "Navarro",
   "Mod": "VOCK",
   "TH Mod": "Talking Heads",
@@ -1021,7 +1021,7 @@ window.CHARACTER_TABLE = [
  },
  {
   "Name": "Kaga",
-  "Msg File": "eckaga1\neckaga2\neckaga3\neckaga4\neckaga5",
+  "Msg File": "eckaga1\r\neckaga2\r\neckaga3\r\neckaga4\r\neckaga5",
   "FRM file": "kaga",
   "Prefix": "kaga",
   "Location": "Special Encounter",
@@ -1622,7 +1622,7 @@ window.CHARACTER_TABLE = [
  {
   "Name": "Chad",
   "Msg File": "hcchad",
-  "FRM file": "cha2\nchad",
+  "FRM file": "cha2\r\nchad",
   "Prefix": "chad",
   "Location": "Broken Hills",
   "Mod": "VOCK",
@@ -1880,7 +1880,7 @@ window.CHARACTER_TABLE = [
   "CompanionMod": ""
  },
  {
-  "Name": "Chuck Dunton\nBuck Dunton",
+  "Name": "Chuck Dunton\r\nBuck Dunton",
   "Msg File": "kcdunton",
   "FRM file": "buck",
   "Prefix": "buck",
@@ -2002,7 +2002,7 @@ window.CHARACTER_TABLE = [
  {
   "Name": "Smiley",
   "Msg File": "kcsmiley",
-  "FRM file": "smiley\nsmilw",
+  "FRM file": "smiley\r\nsmilw",
   "Prefix": "",
   "Location": "Klamath",
   "Mod": "THAT",
@@ -2942,7 +2942,7 @@ window.CHARACTER_TABLE = [
  {
   "Name": "Fannie Mae",
   "Msg File": "rcfannie",
-  "FRM file": "fannc\nfanni",
+  "FRM file": "fannc\r\nfanni",
   "Prefix": "fanni",
   "Location": "Redding",
   "Mod": "VOCK",
@@ -3468,7 +3468,7 @@ window.CHARACTER_TABLE = [
   "Mod": "RPU",
   "TH Mod": "RPU",
   "Status": "Completed",
-  "VoiceActor": "Joey Bracken\nAdam Dravean",
+  "VoiceActor": "Joey Bracken\r\nAdam Dravean",
   "Description": "",
   "AuditionLineA": "",
   "AuditionLineB": "",
