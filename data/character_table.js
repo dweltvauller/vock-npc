@@ -162,7 +162,7 @@ window.CHARACTER_TABLE = [
  {
   "Name": "Hakunin",
   "Msg File": "ahhakun",
-  "FRM file": "hakun\r\nhaku2\r\nhaku3",
+  "FRM file": "hakun\nhaku2\nhaku3",
   "Prefix": "",
   "Location": "Arroyo",
   "Mod": "FO2",
@@ -481,9 +481,9 @@ window.CHARACTER_TABLE = [
  },
  {
   "Name": "Quartermaster",
-  "Msg File": "ccmaster\r\nccqmstr",
-  "FRM file": "qm2\r\nqm",
-  "Prefix": "qm2\r\nqm",
+  "Msg File": "ccmaster\nccqmstr",
+  "FRM file": "qm2\nqm",
+  "Prefix": "qm2\nqm",
   "Location": "Navarro",
   "Mod": "VOCK",
   "TH Mod": "Talking Heads",
@@ -1021,7 +1021,7 @@ window.CHARACTER_TABLE = [
  },
  {
   "Name": "Kaga",
-  "Msg File": "eckaga1\r\neckaga2\r\neckaga3\r\neckaga4\r\neckaga5",
+  "Msg File": "eckaga1\neckaga2\neckaga3\neckaga4\neckaga5",
   "FRM file": "kaga",
   "Prefix": "kaga",
   "Location": "Special Encounter",
@@ -1622,7 +1622,7 @@ window.CHARACTER_TABLE = [
  {
   "Name": "Chad",
   "Msg File": "hcchad",
-  "FRM file": "cha2\r\nchad",
+  "FRM file": "cha2\nchad",
   "Prefix": "chad",
   "Location": "Broken Hills",
   "Mod": "VOCK",
@@ -1880,7 +1880,7 @@ window.CHARACTER_TABLE = [
   "CompanionMod": ""
  },
  {
-  "Name": "Chuck Dunton\r\nBuck Dunton",
+  "Name": "Chuck Dunton\nBuck Dunton",
   "Msg File": "kcdunton",
   "FRM file": "buck",
   "Prefix": "buck",
@@ -2002,7 +2002,7 @@ window.CHARACTER_TABLE = [
  {
   "Name": "Smiley",
   "Msg File": "kcsmiley",
-  "FRM file": "smiley\r\nsmilw",
+  "FRM file": "smiley\nsmilw",
   "Prefix": "",
   "Location": "Klamath",
   "Mod": "THAT",
@@ -2942,7 +2942,7 @@ window.CHARACTER_TABLE = [
  {
   "Name": "Fannie Mae",
   "Msg File": "rcfannie",
-  "FRM file": "fannc\r\nfanni",
+  "FRM file": "fannc\nfanni",
   "Prefix": "fanni",
   "Location": "Redding",
   "Mod": "VOCK",
@@ -3468,7 +3468,7 @@ window.CHARACTER_TABLE = [
   "Mod": "RPU",
   "TH Mod": "RPU",
   "Status": "Completed",
-  "VoiceActor": "Joey Bracken\r\nAdam Dravean",
+  "VoiceActor": "Joey Bracken\nAdam Dravean",
   "Description": "",
   "AuditionLineA": "",
   "AuditionLineB": "",
