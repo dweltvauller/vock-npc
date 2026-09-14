@@ -136,6 +136,7 @@
   .mod-that  { background: #2a1e05; color: #ffc247; }  /* amber */
   .mod-fo2   { background: #0b2233; color: #6cc8ff; }  /* blue */
   .mod-rpu   { background: #28102e; color: #e39bff; }  /* magenta */
+  .mod-fo1   { background: #1d2708; color: #c8e653; }  /* olive */
   .thmod-fo2  { background: #0b2233; color: #6cc8ff; }  /* blue */
   .thmod-rpu  { background: #28102e; color: #e39bff; }  /* magenta */
   .thmod-that { background: #2a1e05; color: #ffc247; }  /* amber */
@@ -144,7 +145,7 @@
 </head>
 <body>
   <h1>V.O.C.K. NPC Table</h1>
-  <div class="subtitle">Voice-acting roster: casting status, audio completion, and audition lines for every VOCK-tracked NPC, plus the full Fallout 2 cast for reference.</div>
+  <div class="subtitle">Voice-acting roster: casting status, audio completion, and audition lines for every VOCK-tracked NPC, plus the full vanilla cast (Fallout 2, and Fallout 1 via Fallout Et Tu) for reference.</div>
 
   <div class="stats" id="stats"></div>
 
@@ -285,6 +286,14 @@ try {
         headerFilterFunc: listMatch,
       },
       {
+        // Which game the NPC is from: "Fallout 2" (the original VOCK scope) or
+        // "Fallout 1" (the vock-fo1 companions, voiced via the Fallout Et Tu port).
+        title: "Game", field: "Game",
+        formatter: (cell) => { const v = cell.getValue() || ""; return v ? chip(v) : ""; },
+        headerFilter: "list", headerFilterParams: multiListParams({ values: genValues("Game") }),
+        headerFilterFunc: listMatch,
+      },
+      {
         title: "Status", field: "Status",
         formatter: (cell) => {
           const v = cell.getValue() || "";
@@ -334,8 +343,9 @@ try {
           const d = cell.getData();
           if (d.Companion !== "Yes") return "";
           const isRPCE = d.CompanionMod === "RPCE";
-          const label = isRPCE ? "RPU Companion Expansion Mod" : "Fallout 2";
-          return `<span class="status-badge ${isRPCE ? "mod-rpu" : "mod-fo2"}">${label}</span>`;
+          const label = isRPCE ? "RPU Companion Expansion Mod" : (d.Game || "Fallout 2");
+          const cls = isRPCE ? "mod-rpu" : (d.Game === "Fallout 1" ? "mod-fo1" : "mod-fo2");
+          return `<span class="status-badge ${cls}">${label}</span>`;
         },
         headerFilter: "list",
         // dropdown values are the rendered chip labels, not the raw Companion
@@ -343,13 +353,14 @@ try {
         headerFilterParams: multiListParams({
           values: {
             [EMPTY]: "(empty)",
+            "Fallout 1": "Fallout 1",
             "Fallout 2": "Fallout 2",
             "RPU Companion Expansion Mod": "RPU Companion Expansion Mod",
           },
         }),
         headerFilterFunc: (headerValue, rowValue, rowData) => {
           const label = rowData.Companion === "Yes"
-            ? (rowData.CompanionMod === "RPCE" ? "RPU Companion Expansion Mod" : "Fallout 2")
+            ? (rowData.CompanionMod === "RPCE" ? "RPU Companion Expansion Mod" : (rowData.Game || "Fallout 2"))
             : "";
           return listMatch(headerValue, label);
         },

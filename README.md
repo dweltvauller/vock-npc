@@ -1,9 +1,11 @@
 # V.O.C.K. NPC Table
 
-A single browsable table of every Fallout 2 NPC that VOCK tracks for voice
-acting — casting status, voice actor, a character/voice brief, three audition
-lines, the Talking Head portrait — cross-referenced with the full vanilla
-cast for reference.
+A single browsable table of every NPC that VOCK tracks for voice acting —
+Fallout 2, plus the Fallout 1 companions covered by
+[vock-fo1](https://github.com/dweltvauller/vock-fo1) via the *Fallout Et Tu*
+port — with casting status, voice actor, a character/voice brief, three
+audition lines, and the Talking Head portrait, cross-referenced with the
+full vanilla cast for reference.
 
 **Live:** <https://dweltvauller.github.io/vock-npc/>
 
@@ -53,14 +55,20 @@ match 1:1.
   Project). `THAT` = on the third-party *Fallout 2 Talking Heads* mod roster
   (its VA goes in `VoiceActor`, `<unknown>` if the public listing has none).
   `VOCK` = none of the above; VOCK's to voice.
+- **Game** — `Fallout 2` (the original VOCK scope) or `Fallout 1` (the
+  companions voiced by vock-fo1 via the *Fallout Et Tu* port). Both games run
+  on the Fallout 2 engine, which is why one pipeline and one table cover both.
 - **TH Mod** — which project made the talking-head art: `Fallout 2` (retail;
   exactly the `Mod = FO2` set), `RPU` (only John Cassidy), `Talking Heads`
   (the THAT mod — every other head), blank (no head). Independent of `Mod`.
 - **Status** (`Mod = VOCK` rows) — `Completed` / `Cast` / `Work In Progress` /
-  `Auditioning`, kept in sync with `vock-fo2/CHANGELOG.md` + `CREDITS.md`
-  (shipped version → Completed, credited but unshipped → Cast, `## WIP` →
-  Work In Progress, AI-voiced or unassigned → Auditioning). `Completed` on
-  `FO2`/`RPU`/`THAT` rows; blank on wiki-roster rows.
+  `Auditioning`. For `Game = Fallout 2` rows, kept in sync with
+  `vock-fo2/CHANGELOG.md` + `CREDITS.md` (shipped version → Completed,
+  credited but unshipped → Cast, `## WIP` → Work In Progress, AI-voiced or
+  unassigned → Auditioning). `Game = Fallout 1` rows track vock-fo1's own
+  progress (no changelog yet — the four starting companions are all
+  `Auditioning`: their dialogue is tagged and they're ready to cast).
+  `Completed` on `FO2`/`RPU`/`THAT` rows; blank on wiki-roster rows.
 - **Prefix, Description, Line A/B/C** — populated for `Mod = VOCK` rows only;
   blank elsewhere.
 - **WikiLink** — fandom article, except RPU restored-content NPCs (Abbey, EPA,
@@ -68,7 +76,8 @@ match 1:1.
   point at the matching `f2rp.bgforge.net/<area>/` handbook page (rendered as
   "RPU guide").
 - **Companion** / **CompanionMod** — whether the game lets you recruit them:
-  `Yes` for vanilla FO2 companions, `RPCE` in `CompanionMod` for ones the
+  `Yes` for base-game companions (the chip shows the `Game`), `RPCE` in
+  `CompanionMod` for ones the
   [RPU Companion Expansion](https://www.nexusmods.com/fallout2/mods/70) adds.
 - **InVockScope** — `No` rows are hidden by default in the page (a "Show non
   Talking Head NPCs" toggle reveals them).
