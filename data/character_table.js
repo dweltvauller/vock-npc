@@ -170,7 +170,7 @@ window.CHARACTER_TABLE = [
  {
   "Name": "Hakunin",
   "Msg File": "ahhakun",
-  "FRM file": "hakun\nhaku2\nhaku3",
+  "FRM file": "hakun\r\nhaku2\r\nhaku3",
   "Prefix": "",
   "Location": "Arroyo",
   "Game": "Fallout 2",
@@ -505,9 +505,9 @@ window.CHARACTER_TABLE = [
  },
  {
   "Name": "Quartermaster",
-  "Msg File": "ccmaster\nccqmstr",
-  "FRM file": "qm2\nqm",
-  "Prefix": "qm2\nqm",
+  "Msg File": "ccmaster\r\nccqmstr",
+  "FRM file": "qm2\r\nqm",
+  "Prefix": "qm2\r\nqm",
   "Location": "Navarro",
   "Game": "Fallout 2",
   "Mod": "VOCK",
@@ -1072,7 +1072,7 @@ window.CHARACTER_TABLE = [
  },
  {
   "Name": "Kaga",
-  "Msg File": "eckaga1\neckaga2\neckaga3\neckaga4\neckaga5",
+  "Msg File": "eckaga1\r\neckaga2\r\neckaga3\r\neckaga4\r\neckaga5",
   "FRM file": "kaga",
   "Prefix": "kaga",
   "Location": "Special Encounter",
@@ -1703,7 +1703,7 @@ window.CHARACTER_TABLE = [
  {
   "Name": "Chad",
   "Msg File": "hcchad",
-  "FRM file": "cha2\nchad",
+  "FRM file": "cha2\r\nchad",
   "Prefix": "chad",
   "Location": "Broken Hills",
   "Game": "Fallout 2",
@@ -1919,7 +1919,7 @@ window.CHARACTER_TABLE = [
   "Game": "Fallout 2",
   "Mod": "VOCK",
   "TH Mod": "Talking Heads",
-  "Status": "Work In Progress",
+  "Status": "Completed",
   "VoiceActor": "sedatednerves",
   "Description": "Zaius is an old and tough supermutant in charge of the Broken Hills uranium mine. A no-nonsense individual, he prefers getting straight to the point.",
   "AuditionLineA": "Right. Well, I'm Zaius. Now that we're introduced You any good with your hands?",
@@ -1974,7 +1974,7 @@ window.CHARACTER_TABLE = [
   "CompanionMod": ""
  },
  {
-  "Name": "Chuck Dunton\nBuck Dunton",
+  "Name": "Chuck Dunton\r\nBuck Dunton",
   "Msg File": "kcdunton",
   "FRM file": "buck",
   "Prefix": "buck",
@@ -2102,7 +2102,7 @@ window.CHARACTER_TABLE = [
  {
   "Name": "Smiley",
   "Msg File": "kcsmiley",
-  "FRM file": "smiley\nsmilw",
+  "FRM file": "smiley\r\nsmilw",
   "Prefix": "",
   "Location": "Klamath",
   "Game": "Fallout 2",
@@ -3089,7 +3089,7 @@ window.CHARACTER_TABLE = [
  {
   "Name": "Fannie Mae",
   "Msg File": "rcfannie",
-  "FRM file": "fannc\nfanni",
+  "FRM file": "fannc\r\nfanni",
   "Prefix": "fanni",
   "Location": "Redding",
   "Game": "Fallout 2",
@@ -3642,7 +3642,7 @@ window.CHARACTER_TABLE = [
   "Mod": "RPU",
   "TH Mod": "RPU",
   "Status": "Completed",
-  "VoiceActor": "Joey Bracken\nAdam Dravean",
+  "VoiceActor": "Joey Bracken\r\nAdam Dravean",
   "Description": "",
   "AuditionLineA": "",
   "AuditionLineB": "",
