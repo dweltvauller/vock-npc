@@ -3217,7 +3217,7 @@ window.CHARACTER_TABLE = [
   "Msg File": "rcwade",
   "FRM file": "ben",
   "Prefix": "",
-  "Location": "Vault City",
+  "Location": "Redding",
   "Game": "Fallout 2",
   "Mod": "THAT",
   "TH Mod": "Talking Heads",
