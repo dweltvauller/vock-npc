@@ -3473,7 +3473,7 @@ window.CHARACTER_TABLE = [
   "Game": "Fallout 2",
   "Mod": "VOCK",
   "TH Mod": "Talking Heads",
-  "Status": "Cast",
+  "Status": "Completed",
   "VoiceActor": "David Pastore-Theriaque",
   "Description": "Don is a ruthless slaver, subordinate to Metzger and leader of the Slaver’s Camp south west of The Den.",
   "AuditionLineA": "Hey, what the fuck!? Who the hell are you?",
