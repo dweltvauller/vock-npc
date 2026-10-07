@@ -3977,7 +3977,7 @@ window.CHARACTER_TABLE = [
   "Game": "Fallout 2",
   "Mod": "VOCK",
   "TH Mod": "Talking Heads",
-  "Status": "Cast",
+  "Status": "Completed",
   "VoiceActor": "Darrell Haley",
   "Description": "Dobbs is a soldier of the United States Army. Sometime before October 23, 2077, he was killed in battle and pronounced dead, and he claims to have learned this via an out-of-body experience. While he was out of the body he observed his body being taken to a laboratory and immersed in bio med gel. When defrosted he looks healthy, but seems quite disoriented.",
   "AuditionLineA": "I-I'm Dobbs, Private, First Class.",
