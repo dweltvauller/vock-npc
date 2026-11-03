@@ -3011,7 +3011,7 @@ window.CHARACTER_TABLE = [
   "Game": "Fallout 2",
   "Mod": "VOCK",
   "TH Mod": "Talking Heads",
-  "Status": "Cast",
+  "Status": "Completed",
   "VoiceActor": "Joshua Luther",
   "Description": "Granite commands the Enclave Control Company, a specialized unit usually assigned to perimeter defense. Despite his loyalty to the Enclave, recent events may challenge his beliefs.",
   "AuditionLineA": "Lock and load. Let's go!",
