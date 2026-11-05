@@ -3746,7 +3746,7 @@ window.CHARACTER_TABLE = [
   "Game": "Fallout 2",
   "Mod": "VOCK",
   "TH Mod": "Talking Heads",
-  "Status": "Cast",
+  "Status": "Completed",
   "VoiceActor": "Enrico Leone",
   "Description": "A short and jovial man, Happy Harry runs a small store in Vault City’s courtyard. He seems to supply all kinds of things.",
   "AuditionLineA": "Well, hello there... what can I do for you?",
