@@ -60,7 +60,9 @@ match 1:1.
   on the Fallout 2 engine, which is why one pipeline and one table cover both.
 - **TH Mod** — which project made the talking-head art: `Fallout 2` (retail;
   exactly the `Mod = FO2` set), `RPU` (only John Cassidy), `Talking Heads`
-  (the THAT mod — every other head), blank (no head). Independent of `Mod`.
+  (the THAT mod — every other head), `VOCK` (made for VOCK: only the Sacred
+  Head, rendered from Project Arroyo's model in the `sacred-head` project),
+  blank (no head). Independent of `Mod`.
 - **Status** (`Mod = VOCK` rows) — `Completed` / `Cast` / `Work In Progress` /
   `Auditioning`. For `Game = Fallout 2` rows, kept in sync with
   `vock-fo2/CHANGELOG.md` + `CREDITS.md` (shipped version → Completed,

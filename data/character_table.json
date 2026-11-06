@@ -924,6 +924,27 @@
   "CompanionMod": ""
  },
  {
+  "Name": "Sacred Head",
+  "Msg File": "ecbhead",
+  "FRM file": "bhead",
+  "Prefix": "bhead",
+  "Location": "Special Encounter",
+  "Game": "Fallout 2",
+  "Mod": "VOCK",
+  "TH Mod": "VOCK",
+  "Status": "Auditioning",
+  "VoiceActor": "",
+  "Description": "The Sacred Head of the Vault Dweller is a giant stone carving of the hero of Vault 13, half buried in the desert sand. It’s a bored, grumpy and rather petty monument that mutters, complains and snores the days away, jealous of the other head that gets worshipped and cleaned back in Arroyo. When disturbed, it puts on a booming, godlike voice to test whether travellers are truly the Chosen One, a test that turns into a 12-hour “Uh-huh / Uh-uh” argument. Anyone who tries to steal from it is disintegrated on the spot.",
+  "AuditionLineA": "WHO DARES APPROACH THE SACRED HEAD OF THE VAULT DWELLER?!",
+  "AuditionLineB": "I still don't see why I have to sit out here in the desert, while that other head gets to hang out at the village.",
+  "AuditionLineC": "Hrnnfff...uh-uh, Mom...therez no school today...Zsnzzzzz",
+  "WikiLink": "https://fallout.fandom.com/wiki/Sacred_head_of_the_Vault_Dweller",
+  "ImageFile": "ecbhead.png",
+  "InVockScope": "Yes",
+  "Companion": "",
+  "CompanionMod": ""
+ },
+ {
   "Name": "Bridge Keeper",
   "Msg File": "ecbridge",
   "FRM file": "brige",
