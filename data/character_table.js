@@ -302,7 +302,7 @@ window.CHARACTER_TABLE = [
   "Game": "Fallout 2",
   "Mod": "VOCK",
   "TH Mod": "Talking Heads",
-  "Status": "Cast",
+  "Status": "Completed",
   "VoiceActor": "Dmitry Medvedenko",
   "Description": "Darion is the leader of the New Khans raiders. His band is a derivative of The Great Khans of which he is the only survivor after The Chosen One’s ancestor, the Vault Dweller, wiped them out while rescuing a young President Tandi. He now lives in fear inside of Vault 15, ready to incinerate any trespassers with his flame thrower. He has a dog called \"Baddog\".",
   "AuditionLineA": "So, here you are at last. The savior of the downtrodden, the righter of wrongs, the icon of hope for humanity. What a dumb-ass!",
